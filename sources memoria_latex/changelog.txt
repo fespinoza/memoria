@@ -1,0 +1,24 @@
+Clase umemoria - Changelog
+21-06-2012
+
+[21-06-2012] v1.3
+- Se saca el package inputenc y fontenc de la definción de la clase, delegando la decisión al usuario.
+- Corregidos problemas de formato con la numeración en el \frontmatter
+- Cambiado el nombre del comando \opting a \carrera
+- Cambiada la funcionalidad del comando \comision. Ahora acepta cada nombre como argumento separado.
+- Agregados los entornos 'intro' y 'conclusion'
+- Cambiada la opción por defecto openright por openany
+- Comentado el codigo fuente
+- Cambiada la definición de los entornos abstrac y thanks, ahora son más coherentes con el formato.
+- Reescrito desde cero el archivo de muestra
+
+[19-06-2012] v1.2
+- Cambio de nombre de la clase de memoriadim a umemoria
+- Arreglados problemas de compatibilidad
+- Reducidas dependencias
+
+[28-04-2012] v1.1
+- Escudo de la Universidad en formato vectorizado se incluye junto con el package.
+
+[11-04-2012] v1.0
+- Primera versión
