@@ -1,0 +1,13 @@
+# Default editing configuration
+softWrap = true
+softTabs = true
+tabSize  = 2
+
+# File type specific configuration
+#
+[ text ]
+showInvisibles   = true
+
+[ text.tex.latex ]
+spellChecking    = true
+spellingLanguage = 'es'
