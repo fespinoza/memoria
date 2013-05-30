@@ -2,3 +2,9 @@
 *.swo
 */**/.DS_Store
 .DS_Store
+*.aux
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.toc

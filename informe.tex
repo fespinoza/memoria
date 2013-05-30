@@ -1,72 +1,33 @@
 \documentclass[upright, contnum]{umemoria}
+
 \depto{DEPARTAMENTO DE CIENCIAS DE LA COMPUTACIÓN}
 \author{FELIPE ANIBAL RICARDO ESPINOZA CASTILLO}
-\title{DISEÑO Y DESARROLLO DE UNA}
+\title{DISEÑO Y DESARROLLO DE UNA HERRAMIENTA DE REPRESENTACIÓN Y VISUALIZACIÓN DE REDES SOCIALES CON CAPACIDADES DISTRIBUIDAS}
 \auspicio{}
 \date{JULIO 2013}
 \guia{CLAUDIO GUTIÉRREZ GALLARDO}
 \carrera{TÍTULO DE INGENIERO CIVIL EN COMPUTACIÓN}
 \comision{GONZALO NAVARRO BADINO}{LUIS MATEU BRULE}{\ }
 
-\usepackage{lipsum}
-
-% \usepackage[latin1]{inputenc}
-% \usepackage[T1]{fontenc}
-% \usepackage[utf8]{inputenc}
-
 \begin{document}
-
-\frontmatter
-\maketitle
-
-\begin{abstract}
-  \begin{itemize}
-    \item Portada [OK]
-    \item Resumen [INCLUDED]
-    \item Dedicatoria [INCLUDED]
-    \item Agradecimientos [INCLUDED]
-    \item Tabla de contenidos [INCLUDED]
-    \item Índice de tablas [INCLUDED]
-    \item Índice de ilustraciones [INCLUDED]
-  \end{itemize}
-
-  \begin{itemize}
-    \item Introducción [INCLUDED]
-    \item Cuerpo
-    \item Conclusión [INCLUDED]
-  \end{itemize}
-
-  \begin{itemize}
-    \item Glosario
-    \item Bibliografía [INCLUDED]
-    \item Anexo y Apéndices
-  \end{itemize}
-\end{abstract}
-
-\begin{dedicatoria}
-  A mi familia, a mi polola, a mis amigos y mi profe guía.
-\end{dedicatoria}
-
-\begin{thanks}
-  Gracias a mí por ser tan genial xD.
-\end{thanks}
-
-\tableofcontents
-
-\listoftables
-
-\listoffigures
-
-\mainmatter
-
-%=== BEGIN cuerpo de la memoria
-\input{introduccion.tex}
-% \input{cap1.tex}
-\input{cap2.tex}
-\input{conclusion.tex}
-%=== END cuerpo memoria
-
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{bibliografia}
+  \frontmatter
+  \maketitle
+  \input{preliminary/01-abstract.tex}
+  \input{preliminary/02-dedicatory.tex}
+  \input{preliminary/03-thanks.tex}
+  \tableofcontents
+  \listoftables
+  \listoffigures
+  \mainmatter
+  
+  %=== BEGIN cuerpo de la memoria
+    \input{chapters/00-introduction.tex}
+    \input{chapters/01-cap1.tex}
+    \input{chapters/02-cap2.tex}
+    \input{chapters/10-conclusion.tex}
+  %=== END cuerpo memoria
+  
+  \nocite{*}
+  \bibliographystyle{plain}
+  \bibliography{endings/02-bibliography}
 \end{document}

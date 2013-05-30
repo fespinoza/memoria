@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 MAY 2013 21:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 MAY 2013 22:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -327,29 +327,26 @@ Package: parskip 2001/04/09 non-zero parskip adjustments
 )
 \c@defn=\count118
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/lipsum/lipsum.sty
-Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count119
-) (./informe.aux
+(./informe.aux
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
 )
 \openout1 = `informe.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -390,16 +387,16 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
+\scratchcounter=\count119
 \scratchdimen=\dimen126
 \scratchbox=\box28
-\nofMPsegments=\count121
-\nofMParguments=\count122
+\nofMPsegments=\count120
+\nofMParguments=\count121
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count123
+\MPscratchCnt=\count122
 \MPscratchDim=\dimen127
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks34
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -416,10 +413,10 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 17.
+Package hyperref Info: Link coloring OFF on input line 12.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -427,28 +424,28 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count126
+\c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 17.
-LaTeX Info: Redefining \pageref on input line 17.
-LaTeX Info: Redefining \nameref on input line 17.
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
 
 (./informe.out) (./informe.out)
 \@outlinefile=\write3
 \openout3 = `informe.out'.
 
 
-<escudoU.pdf, id=15, 320.19624pt x 689.57625pt>
+<escudoU.pdf, id=19, 320.19624pt x 689.57625pt>
 File: escudoU.pdf Graphic file (type pdf)
  <use escudoU.pdf>
-Package pdftex.def Info: escudoU.pdf used on input line 20.
+Package pdftex.def Info: escudoU.pdf used on input line 14.
 (pdftex.def)             Requested size: 38.42189pt x 82.74557pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 20.
+LaTeX Font Info:    Try loading font information for U+msa on input line 14.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 20.
+LaTeX Font Info:    Try loading font information for U+msb on input line 14.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -460,21 +457,23 @@ File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./escud
 oU.pdf>]
-[2
+(./preliminary/01-abstract.tex [2
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
- (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 3.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
- [3
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3.
+)
+(./preliminary/02-dedicatory.tex [3
 
 ] [4
 
-]
-[5] [6
+]) (./preliminary/03-thanks.tex [5])
+[6
 
 ] (./informe.toc
 LaTeX Info: Redefining \. on input line 1.
@@ -506,7 +505,7 @@ LaTeX Info: Redefining \% on input line 1.
 ] [10
 
 ]
-(./introduccion.tex
+(./chapters/00-introduction.tex
 
 LaTeX Warning: Citation `littlesis' on page 1 undefined on input line 3.
 
@@ -593,60 +592,51 @@ e 33.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2])
-(./cap2.tex [3]
+(./chapters/01-cap1.tex [3]
 Cap\'{\i }tulo 1.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4
+) (./chapters/02-cap2.tex [4
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Cap\'{\i }tulo 2.
+) (./chapters/10-conclusion.tex [5
 
- [5])
-(./conclusion.tex [6] <fcfm.png, id=101, 473.77pt x 384.43625pt>
-File: fcfm.png Graphic file (type png)
-
-<use fcfm.png>
-Package pdftex.def Info: fcfm.png used on input line 5.
-(pdftex.def)             Requested size: 94.75232pt x 76.88588pt.
- [7
-
- <./fcfm.png>])
+])
 No file informe.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
-[8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+[6
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
  (./informe.aux
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: B0FDA989D63233869F5BF8ACB476D89F;141.
+(rerunfilecheck)             Checksum: 9EC9A1E852DEBCA7D3C06DBC9CBC2B2E;181.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 8006 strings out of 493488
- 112298 string characters out of 3141326
- 306985 words of memory out of 3000000
- 11161 multiletter control sequences out of 15000+200000
+ 7830 strings out of 493488
+ 110408 string characters out of 3141326
+ 215434 words of memory out of 3000000
+ 10979 multiletter control sequences out of 15000+200000
  9545 words of font info for 36 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 36i,7n,29p,1072b,579s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,7n,29p,1088b,579s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on informe.pdf (18 pages, 274187 bytes).
+Output written on informe.pdf (16 pages, 154052 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 35 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
