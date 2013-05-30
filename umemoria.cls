@@ -32,13 +32,16 @@
 
 %% Packages necesarios
 \RequirePackage[top=2cm, left=3cm, bottom=2cm, right=2cm, paper=letterpaper]{geometry}	%%Margenes
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+% \usepackage[spanish]{babel}
 \RequirePackage{amsmath, amssymb, amsthm, graphicx}										%%Varios
 \RequirePackage[spanish, es-nolists, es-lcroman]{babel}									%%Lenguaje
 \RequirePackage[pdfpagelabels]{hyperref}												%%Links y numeracion del PDF
 
 %% Lenguaje
 \addto\captionsspanish{\renewcommand\tablename{Tabla}}
-\addto\captionsspanish{\renewcommand\listtablename{蚽dice de tablas}}
+\addto\captionsspanish{\renewcommand\listtablename{脥ndice de tablas}}
 
 %% Interlineado
 \RequirePackage{parskip}
@@ -58,8 +61,8 @@
 \newenvironment{dedicatoria}{\cleardoublepage\null\vspace{\stretch{1}}\begin{flushright}\itshape}{\end{flushright}\vspace{\stretch{2}}\null}
 \let\thanks\undefined
 \newenvironment{thanks}{\chapter*{Agradecimientos}}{\vfill\null}
-\newenvironment{intro}{\addcontentsline{toc}{chapter}{\protect\numberline{}Introducci髇}\chapter*{Introducci髇}}{\vfill\null}
-\newenvironment{conclusion}{\addcontentsline{toc}{chapter}{\protect\numberline{}Conclusi髇}\chapter*{Conclusi髇}}{\vfill\null}
+\newenvironment{intro}{\addcontentsline{toc}{chapter}{\protect\numberline{}Introducci贸n}\chapter*{Introducci贸n}}{\vfill\null}
+\newenvironment{conclusion}{\addcontentsline{toc}{chapter}{\protect\numberline{}Conclusi贸n}\chapter*{Conclusi贸n}}{\vfill\null}
 
 %% Teoremas, proofs, etc
 \renewenvironment{proof}[1][\proofname] {\par\pushQED{\qed}\normalfont\topsep6\p@\@plus6\p@\relax\trivlist\item[\hskip\labelsep\scshape\footnotesize#1\@addpunct{.}]\ignorespaces}{\popQED\endtrivlist\@endpefalse}
@@ -70,21 +73,21 @@
 	\swapnumbers
 \fi
 \theoremstyle{miestilo}
-\newtheorem{defn}{Definici髇}[chapter]
+\newtheorem{defn}{Definici贸n}[chapter]
 \if@contnum
 \newtheorem{teo}[defn]{Teorema}
 \newtheorem{cor}[defn]{Corolario}
 \newtheorem{lema}[defn]{Lema}
-\newtheorem{prop}[defn]{Proposici髇}
+\newtheorem{prop}[defn]{Proposici贸n}
 \else
 \newtheorem{teo}{Teorema}[chapter]
 \newtheorem{cor}{Corolario}[chapter]
 \newtheorem{lema}{Lema}[chapter]
-\newtheorem{prop}{Proposici髇}[chapter]
+\newtheorem{prop}{Proposici贸n}[chapter]
 \fi
 \theoremstyle{miobs}
 \newtheorem*{ej}{Ejemplo}
-\newtheorem*{obs}{Observaci髇}
+\newtheorem*{obs}{Observaci贸n}
 
 %% Comandos para la portada
 \global\let\@carrera\@empty
@@ -123,7 +126,7 @@
 			\includegraphics[scale=.12]{escudoU.pdf}
 		\end{minipage}
 		\begin{minipage}[t]{12cm}
-			UNIVERSIDAD DE CHILE\\FACULTAD DE CIENCIAS F蚐ICAS Y MATEM罷ICAS\\DEPARTAMENTO DE \MakeUppercase\@depto
+			UNIVERSIDAD DE CHILE\\FACULTAD DE CIENCIAS F脥SICAS Y MATEM脕TICAS\\DEPARTAMENTO DE \MakeUppercase\@depto
 		\end{minipage}
 		
 		\vspace{2cm}
@@ -131,16 +134,16 @@
 			\MakeUppercase\@title
 			
 		\vspace{1cm}
-			MEMORIA PARA OPTAR AL T蚑ULO DE \MakeUppercase\@carrera
+			MEMORIA PARA OPTAR AL T脥TULO DE \MakeUppercase\@carrera
 			
 		\vspace{1cm}
 			\MakeUppercase\@author
 			
 		\vspace{3cm}
-			PROFESOR GU虯:\\ \MakeUppercase\@guia
+			PROFESOR GU脥A:\\ \MakeUppercase\@guia
 		
 		\vspace{1cm}
-			MIEMBROS DE LA COMISI覰:\\ \MakeUppercase\@comisa\\\MakeUppercase\@comisb\\\MakeUppercase\@comisc
+			MIEMBROS DE LA COMISI脫N:\\ \MakeUppercase\@comisa\\\MakeUppercase\@comisb\\\MakeUppercase\@comisc
 		\if\@auspicio\@empty\else
 
 		\vfill

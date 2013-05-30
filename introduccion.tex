@@ -1,16 +1,35 @@
 \begin{intro}
-\lipsum[30-35]
-\begin{enumerate}
-	\item Item 1
-	\begin{enumerate}
-		\item Subitem 1
-		\item Subitem 2 (ver Figura \ref{logofcfm})
-	\end{enumerate}
-	\item Item 2
-	\item Item 3
-\end{enumerate}
-\begin{teo}
-Se tiene que $$\int_0^t e^sds=e^t-1.$$
-\end{teo}
-\lipsum[36-40]
+% -- Contexto y littlesis --
+Existe una red social llamada \textbf{LittleSis}\cite{littlesis} que consiste en una base de datos de relaciones de \emph{quien conoce a quien} entre gente política, económica y socialmente poderosa en el mundo de las organizaciones en Estados Unidos cuyo fin es entregar el poder de la información al pueblo.\\
+
+El origen del nombre de \emph{LittleSis} se relaciona con el personaje \emph{Big Brother} de la novela de George Orwell llamada \emph{Nineteen Eighty-Four}. Este personaje consiste en un dictador que maneja toda la información sobre la población. \emph{Big Brother} posteriormente fue un concepto con el cual se describió un ente poderoso.\\
+ 
+De esta forma, al grupo compuesto por las personas poderosas y políticos de un país se les atribuye esta imagen de \emph{Big Brother}, por su poder e influencia en un país. Esta es la motivación para bautizar con el nombre \emph{LittleSis}\emph{(Little Sister)}, en oposición a \emph{Big Brother}, a una aplicación cuyo fin es entregar poder de  la información a toda la población.\\
+
+La idea detrás de \emph{LittleSis} tiene la capacidad de ser replicada en muchos países con el mismo fin, esto es, el de entregar poder al pueblo e informarle sobre los posibles conflictos de interés que las autoridades locales puedan tener al lidiar con el ejercicio de su poder, lo que en el caso particular de Chile, existe una iniciativa llamada \textbf{Poderopedia}\cite{poderopedia} que busca ser una réplica de \emph{LittleSis} para Chile.\\
+
+En el caso de \textbf{Poderopedia}, uno de los líderes de ese proyecto es el ex alumno del DCC, Álvaro Graves, quienes tienen un \textbf{modelo RDF publicado en un repositorio en Github*}, ellos están desde hace un tiempo cercanos a el lanzamiento de un beta público, de cualquier manera, por lo expresado en las redes sociales y en su página oficial, consiste en esta herramienta de las mismas características de LittleSis, es decir una base de datos centralizada sobre las relaciones del ambiente político chileno.
+
+% -- Deficiencias de littleSis --
+Con toda sus potencialidades, tanto \emph{LittleSis} como \emph{Poderopedia}, poseen un fin muy particular. En este sentido, sólo tienen la capacidad de cubrir la información sobre las personas muy importantes del mundo político, social y económico poderoso. Pero si una persona quisiera recolectar información sobre grupos de personas (por ejemplo el grupo de poder de una pequeña ciudad) para formar una red sociales, estas aplicaciones no sirven. Tampoco estas herramientas permiten la creación de redes sociales privadas, que cumplan los objetivos que el usuario desee, pero al mismo tiempo permitirle interactuar con los datos de otras redes sociales pertenecientes a otras personas o comunidades.\\
+
+% -- En esta parte se propone el proyecto ---
+El objetivo de esta memoria es llenar ese vacío, diseñando y desarrollando una herramienta para representar redes sociales, y que tengan capacidades distribuidas, donde los usuarios que poseen sus redes sociales públicas o privadas, puedan unirlas a voluntad.\\
+
+Esta herramienta posee una gran gama de aplicaciones posibles, tanto para estudios de tipo sociológico, histórico, biológico, político, etc. Un caso de ejemplo reciente es el caso de las redes de autoridades e intereses posibles dentro del ambiente educacional chileno, lo que puede dar una visión más informada sobre el entramado de intereses detrás de los problemas denunciados por el conflicto estudiantil que se vive desde el año 2011.\\
+
+% -- Desafíos técnicos --
+% --- Basado en el modelo de Mauro
+% --- ??
+Para lograr desarrollar esta herramienta se deben sortear una serie de desafíos técnicos, que aunque pareciera una aplicación bastante intuitiva, hasta el momento no hemos encontrado una aplicación con estas características.\\
+
+Entre sus mayores desafíos está el de tener una aplicación de fácil instalación y uso amigable para los usuarios. Por otro lado, con lo que respecta al modelamiento de datos, debe basarse en algún estándar flexible de representación de redes sociales que permita la interoperabilidad. Esta memoria partirá de la base y la experiencia del recientemente titulado doctor en computación Mauro San Martín, cuya tesis de doctorado consistió en diseñar un modelo para el manejo de redes sociales, de esta forma, se aprovechará el conocimiento de su experiencia de investigación, aplicándolo a un trabajo práctico y útil para la investigación y estudio de varias disciplinas.\\
+
+También habrá que desarrollar el aspecto de la visualización de datos, la integración con otras herramientas enfocadas al análisis de redes sociales, el modelamiento y uso de la información de redes sociales.\\
+
+Dado que la estructura de redes sociales está fuertemente ligada a grafos, y se necesita un estándar aceptado (para el que existan herramientas de desarrollo disponibles), se ha optado por representarlo en el modelo \textbf{RDF}. Este estándar es además es una representación que permitirá todo tipo de usos incorporándose a tecnologías de la \textbf{Web Semántica}. Finalmente, además de los anteriores, hay desafíos de negocios que se vinculan con lo técnico, como hacer algunos casos de prueba de usabilidad para entregar una herramienta de valor a usuarios y contactar diversas personas que puedan estar interesadas en la herramienta.\\
+
+% -- Organización del documento --
+En este informe de avance en el tema de memoria se expondrá los avances hechos en el semestre. En la sección \ref{sec:objetivo_general} se presenta el objetivo general del trabajo, de manera que el lector comprenda resumida y claramente la visión y alcance de este trabajo. Luego en la sección \ref{sec:objetivos_especificos} de objetivos específicos se descompone el objetivo general en una serie de objetivos medibles incluyendo además objetivos tentativos con respecto al tiempo de lo que se pudiera extender este trabajo. Los avances principales en la memoria de expresan en la sección \ref{sec:especificacion_del_sistema} donde se expone la especificación del sistema. Luego, se discute el enfoque mismo de trabajo de esta memoria en la sección \ref{sec:plan_de_trabajo} de plan de trabajo, en donde de dará a conocer la metodología general para desarrollar los objetivos, definir los entregables finales del trabajo y haciendo una estimación de tiempos por medio de una carta gantt.
+
 \end{intro}
