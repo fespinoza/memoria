@@ -21,15 +21,18 @@ que conceptos debo manejar para entender la memoria, ej:
 * metodologías de desarrollo
 * arquitectura estándar
 
-### 2.1 Conceptos de Desarrollo
-#### 2.1.1 Desarrollo Front-End
-#### 2.1.2 Desarrollo Back-End
-#### 2.1.3 El Modelo MVC
-#### 2.1.4 Frameworks de Desarrollo
-##### 2.1.4.1. Server Side
-##### 2.1.4.2. Clien Side
-#### 2.1.5. HTML5
-##### 2.1.5.1 SVG, Gráficos Vectoriales en la Web
+### 2.1 Conceptos de Redes Sociales
+#### 2.1.1. Definiciones
+
+### 2.2 Conceptos de Desarrollo
+#### 2.2.1 Desarrollo Front-End
+#### 2.2.2 Desarrollo Back-End
+#### 2.2.3 El Modelo MVC
+#### 2.2.4 Frameworks de Desarrollo
+##### 2.2.4.1. Server Side
+##### 2.2.4.2. Clien Side
+#### 2.2.5. HTML5
+##### 2.2.5.1 SVG, Gráficos Vectoriales en la Web
 
 
 ## 3. Especificación del Problema
