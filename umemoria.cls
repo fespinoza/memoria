@@ -35,9 +35,9 @@
 \usepackage{ucs}
 \usepackage[utf8x]{inputenc}
 % \usepackage[spanish]{babel}
-\RequirePackage{amsmath, amssymb, amsthm, graphicx}										%%Varios
-\RequirePackage[spanish, es-nolists, es-lcroman]{babel}									%%Lenguaje
-\RequirePackage[pdfpagelabels]{hyperref}												%%Links y numeracion del PDF
+\RequirePackage{amsmath, amssymb, amsthm, graphicx}					%%Varios
+\RequirePackage[spanish, es-nolists, es-lcroman]{babel}			%%Lenguaje
+\RequirePackage[pdfpagelabels]{hyperref}										%%Links y numeracion del PDF
 
 %% Lenguaje
 \addto\captionsspanish{\renewcommand\tablename{Tabla}}
@@ -57,7 +57,7 @@
 \renewenvironment{itemize}{\olditem\setlength{\parskip}{\smallskipamount}}{\oldenditem}
 
 %% Entornos nuevos
-\newenvironment{abstract}{\cleardoublepage\chapter*{Resumen}}{\vfill\null}
+\newenvironment{abstract}{\cleardoublepage}{\vfill\null}
 \newenvironment{dedicatoria}{\cleardoublepage\null\vspace{\stretch{1}}\begin{flushright}\itshape}{\end{flushright}\vspace{\stretch{2}}\null}
 \let\thanks\undefined
 \newenvironment{thanks}{\chapter*{Agradecimientos}}{\vfill\null}
