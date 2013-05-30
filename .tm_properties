@@ -11,3 +11,7 @@ showInvisibles   = true
 [ text.tex.latex ]
 spellChecking    = true
 spellingLanguage = 'es'
+
+[ text.html.markdown ]
+spellChecking    = true
+spellingLanguage = 'es'
