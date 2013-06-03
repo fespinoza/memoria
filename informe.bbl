@@ -1,0 +1,50 @@
+\begin{thebibliography}{10}
+
+\bibitem{angular}
+Angularjs home page.
+\newblock \url{http://angularjs.org/}, June 2013.
+
+\bibitem{backbone}
+Backbonejs home page.
+\newblock \url{http://backbonejs.org/}, June 2013.
+
+\bibitem{cake}
+Cakephp home page.
+\newblock \url{http://cakephp.org/}, June 2013.
+
+\bibitem{django}
+Django home page.
+\newblock \url{https://www.djangoproject.com/}, June 2013.
+
+\bibitem{meteor}
+Meteosjs home page.
+\newblock \url{http://meteor.com/}, June 2013.
+
+\bibitem{pylons}
+Pylons home page.
+\newblock \url{http://www.pylonsproject.org/}, June 2013.
+
+\bibitem{mvc}
+Rails guides, the mvc architecture.
+\newblock
+  \url{http://guides.rubyonrails.org/getting_started.html#the-mvc-architecture},
+  June 2013.
+
+\bibitem{rails}
+Ruby on rails, home page.
+\newblock \url{http://rubyonrails.org/}, June 2013.
+
+\bibitem{sinatra}
+Sinatra home page.
+\newblock \url{http://www.sinatrarb.com/}, June 2013.
+
+\bibitem{spring}
+Spring home page.
+\newblock \url{http://www.springsource.org/}, June 2013.
+
+\bibitem{ember}
+Yehuda Katz.
+\newblock Emberjs home page.
+\newblock \url{http://emberjs.com/}, June 2013.
+
+\end{thebibliography}

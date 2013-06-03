@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: informe.aux
+The style file: plain.bst
+Database file #1: endings/02-bibliography.bib
+Warning--I didn't find a database entry for "littlesis"
+Warning--I didn't find a database entry for "poderopedia"
+Warning--to sort, need author or key in mvc
+Warning--to sort, need author or key in rails
+Warning--to sort, need author or key in sinatra
+Warning--to sort, need author or key in django
+Warning--to sort, need author or key in pylons
+Warning--to sort, need author or key in spring
+Warning--to sort, need author or key in cake
+Warning--to sort, need author or key in angular
+Warning--to sort, need author or key in meteor
+Warning--to sort, need author or key in backbone
+You've used 11 entries,
+            2118 wiz_defined-function locations,
+            534 strings with 4694 characters,
+and the built_in function-call counts, 1882 in all, are:
+= -- 180
+> -- 17
+< -- 0
++ -- 13
+- -- 2
+* -- 90
+:= -- 226
+add.period$ -- 23
+call.type$ -- 11
+change.case$ -- 34
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 77
+empty$ -- 253
+format.name$ -- 2
+if$ -- 457
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 0
+newline$ -- 48
+num.names$ -- 2
+pop$ -- 88
+preamble$ -- 1
+purify$ -- 23
+quote$ -- 0
+skip$ -- 76
+stack$ -- 0
+substring$ -- 55
+swap$ -- 11
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 44
+warning$ -- 10
+while$ -- 2
+width$ -- 13
+write$ -- 92
+(There were 12 warnings)
