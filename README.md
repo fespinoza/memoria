@@ -128,20 +128,56 @@ de esta forma
 
 ## 3. Especificación del Problema
 ### 3.1 Antecedentes y soluciones existentes
-acá hablo de:
 
-* littlesis
-* poderopedia
-* la memoria del manuel
-* etc
+A continuación se presentan algunas de las soluciones existentes que apuntan a resolver problemas similares al de esta
+memoria.
+
+#### LittleSis y Poderopedia
+
+* que es littlesis
+* screenshot de littlesis
+* por que no cumplo el objetivo de la memoria con littlesis
+
+* que es poderopedia: un clon chileno de littlesis en el cual se publican información sobre y de las relaciones entre
+políticos y empresarios chilenos.
+* screenshot de poderopedia
+* screenshot de red social en forma de grafo
+* por qué no sirve?: al igual que little sis
+
+#### Memoria Alumno Manuel Bahamonde
+
+* de qué se trata esta memoria y cual es la relación de esta memoria con la de manuel
+* que me permite hacer
+* screenshots del modelo de redes sociales
+* que problemas tengo con la memoria de manuel?
+  * no puedo unir redes sociales
+  * establece restricciones en la aridad de las relaciones
+  * no permite agregar atributos a los nodos y relaciones
+  * no posee un formato de exportación genérico, sólo un formato único para una aplicación externa
+  * necesita de que el computador del cliente tenga instalado java
+  
+#### Otras referencias
+
+* que otras referencias de soluciones similares tengo?
 
 ### 3.2 Relevancia del problema
-por qué es importante solucionar el problema?
 
-### 3.3 Requisitos
+* el problema es relevante de tomar pues se le entrega a las personas una herramienta que les permite guardar datos de
+redes sociales en forma interactiva y gráfica.
+* permite que las personas puedan complementar su información con la información de otras personas
+* permite la generación de información compatible con la web semántica por parte de personas con conocimientos básicos
+de computación
+
+### 3.3 Usuarios Objetivo
+
+* quienes son mis usuarios objetivo
+
+### 3.4 Requisitos
+
 se especifica en todo el detalle de los requisitos **(del informe del E)**
 
-### 3.4 Criterios de Solución
+### 3.5 Criterios de Solución
+
 definir los criterios de aceptación de una solución
 
 
@@ -214,5 +250,6 @@ cosas técnicas y metodológicas que fueron complejas al momento de enfrentar la
 
 * agregar endpoint virtuoso
 * mejorar la escalabilidad de la aplicación
+* habilitar un modo offline de la app
 
 <!-- TODO: agregar subsub section to index -->
