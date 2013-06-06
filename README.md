@@ -172,13 +172,24 @@ de computación
 
 * quienes son mis usuarios objetivo
 
-### 3.4 Requisitos
+### 3.4 Requisitos / Criterios de Aceptación
 
 se especifica en todo el detalle de los requisitos **(del informe del E)**
 
-### 3.5 Criterios de Solución
+*Es una visión más funcional de los requisitos que se necesitan cumplir*
 
-definir los criterios de aceptación de una solución
+Se necesita un sistema que me permita crear y editar redes sociales y:
+* crear, editar y borrar actores
+* crear, edirar y borrar relaciones n-árias entre esos actores
+* que me permita agregar, editar y borrar atributos de actores y relaciones
+* que pueda unir redes sociales
+* que pueda exportar mis redes sociales en formato RDF
+* que pueda importar mis redes en formato RDF
+
+En términos de requisitos de calidad se necesita:
+
+* que la interfaz sea fácil de usar
+* que la aplicación sea de fácil instalación
 
 
 ## 4. Descripción de la Solución
@@ -251,5 +262,6 @@ cosas técnicas y metodológicas que fueron complejas al momento de enfrentar la
 * agregar endpoint virtuoso
 * mejorar la escalabilidad de la aplicación
 * habilitar un modo offline de la app
+* evolución temporal de las redes sociales
 
 <!-- TODO: agregar subsub section to index -->
