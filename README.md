@@ -36,13 +36,15 @@ Enumeración de objetivos específicos extraídos del informe del E
 
 ### 1.3. Resultados esperados
 
-que cosas se esperan obtener luego del trabajo realizado
+* el resultado esperado **es una aplicación** que con **una interfaz amigable** me permita cumplir el objetivo general
 
 ### 1.4. Alcances
 
-que no va a incluir el trabajo de memoria
+Especificar algunas limitaciones al problema a resolver con el fin de que la memoria sea un paso más acotado en la
+solución final del problema:
 
-* manejo de redes sociales muy grandes
+* se resolverá el problema para redes sociales de menos de 100 actores **Tamaño pequeño, revisar este número**
+* no se considerará la posible temporalidad de la red social
 
 ## 2. Marco Conceptual
 
