@@ -1,0 +1,60 @@
+\chapter{Descripción del Proyecto}
+
+\section{Objetivos} % (fold)
+\label{sec:objetivos}
+A continuación se presentan los objetivos para este trabajo de memoria.
+
+\subsubsection{Objetivo General} % (fold)
+\label{ssub:objetivo_general}
+
+El objetivo de este trabajo consiste en crear una herramienta por la cual personas que estudian diversos tipos de redes
+sociales como: sociólogos, periodistas, biólogos, etc; puedan representar, administrar y visualizar redes sociales
+de mediana escala, contando además con la capacidad de combinar redes sociales con otros usuarios de la herramienta
+para obtener redes sociales con información más completa ofreciendo esto como un servicio centralizado con la
+capacidad de ser distribuido.
+
+% subsubsection objetivo_general (end)
+
+\subsubsection{Objetivos Específicos} % (fold)
+\label{ssub:objetivos_específicos}
+
+De lo escrito anteriormente en el objetivo general, se desprenden los siguientes objetivos intermedios:
+
+  \begin{enumerate}
+    \item Implementar un modelo de representación de redes sociales en RDF.
+    \item Hacer una interfaz amigable de ingreso de datos: actores y relaciones.
+    \item Desarrollar un sistema centralizado que administre la asignación de identificadores únicos a los actores que los usuarios agregan a sus redes sociales.
+    \item Unir redes sociales, combinando la información y relaciones de actores en común.
+    \item Visualización
+      \begin{enumerate}
+        \item De la estructura general de las redes sociales creadas.
+        \item Específica de elementos de interés en esas redes sociales.
+      \end{enumerate}
+    \item Representar algunas redes con el modelo implementado anteriormente, que varíen en tamaño y en complejidad.
+  \end{enumerate}
+
+% subsubsection objetivos_específicos (end)
+% section objetivos (end)
+
+\section{Resultados Esperados} % (fold)
+\label{sec:resultados_esperados}
+
+Para llevar a cabo los objetivos expuestos en esta memoria, los resultados que se esperan consisten en: un sistema que permita el modelamiento de redes sociales en donde debe existir una aplicación que permita de manera cómoda crear estas redes sociales, complementar su información para posteriormente unir las redes de un usuario con otro en caso de que este lo quiera. Además de lo anterior, los datos generados por el sistema deben estar en un formato amigable para computadores, que faciliten la posterior interoperabilidad con otras aplicaciones y fuentes de conocimiento.
+
+% section resultados_esperados (end)
+
+\section{Alcances} % (fold)
+\label{sec:alcances}
+% Especificar algunas limitaciones al problema a resolver con el fin de que la memoria sea un paso más acotado en la
+% solución final del problema:
+% 
+% * se resolverá el problema para redes sociales de menos de 100 actores **Tamaño pequeño, revisar este número**
+% * no se considerará la posible temporalidad de la red social
+
+Es importante mencionar, que con el objetivo de que el trabajo a realizar cumpla con las limitaciones de tiempo correspondientes a una memoria de ingeniería, el problema de la creación y manipulación de redes sociales por personas se acota en los siguientes aspectos:
+
+\begin{itemize}
+  \item El tamaño de redes sociales, se considerará pequeño con un número de alrededor 100 actores por red social, debido a que las redes serán principalmente creadas de forma manual, por tanto debe manejar un número que sea posible de alcanzar por los usuarios de la aplicación, de esta forma, ahorrando problemáticas asociadas con la escalabilidad de la aplicación para redes sociales más grandes.
+  \item Dependiendo de las aplicaciones para las cuales se use el modelamiento de redes sociales, puede requerirse ver los cambios temporales que sufren estas, para analizar la estructura de una red social y su evolución en el tiempo. Dicho problema no será abordado en esta memoria.
+\end{itemize}
+% section alcances (end)

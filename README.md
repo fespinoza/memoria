@@ -1,6 +1,6 @@
 # Estructura de mi Informe de Memoria
 
-## 1. Introducción
+## Introducción
 
 toda esta información es casi todo lo que se puso en el informe final del E
 
@@ -15,8 +15,9 @@ toda esta información es casi todo lo que se puso en el informe final del E
 * aspectos técnicos importantes que resolver para realizar la memoria
 * memoria basada en el trabajo de mauro san martín
 * el uso de tecnologías RDF para publicar los datos generados
+* guía de lectura del informe
 
-### 1.1. Descripción del Proyecto
+## 1. Descripción del Proyecto
 
 ### 1.2. Objetivos
 
