@@ -18,6 +18,51 @@ En caso de así preferirlo, el lector puede saltar las secciones que estime conv
 
 A continuación se explican los términos en lo que a desarrollo que se refiere que tienen relación con el trabajo realizado en esta memoria.
 
+\subsection{Desarrollo Web} % (fold)
+\label{sub:desarrollo_web}
+
+% * que es el desarrollo web
+% * arquitectura de cliente servidor
+% * que componentes típicos se encuentran en el desarrollo web
+%   * servidor
+%   * browser
+%     * web
+%     * movil
+%   * servidor de bases de datos
+%   * servidor de acceso a aplicaciones
+
+El desarrollo web se denomina al desarrollo de software cuyo fin es la creación de aplicaciones que se ejecuten en computadores que puedan ser accesados vía la \emph{world-wide web}. Este estilo de desarrollo conlleva a que una aplicación que pueda estar ejecutándose en un servidor pueda entregar resultados a clientes provenientes de cualquier parte del mundo, usando una gran diversidad de dispositivos, plataformas de software, etc. La cual es frecuentemente accesada por las personas vía un navegador web.\\
+
+Esta propiedad de multiplataforma de las aplicaciones desarrolladas para la web, junto con propiedades de accesibilidad desde diversos medios a las aplicaciones, ha hecho que el desarrollo web sea un enfoque de desarrollo ampliamente usado en la industria en los últimos 10 años.\\
+
+En términos generales el desarrollo web posee una arquitectura clásica de cliente/servidor, en donde una aplicación corriendo en un servidor proporciona resultados y ejecuta instrucciones proveniente de clientes, que pueden ir desde un navegador web de p.c. o dispositivo móvil, o servir de API para otras aplicaciones. A continuación se adjunta un diagrama que muestra los principales componentes cuando se habla de desarrollo web.\\
+
+% TODO inserte imagen bonita de desarrollo web gral aquí
+
+En la imagen se ve un ejemplo simple de una aplicación que posee un servidor de ejecución de la aplicación, con un servidor de base de datos, que son accesados vía teléfono, tablet o computador por medio de un navegador web o de una interfaz API que use una aplicación nativa.\\
+
+Dentro del desarrollo web, también se encuentran subcategorías que son expuestas a continuación.
+
+\subsubsection{Desarrollo Front-End} % (fold)
+\label{ssub:desarrollo_front_end}
+% * es el desarrollo que compone todos los aspectos de un sistema con los cuales interactúa un cliente, como el cliente
+% la arquitectura de cliente-servidor
+
+Es el desarrollo orientado a todos los componentes con los cuales interactúa un usuario de la aplicación, enfocado en la interfaz y sus componentes gráficos, además de la experiencia usuario, la usabilidad de la aplicación, etc. Es el desarrollo del cliente que el usuario usa para acceder al core de la aplicación.\\
+
+En términos de tecnologías, se asocia el desarrollo front-end al uso de tecnologías como: HTML, CSS, Javascript, entre otras.
+% subsubsection desarrollo_front_end (end)
+
+\subsubsection{Desarrollo Back-End} % (fold)
+\label{ssub:desarrollo_back_end}
+
+% * es desarrollo de software de la aplicación que guarda y procesa los datos del usuario
+
+Es el desarrollo de la aplicación que almacena y posee la lógica común a todos los clientes de la aplicación, en donde el código de este tipo de desarrollo es que se ejecuta en el servidor. Además generalmente en el desarrollo back-end se incluye todo lo relacionado a persistencia de datos generados a través del uso de la aplicación.
+
+% subsubsection desarrollo_back_end (end) 
+% subsection desarrollo_web (end)
+
 \subsection{Modelo MVC} % (fold)
 \label{sub:modelo_mvc}
 El modelo MVC (Modelo, Vista, Controlador)\cite{mvc}, consiste en un modelo para separar la lógica de una aplicación agrupándola en clases u otras unidades modulares, de acuerdo con la responsabilidad que estos módulos cumplan dentro de un sistema. A modo de ejemplo, a fin de ilustrar este concepto, se puede dar un caso de una aplicación que registre compras en un sistema de tienda online, un ejemplo de los módulos asociados a compras en MVC puede ser el siguiente:
@@ -36,7 +81,7 @@ El modelo MVC (Modelo, Vista, Controlador)\cite{mvc}, consiste en un modelo para
 \end{itemize}
 % subsection modelo_mvc (end)
 
-\subsection{Frameworks de Desarollo} % (fold)
+\subsection{Frameworks de Desarrollo} % (fold)
 \label{sub:frameworks_de_desarollo}
 Un framework de desarrollo define un marco en el cual desarrollar una aplicación, el cual provee una gran cantidad de funcionalidad común lista de manera de no desarrollar un proyecto desde cero, pero además de sólo funcionalidad, provee de una estructura lógica con la cual se escribe el código, que está influida por muchas otras personas que han usado el framework en aplicaciones reales.
 
@@ -57,13 +102,3 @@ Comúnmente estos frameworks son escritos para ser usados con el lenguaje \textt
 % subsection frameworks_de_desarollo (end)
 
 % section conceptos_de_desarrollo (end)
-
-% ### 2.2 Conceptos de Desarrollo
-% #### 2.2.1 Desarrollo Front-End
-% #### 2.2.2 Desarrollo Back-End
-% #### 2.2.3 El Modelo MVC
-% #### 2.2.4 Frameworks de Desarrollo
-% ##### 2.2.4.1. Server Side
-% ##### 2.2.4.2. Clien Side
-% #### 2.2.5. HTML5
-% ##### 2.2.5.1 SVG, Gráficos Vectoriales en la Web
