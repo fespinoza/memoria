@@ -7,11 +7,65 @@ En caso de así preferirlo, el lector puede saltar las secciones que estime conv
 \section{Conceptos de Redes Sociales} % (fold)
 \label{sec:conceptos_de_redes_sociales}
 
-\subsection{Definiciones} % (fold)
-\label{sub:definiciones}
 
-% subsection definiciones (end)
-% section conceptos_de_redes_sociales (end)
+A continuación se expondrán los conceptos fundamentales que se usarán en la memoria en relación a redes sociales. Estos conceptos fueron extraídos desde la tesis de doctorado del alumno del DCC, Mauro San Martín\cite{tesismauro}, debido a que representan lo necesario para el entendimiento de este trabajo, por lo tanto su reusó e inclusión en el informe para que el lector no necesite revisar la memoria de Mauro para poder ver estos conceptos.
+
+Para construir la definición formal de redes sociales, es necesario definir algunos conceptos claves previamente, siguiendo las definiciones clásicas de este dominio\cite{sna}.
+
+\subsection{Actor} % (fold)
+\label{sub:actor}
+Un actor es una entidad social, la cual está bajo estudio junto con sus interacciones sociales. En estricto rigor, los actores pueden ser definidos como individuos, corporaciones o unidades sociales colectivas. Ejemplos de actores son gente en un grupo, departamentos en una empresa o agencias de servicio público en una cuidad. El uso del término actor no significa que estas entidades necesariamente tienen la habilidad de actuar. Más allá, la mayoría de las aplicaciones en redes sociales se enfocan en colecciones de actores que son de un mismo tipo (por ejemplo, gente en un grupo de trabajo). A veces, sin embargo, la investigación necesita mirar a actores de diversos niveles o tipos conceptuales, o desde diversos conjuntos. Los datos pueden incluir atributos no relacionales asociados a los diferentes actores.
+% subsection actor (end)
+
+\subsection{Uniones Relacionales} % (fold)
+\label{sub:uniones_relacionales}
+Los actores están conectados hacia otros por uniones sociales. El rango y tipo de estas uniones puede ser muy grande. La característica principal de una unión es que establece una conexión entre un par de actores. Algunos de los ejemplos más comunes de uniones empleadas en el análisis de redes sociales son:
+
+  \begin{itemize}
+    \item La evaluación de una persona por otra, ej: amistad declarada, gusto o respeto.
+    \item Transferencia de recursos materiales, ej: transacciones de negocios, prestar o pedir prestado.
+    \item Asociación o afiliación, ej: atender conjuntamente a un evento social, o pertenecer al mismo club social.
+  \end{itemize}
+% subsection uniones_relacionales (end)
+
+\subsection{Relaciones} % (fold)
+\label{sub:relaciones}
+El conjunto de uniones entre un tipo específico de miembros de un grupo se llama una relación. Por ejemplo, el conjunto de las amistades entre pares de niños en un salón de clases, o el conjunto de uniones diplomáticas entre pares de naciones en el mundo, son uniones que definen relaciones. Para cualquier grupo de actores, podemos encontrar diversas relaciones; por ejemplo, además de las relaciones diplomáticas entre países, podemos encontrar la existencia de comercio en un determinado año. Las relaciones (o uniones específicas) pueden tener atributos que las describen. Por ejemplo en el caso del comercio, su cantidad de transacciones total puede haber sido guardado.
+% subsection relaciones (end)
+
+Con lo expuesto anteriormente, finalmente podemos definir una red social.
+
+\subsection{Red Social} % (fold)
+\label{sub:red_social}
+Una red social consiste en uno o muchos conjuntos finitos de actores, junto con las relaciones definidas entre ellos. La presencia de información relacional es una característica crítica de las redes sociales. Una red social es un caso particular de red, de esta manera su estructura puede ser formalizada como un grafo.
+
+% TODO: cita aquí
+En adición al uso de conceptos relacionales, Wasserman y Faust\cite{sna} se deben tener en cuenta las siguientes consideraciones:
+
+  \begin{itemize}
+    \item Actores y sus acciones son vistos como interdependientes, más que independientes, unidades autónomas.
+    \item Uniones relacionales (conexiones) entre actores son canales de transferencia o "flujo" de recursos (material o no material).
+    \item Modelos de red enfocados en individuos muestran el ambiente estructural de la red, además de proveer la capacidad de definir limitaciones en nivel individual.
+    \item Los modelos de red conceptualizan estructura (social, económica, política, entre otras) como patrones generales de relaciones entre actores.
+  \end{itemize}
+% subsection red_social (end)
+
+
+% ### 2.1 Conceptos de Redes Sociales
+% 
+% * explicación de que se van a reusar (copiar-pegar casi) los conceptos de redes sociales de la tesis de mauro
+% 
+% #### 2.1.1. Definiciones
+% 
+% * red social
+% * nodo {NO}
+% * actor
+% * atributo {NO}
+% * relación
+% * familia {NO}
+% * rol {NO}
+
+% {NO} es pq estos conceptos son más específicos al modelo de mauro, pues se entienden mejor con el modelo
 
 \section{Conceptos de Desarrollo} % (fold)
 \label{sec:conceptos_de_desarrollo}

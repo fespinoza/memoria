@@ -42,9 +42,27 @@ Sinatra home page.
 Spring home page.
 \newblock \url{http://www.springsource.org/}, June 2013.
 
+\bibitem{memoriamanuel}
+Manuel Bahamonde.
+\newblock Aplicación para la creación y administración de redes sociales,
+  2009.
+\newblock Memoria para optar al título de ingeniero civil en computación.
+
 \bibitem{ember}
 Yehuda Katz.
 \newblock Emberjs home page.
 \newblock \url{http://emberjs.com/}, June 2013.
+
+\bibitem{tesismauro}
+Mauro~San Martín.
+\newblock A model for social networks data management, 2012.
+\newblock Tesis para optar al grado de doctor en ciencias mención
+  computación.
+
+\bibitem{sna}
+Stanley Wasserman and Katherine Faust.
+\newblock {\em Social Network Analysis: Methods and Applications.}
+\newblock Cambridge University Press, first edition, structural analysis in the
+  social sciences edition, 1994.
 
 \end{thebibliography}
