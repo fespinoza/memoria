@@ -1,0 +1,74 @@
+\chapter{Descripción de la Solución}
+
+A continuación se describe la solución propuesta con motivo de este trabajo de memoria, partiendo de conceptos más teóricos para luego abordar algunos temas de decisiones de implementación y mostrar el resultado final de la aplicación que se desarrolló.
+
+\section{SNM, Social Network Model} % (fold)
+\label{sec:snm_social_network_model}
+
+Uno de los puntos principales de esta memoria, es poner en práctica el modelo realizado por el alumno de doctorado en el DCC, Mauro San Martín\cite{tesismauro}, quien investigó y propuso un modelo llamado \emph{Social Network Model} o SNM. Por lo tanto, la generación de redes sociales en esta aplicación tendrán en cuenta este modelo, trabajo que fue guiado por el mismo profesor guía de esta memoria, aprovechando la experiencia e investigación previa sobre el tema. Entonces, se procederá a definir y explicar brevemente en que consiste este modelo.
+
+\subsection{Elementos de Redes Sociales} % (fold)
+\label{sub:elementos_de_redes_sociales}
+
+Para el modelo de Mauro se tienen algunos elementos pertenecientes a las redes sociales, que fueron tratados en los conceptos de redes sociales\ref{sec:conceptos_de_redes_sociales}, a los cuales se les agregan algunas restricciones:
+
+  \begin{itemize}
+    \item Los \emph{Actores}: estos tienen un identificador único y un conjunto de atributos, además pueden participar en cualquier número de relaciones.
+    \item Las \emph{Relaciones} también tiene un identificador único, un conjunto de atributos y un número de actores participantes. El número de participantes puede ser uno o más, y puede cambiar sin afectar el resto de las propiedades de la relación.
+    \item Los \emph{Atributos} tienen un significado asociado y un valor literal. Un atributo es identificado por el identificador del objeto al cual está añadido (acto o relación), por su significado y su valor literal. La clase de un objeto (actor o relación) es un tipo de atributo especial llamado \emph{familia}.
+    \item \emph{Actores}, \emph{Relaciones}, \emph{Atributos} y sus conexiones forman una red social. Compartiendo y reusando metadata al nivel, por ejemplo, proveniencia de conjuntos de datos.
+  \end{itemize}
+
+\subsection{Definición Matemática} % (fold)
+\label{sub:definicion_matematica}
+
+Dado lo anterior, el modelo \emph{SNM} describe una red social como un grafo de la siguiente forma:
+
+\begin{defn}
+  (Red Social Generalizada) Una red social generalizada es definida como un multigrafo dirigido tripartito con etiquetas junto con una familia de funciones equitetadoras $f$ y un conjunto de familia de etiquetas $L_f$:
+  
+  \begin{center}
+    $ G = (N, E, L_N, L_E, L_f, \iota, \nu, \epsilon, f) $
+  \end{center}
+  
+  Donde:
+  
+  \begin{itemize}
+    \item El conjunto de nodos $N = A \cup T \cup C$ es una unión disjunta del conjunto de actores $A$, con el conjunto de relaciones $T$ y el conjunto de atributos $C$.
+    \item Existe una colección finita de familias (subconjuntos) de actores $\mathcal{A} = \{ A_1, A_2, \dotsc, A_k \}$ de manera tal que cada $A_i \subseteq A$ y $\cup_{1 \leq i \leq k}A_i = A$.
+    \item Donde existe una colección finita de familias (subconjuntos) de relaciones $\mathcal{T} = \{ T_1, T_2, \dotsc, T_j \}$ donde cada $T_i \subseteq T$ y $\cup_{1 \leq i \leq k}T_i = T$.
+    \item El conjunto de arcos $E = E_{AT} \cup E_{AC} \cup E_{TC}$ es la unión disjunta del conjunto de arcos entre actores y relaciones $E_{AT}$, con el conjunto de arcos entre actores y atributos $E_{AC}$, el conjunto de arcos entre atributos y relaciones $E_{TC}$.
+    \item El conjunto de etiquetas de nodo $L_N = L_A \cup L_T \cup L_C$ es la unión disjunta de los conjuntos de etiquetas de actores $L_A$, de etiquetas de relaciones $L_T$ y el de etiquetas de atributos $L_C$.
+    \item El conjunto de etiquetas de arcos $L_E = L_{AT} \cup L_{AC} \cup L_{TC}$ es la unión disjunta de los conjuntos de etiquetas de arcos entre actores y relaciones $L_{AT}$ (roles de participación), de etiquetas de arcos entre actores y atributos $L_{AC}$ (significado de atributos de actores) y el de etiquetas de arcos entre relaciones y atributos $L_{TC}$ (significado de atributos de relaciones).
+    \item El conjunto de etiquetas de familias $L_f = L_{f_A} \cup L_{f_T}$ es la unión disjunta entre el conjunto de etiquetas de familias de actores $L_{f_A}$ y el conjunto de etiquetas de familias de relaciones $L_{f_T}$.
+    \item $\iota = \{ \iota_{AT} , \iota_{AC} , \iota_{TC} \}$ es el conjunto de funciones de incidencia tales que $ \iota_{AT} : E_{AT} \longrightarrow A \times T$ es una función de incidencia que asocia cada arco de participación a un actor y su relación; $ \iota_{AC} : E_{AC} \longrightarrow A \times C$ es una función de incidencia que asocia un arco de significado a un actor y a un atributo; $ \iota_{TC} : E_{TC} \longrightarrow T \times C$ es una función de incidencia que asocia cada arco de significado a una relación y un atributo.
+    \item $\nu = \{ \nu_A , \nu_T , \nu_C \}$ es un conjunto de funciones etiquetadoras de nodos tales que $ \nu_A : A \longrightarrow L_A$ es una función biyectiva desde actores a las etiquetas de actores; $ \nu_T : T \longrightarrow L_T$ es una función biyectiva desde relaciones a las etiquetas de las relaciones; $ \nu_C : C \longrightarrow L_C$ es una función biyectiva desde atributos a las etiquetas de atributos.
+    \item $\epsilon = \{ \epsilon_{AT} , \epsilon_{AC} , \epsilon_{TC} \}$ es el conjunto de funciones etiquetadoras de arcos tales que $ \epsilon_{AT} : E_{AT} \longrightarrow L_{AT}$ es una función desde arcos de participación a sus etiquetas; $ \epsilon_{AC} : E_{AC} \longrightarrow L_{AC}$ y $ \epsilon_{TC} : E_{TC} \longrightarrow L_{TC}$ son funciones desde arcos de significado a sus etiquetas.
+    \item $f = \{f_A, f_T\}$ es el conjunto de funciones etiquetadoras de familias tal que $f_A : \mathcal{A} \longrightarrow L_{f_A}$ es una función de familias de actores a las etiquetas de familias de actores y $f_T = \mathcal{T} \longrightarrow L_{f_T}$ es una función de familias de relaciones a las etiquetas de familias de relaciones.
+    \item La siguiente condición se mantiene para todos los arcos entre el mismo par de actores y relaciones, Para todo $e_1$ y $e_2$ de manera tal que $\iota(e_1) = \iota(e_2) = (u,v)$ con $u \in A$ y $v \in T, e_1, e_2 \in E \Leftrightarrow \epsilon(e_1) \neq \epsilon(e_2)$.
+    \item Cada función de etiquetado en $\nu, \epsilon$ y $f$, excepto $\nu_C$, deben ser invertibles.
+    \item Para una relación $r \in T$ entre dos actores $a_1, a_2 \in A$, tal que existe $e_1, e_2 \in E$, y $\iota(e_1) = (a_1, r), \iota(e_2) = (a_2, r)$ con etiquetas $\epsilon(e_1) = p_1, \epsilon(e_2) = p_2$. La dirección de $r$ puede ser especificada por el par ordenado de las etiquetas de participación, eso es que una dirección $(p_1, p_2)$ indica que $r$ comienza en $a_1$ y termina en $a_2$, la dirección opuesta es representada por $(p_2, p_1)$.
+  \end{itemize}
+\end{defn}
+
+De lo anterior se extrae alguna información sobre las características de las redes sociales y sus elementos:
+
+\begin{itemize}
+  \item Un \textbf{Nodo} puede ser un \emph{Actor}, \emph{Relación} o \emph{Atributo}.
+  \item Las relaciones pueden ser de uno a múltiples actores.
+  \item Los actores juegan un \textbf{Rol} en la relación.
+  \item Los \emph{Actores} y \emph{Relaciones} pertenecen a \textbf{Familias de Actores} y \textbf{Familias de Relaciones} respectivamente.
+  \item Una \textbf{Familia} de relación o actor, define un conjunto de actores/relaciones en común.
+\end{itemize}
+
+% subsection definición_matemática (end)
+
+% * definición del modelo de mauro como grafo, extrayendo esto de su tesis
+% 
+% #### 4.1.2. Representación Gráfica
+% 
+% * un ejemplo de red social en la representación gráfica de la solución (extrayendo esto de su tesis)
+% 
+% #### 4.1.3. Características de este modelo
+% 
+% * un listado resumen de los principales puntos fuertes de este modelo

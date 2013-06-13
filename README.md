@@ -196,6 +196,7 @@ En términos de requisitos de calidad se necesita:
 
 
 ## 4. Descripción de la Solución
+
 Esto es una descripción conceptual de la solución
 
 ### 4.1. SNM, Social Network Model
