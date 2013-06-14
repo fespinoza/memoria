@@ -51,7 +51,7 @@ Dado lo anterior, el modelo \emph{SNM} describe una red social como un grafo de 
   \end{itemize}
 \end{defn}
 
-De lo anterior se extrae alguna información sobre las características de las redes sociales y sus elementos:
+De lo anterior se extrae información relevante sobre las características de las redes sociales y sus elementos:
 
 \begin{itemize}
   \item Un \textbf{Nodo} puede ser un \emph{Actor}, \emph{Relación} o \emph{Atributo}.
@@ -63,12 +63,59 @@ De lo anterior se extrae alguna información sobre las características de las r
 
 % subsection definición_matemática (end)
 
-% * definición del modelo de mauro como grafo, extrayendo esto de su tesis
-% 
-% #### 4.1.2. Representación Gráfica
-% 
-% * un ejemplo de red social en la representación gráfica de la solución (extrayendo esto de su tesis)
-% 
-% #### 4.1.3. Características de este modelo
-% 
-% * un listado resumen de los principales puntos fuertes de este modelo
+\subsection{Representación Gráfica} % (fold)
+\label{sub:representacian_grafica}
+
+En su tesis de doctorado\cite{tesismauro}, Mauro define un lenguaje gráfico para representar redes sociales con su modelo, el cual se adjunta a continuación por motivos de completitud del trabajo y expresar como este modelo influye posteriormente el diseño de la interfaz del usuario.\\
+
+\begin{figure}[H]
+  \includegraphics[width=1.0\textwidth]{images/elementos_modelo_mauro.png}
+  \caption[Elementos Gráficos SNM]{\emph{Elementos Gráficos SNM}. Desde izquierda a derecha, los 4 bloques de construcción gráfica de una red social: un actor (arriba) y su etiqueta de familia, una relación y su etiqueta de familia, un rol de participación de un actor en una relación y atributos sobre actores y relaciones. Además por cada bloque se muestra la equivalencia en forma de triple.}
+  \label{elementos_graficos_snm}
+\end{figure}
+
+Dados estos elementos gráficos podemos modelar una red de ejemplo como:
+
+\begin{figure}[H]
+  \includegraphics[width=1.0\textwidth]{images/ejemplo_red_social_mauro.png}
+  \caption[Ejemplo Red Social de Amistad en SNM]{\emph{Ejemplo Red Social de Amistad en SNM}. Una red social representando relaciones de amistad (nodos cuadrados) entre Mary y John, quienes fueron presentados por Ann (los actores se muestran como nodos circulares y sus atributos como puntos grises). Las ciudades de residencia también son representadas como actores.}
+  \label{ejemplo_red_snm}
+\end{figure}
+
+% subsection representación_gráfica (end)
+
+\subsection{Representación Como Triples} % (fold)
+\label{sub:representacion_como_triples}
+
+El modelo SNM, al ser en una representación de grafo, es posible representarlo como triples y vice-versa (la demostración se encuentra en la memoria de Mauro\cite{tesismauro}). Lo cual es particularmente útil para usar este modelo dentro de un contexto de bases de datos relacionales, razón por la cual veremos una de estas transformaciones a continuación.
+
+Es posible traducir una red social dada, representada como tres conjuntos de triples $(N, R, M)$, en donde $N$ es el conjunto de triples de \emph{Tipos}, $R$ el de \emph{Roles} y $M$ de \emph{Atributos}; en una red social generalizada $G$ con el siguiente algoritmo que produce un nodo o arco por cada triple:
+
+\begin{itemize}
+  \item Para cada triple $(\nu_A(a), isa, f_A(A_i))$ en $N$, se añade un nodo actor $a$ en $A_i$.
+  \item Para cada triple $(\nu_T(t), isr, f_T(T_i))$ en $N$, se añade un nodo de relación $t$ a $T_i$.
+  \item Para cada triple $(\nu_A(u), \epsilon_{AT}(e), \nu_T(v))$ en $R$, se añade un arco de participación $e$ a $E_{AT}$ con nodos finales $u \in A$ y $v \in T$.
+  \item Para cada triple $(\nu_A(u), \epsilon_{AC}(e), \nu_C(v))$ en $M$, se añade un nodo de atributo $v$ a $C$, y su arco de significado $e$ a $E_{AC}$ con nodos finales $u \in A$ y $v \in C$.
+  \item Para cada triple $(\nu_T(u), \epsilon_{TC}(e), \nu_C(v))$ en $M$, se añade un nodo de atributo $v$ a $C$, y su arco de significado $e$ a $E_{TC}$ con nodos finales $u \in T$ y $v \in C$.
+\end{itemize}
+
+Por ejemplo se muestra la siguiente tabla que representa este conjunto de triples, que es similar a lo que se tendría en una base de datos relacional para el caso de la red de amistades de la figura \ref{ejemplo_red_snm}.
+
+\begin{table}[h]
+    \begin{tabular}{|c|c|c|l|c|c|c|l|c|c|c|}
+    \cline{1-3} \cline{5-7} \cline{9-11}
+    \multicolumn{3}{ |c| }{N: Typing}           & ~ & \multicolumn{3}{ c| }{R: Roles} & ~ & \multicolumn{3}{ c | }{M: Attributes}              \\ \cline{1-3} \cline{5-7} \cline{9-11}
+    a1 & isa       & 'person'     & ~ & a1 & friend     & r1 & ~ & a1 & name          & 'Mary'         \\
+    a2 & isa       & 'person'     & ~ & a2 & friend     & r1 & ~ & a2 & name          & 'John'         \\
+    a3 & isa       & 'person'     & ~ & a3 & introducer & r1 & ~ & a3 & name          & 'Ann'          \\
+    a4 & isa       & 'city'       & ~ & a2 & inhabitant & r2 & ~ & a4 & name          & 'Capital City' \\
+    a5 & isa       & 'city'       & ~ & a4 & place      & r2 & ~ & a5 & name          & 'Central City' \\
+    r1 & isr       & 'friendship' & ~ & a1 & inhabitant & r3 & ~ & ~  & ~             & ~              \\
+    r2 & isr       & 'lives-in'   & ~ & a5 & place      & r3 & ~ & ~  & ~             & ~              \\
+    r3 & isr       & 'lives-in'   & ~ & a3 & inhabitant & r4 & ~ & ~  & ~             & ~              \\
+    r4 & isr       & 'lives-in'   & ~ & a5 & place      & r4 & ~ & ~  & ~             & ~              \\ \cline{1-3} \cline{5-7} \cline{9-11}
+    \end{tabular}
+    \caption {Representación en triples de la red social de la figura \ref{ejemplo_red_snm}}
+\end{table}
+
+% subsection representación_como_triples (end) 

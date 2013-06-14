@@ -203,17 +203,22 @@ Esto es una descripción conceptual de la solución
 
 * explicar como se consideró usar este modelo
 
-#### 4.1.1. Definición
+#### 4.1.1. Elementos de Redes Sociales
 
-* definición del modelo de mauro como grafo, extrayendo esto de su tesis
+* una visión de algunas restricciones con los conceptos de redes sociales (actores, relaciones, atributos) que son necesarias para el modelo de mauro
 
-#### 4.1.2. Representación Gráfica
+#### 4.1.2. Definición Matemática
+
+* definición formal del modelo de mauro, con todos sus elementos como grafo
+* extracción de información a considerar (que es un nodo, que es una familia)
+
+#### 4.1.3. Representación Gráfica
 
 * un ejemplo de red social en la representación gráfica de la solución (extrayendo esto de su tesis)
 
-#### 4.1.3. Características de este modelo
+#### 4.1.4. Representación Relacional del Modelo
 
-* un listado resumen de los principales puntos fuertes de este modelo
+* exponer la forma en que mauro representa este modelo en modelo relacional (para posterior comparación con lo realmente implementado)
 
 ### 4.2. Herramientas Elegidas
 
