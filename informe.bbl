@@ -12,6 +12,10 @@ Backbonejs home page.
 Cakephp home page.
 \newblock \url{http://cakephp.org/}, June 2013.
 
+\bibitem{d3}
+D3.js, data driven documents.
+\newblock \url{http://d3js.org/}, June 2013.
+
 \bibitem{django}
 Django home page.
 \newblock \url{https://www.djangoproject.com/}, June 2013.
