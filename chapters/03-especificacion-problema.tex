@@ -1,5 +1,80 @@
 \chapter{Especificación del Problema}
 
+\section{Antecedentes y soluciones existentes} % (fold)
+\label{sec:antecedentes_y_soluciones_existentes}
+
+A continuación se presentan algunas de las soluciones existentes que apuntan a resolver problemas similares al de esta memoria.
+
+\subsection{LittleSis y Poderopedia} % (fold)
+\label{sub:littlesis_y_poderopedia}
+
+% * que es littlesis
+% * screenshot de littlesis
+% * por que no cumplo el objetivo de la memoria con littlesis
+\textbf{LittleSis}, pequeña hermana en oposición al gran hermano (Big Brother), es una plataforma estadounidense que contiene una base de datos libre de relaciones de \emph{quien conoce a quien} en el mundo de las grandes empresas y políticas de ese país. Todo esto con el fin de entregar información a la gente de que posible conflictos de intereses pueden tener los políticos que toman las decisiones en el país.
+
+\begin{figure}[H]
+  \includegraphics[width=1.0\textwidth]{images/littlesis.png}
+  \caption[Interfaz de LittleSis, Rupert Murdoch]{\emph{Interfaz de LittleSis, Rupert Murdoch}. un ejemplo de como littlesis almacena la información de las personas y el tipo de personas presentes en littleSis.}
+  \label{ejemplo_littlesis}
+\end{figure}
+
+La idea detrás de LittleSis de entregar el poder de la información a la gente es muy buena desde su punto de vista de análisis de estructuras sociales económicas y políticas. Sin embargo, no cubre el problema que trata resolver esta memoria, debido a que si bien las personas pueden complementar esta información se hace de una manera centralizada, además de que no se puede agregar información asociada a otro tipos de redes sociales, como por ejemplo: la red de panaderos de un país, ya que no está dentro del objetivo y alcance de LittleSis, sin mencionar que esta idea está enfocada en Estados Unidos.\\
+
+\textbf{Poderopedia} es el clon chileno de LittleSis, una plataforma centralizada por la cual se expone información sobre las redes de poder e influencias en el ambiente económico, social y político chileno, en donde nuevamente el objetivo es enfocarse en las personas en los más altos cargos empresariales y políticos en Chile.\\
+
+\begin{figure}[H]
+  \includegraphics[width=1.0\textwidth]{images/poderopedia.png}
+  \caption[Interfaz de Poderopedia, Michelle Bachelet]{\emph{Interfaz de Poderopedia, Michelle Bachelet}. un ejemplo de como poderopedia almacena la información de las personas y el tipo de personas presentes en esta plataforma.}
+  \label{ejemplo_poderopedia}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=1.0\textwidth]{images/grafo_poderopedia.png}
+  \caption[Interfaz de Grafo de Poderopedia, Michelle Bachelet]{\emph{Interfaz de Grafo de Poderopedia, Michelle Bachelet}. Poderopedia tiene una opción de visualización de grafo al rededor de una persona.}
+  \label{ejemplo_grafo_poderopedia}
+\end{figure}
+
+De la misma forma de LittleSis, las desventajas de Poderopedia en relación al problema que se desea resolver, van por el lado de que su foco es exclusivamente la gente con poder político y económico del país, que además es centralizada, que su visualización de grafo no entrega información real de las estructuras sociales y no es fácilmente manipulable.\\
+
+Ambos LittleSis y Poderopedia son excelentes herramientas, pero su objetivo difiere bastante de lo que se desea resolver en esta memoria, a pesar de que la idea básica es la misma, exponer información sobre estructuras sociales.
+
+% subsection littlesis_y_poderopedia (end)
+
+\subsection{Memoria Manuel Bahamonde} % (fold)
+\label{sub:memoria_manuel_bahamonde}
+
+Un intento de resolver este problema fue desarrollado por el alumno del DCC Manuel Bahamonde, quien hizo su trabajo de memoria titulado: \emph{Aplicación para la creación y administración de redes sociales} \cite{memoriamanuel} el año 2009, memoria también guiada por el profesor Claudio Gutiérrez. Entonces, se gestó la idea de este trabajo de memoria, como una forma de mejorar lo ofrecido anteriormente por Manuel, aprovechando los avances tecnológicos y experiencias con el modelamiento de redes sociales y la web semántica.\\
+
+La aplicación desarrollada en Java por Manuel, permite al usuario descargar un ejecutable y usarlo tanto en Windows, Linux o Mac, la cual permite crear redes sociales en forma de grafo, creando actores y sus relaciones respectivas, asociándolos a familias y pudiendo exportar la información de las redes sociales en formato para la utilización del software de análsis de redes sociales, pajek\cite{pajek}.
+
+\begin{figure}[H]
+  \includegraphics[width=1.0\textwidth]{images/memoria_manuel.png}
+  \caption[Interfaz SocialNetworks Manager]{\emph{Interfaz SocialNetworks Manager}. La aplicación creada por el alumno Manuel Bahamonde con el objetivo de modelar redes sociales como aproximación incial al problema de esta memoria.}
+  \label{memoria_manuel}
+\end{figure}
+
+El trabajo de Manuel ayudó como experiencia para acercarse más a una solución para el fácil modelamiento de redes sociales y con el conocimiento actual del tema, es necesario hacer modificaciones a lo que hizo Manuel, resolviendo algunos problemas extras, como:
+
+  \begin{enumerate}
+    \item El formato de almacenamiento de las redes sociales, no permite una interoperabilidad con otras aplicaciones fuera de pajek\cite{pajek}, en especial con las tecnologías de la web semántica.
+    \item Las relaciones entre actores sólo pueden ser 2 actores a la vez, no hay posibilidad de crear n-relaciones, o relaciones entre $n$ actores.
+    \item Esta aplicación no me permite complementar la información de una red social uniéndola con otra.
+    \item No puedo agregar atributos a los actores y relaciones.
+    \item Necesita de que el usuario de la aplicación tenga instalado Java en su equipo.
+    \item No se puede acceder a la información del usuario desde cualquier computador.
+    \item La interfaz podría ser mejor en términos de usabilidad
+  \end{enumerate}
+
+% subsection memoria_manuel_bahamonde (end)
+
+% section antecedentes_y_soluciones_existentes (end)
+
+%   
+% #### Otras referencias
+% 
+% * que otras referencias de soluciones similares tengo?
+
 % ### 3.2 Relevancia del problema
 % 
 % * el problema es relevante de tomar pues se le entrega a las personas una herramienta que les permite guardar datos de

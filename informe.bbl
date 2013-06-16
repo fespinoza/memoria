@@ -24,6 +24,10 @@ Django home page.
 Meteosjs home page.
 \newblock \url{http://meteor.com/}, June 2013.
 
+\bibitem{pajek}
+Pajek, programa para análsis de grandes redes.
+\newblock \url{http://pajek.imfm.si/doku.php?id=pajek}, June 2013.
+
 \bibitem{pylons}
 Pylons home page.
 \newblock \url{http://www.pylonsproject.org/}, June 2013.
