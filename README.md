@@ -272,5 +272,3 @@ cosas técnicas y metodológicas que fueron complejas al momento de enfrentar la
 * mejorar la escalabilidad de la aplicación
 * habilitar un modo offline de la app
 * evolución temporal de las redes sociales
-
-<!-- TODO: agregar subsub section to index -->

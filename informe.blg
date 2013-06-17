@@ -19,6 +19,8 @@ Warning--to sort, need author or key in cake
 Warning--to sort, need author or key in angular
 Warning--to sort, need author or key in meteor
 Warning--to sort, need author or key in backbone
+Warning--to sort, need author or key in html5
+Warning--to sort, need author or key in w3c
 Warning--to sort, need author or key in pajek
 Warning--to sort, need author or key in yed
 Warning--to sort, need author or key in omnigraffle
@@ -26,45 +28,45 @@ Warning--to sort, need author or key in gruff
 Warning--to sort, need author or key in allegrograph
 Warning--to sort, need author or key in graph
 Warning--to sort, need author or key in d3
-You've used 21 entries,
+You've used 23 entries,
             2118 wiz_defined-function locations,
-            572 strings with 5864 characters,
-and the built_in function-call counts, 3710 in all, are:
-= -- 354
-> -- 51
+            578 strings with 5979 characters,
+and the built_in function-call counts, 4040 in all, are:
+= -- 386
+> -- 53
 < -- 0
-+ -- 32
++ -- 34
 - -- 10
-* -- 172
-:= -- 465
-add.period$ -- 46
-call.type$ -- 21
-change.case$ -- 68
+* -- 188
+:= -- 501
+add.period$ -- 50
+call.type$ -- 23
+change.case$ -- 74
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 152
-empty$ -- 480
+cite$ -- 42
+duplicate$ -- 166
+empty$ -- 526
 format.name$ -- 10
-if$ -- 889
+if$ -- 971
 int.to.chr$ -- 0
-int.to.str$ -- 21
+int.to.str$ -- 23
 missing$ -- 2
-newline$ -- 91
+newline$ -- 99
 num.names$ -- 8
-pop$ -- 170
+pop$ -- 186
 preamble$ -- 1
-purify$ -- 47
+purify$ -- 51
 quote$ -- 0
-skip$ -- 146
+skip$ -- 160
 stack$ -- 0
-substring$ -- 106
-swap$ -- 21
+substring$ -- 116
+swap$ -- 23
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 82
-warning$ -- 17
+type$ -- 90
+warning$ -- 19
 while$ -- 8
-width$ -- 23
-write$ -- 179
-(There were 21 warnings)
+width$ -- 25
+write$ -- 195
+(There were 23 warnings)

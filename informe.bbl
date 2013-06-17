@@ -16,6 +16,10 @@ Backbonejs home page.
 Cakephp home page.
 \newblock \url{http://cakephp.org/}, June 2013.
 
+\bibitem{html5}
+Curso html5, w3schools.
+\newblock \url{http://w3schools.com/html/html5_intro.asp}, June 2013.
+
 \bibitem{d3}
 D3.js, data driven documents.
 \newblock \url{http://d3js.org/}, June 2013.
@@ -66,6 +70,10 @@ Sinatra home page.
 \bibitem{spring}
 Spring home page.
 \newblock \url{http://www.springsource.org/}, June 2013.
+
+\bibitem{w3c}
+W3c, home page.
+\newblock \url{http://www.w3.org/}, June 2013.
 
 \bibitem{yed}
 yed, graph editor.
