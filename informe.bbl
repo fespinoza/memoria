@@ -1,5 +1,9 @@
 \begin{thebibliography}{10}
 
+\bibitem{allegrograph}
+Allegrograph, motor de base de datos para grafos.
+\newblock \url{http://www.franz.com/agraph/allegrograph/}, June 2013.
+
 \bibitem{angular}
 Angularjs home page.
 \newblock \url{http://angularjs.org/}, June 2013.
@@ -20,9 +24,22 @@ D3.js, data driven documents.
 Django home page.
 \newblock \url{https://www.djangoproject.com/}, June 2013.
 
+\bibitem{graph}
+Graph herramienta que construye, visualiza y modifica grafos.
+\newblock \url{http://www.cosbi.eu/index.php/research/prototypes/graph}, June
+  2013.
+
+\bibitem{gruff}
+Gruff un browser basado en la base de datos allegrograph.
+\newblock \url{http://www.franz.com/agraph/gruff/}, June 2013.
+
 \bibitem{meteor}
 Meteosjs home page.
 \newblock \url{http://meteor.com/}, June 2013.
+
+\bibitem{omnigraffle}
+Omnigraffle, aplicación de diagramación para mac.
+\newblock \url{http://www.omnigroup.com/products/omnigraffle/}, June 2013.
 
 \bibitem{pajek}
 Pajek, programa para análsis de grandes redes.
@@ -49,6 +66,10 @@ Sinatra home page.
 \bibitem{spring}
 Spring home page.
 \newblock \url{http://www.springsource.org/}, June 2013.
+
+\bibitem{yed}
+yed, graph editor.
+\newblock \url{http://www.yworks.com/en/products_yed_about.html}, June 2013.
 
 \bibitem{memoriamanuel}
 Manuel Bahamonde.
