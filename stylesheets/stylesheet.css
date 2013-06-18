@@ -479,9 +479,9 @@ footer a:hover {
 @media only screen and (max-width: 479px) {}
   
 /* custom styles */
-.done { text-decoration: line-through }
-
-
-
-
-
+#main-content .done { text-decoration: line-through }
+#main-content .needs-revision { 
+  color: red;
+  font-weight: bold;
+  font-weight: normal; 
+}
