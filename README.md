@@ -194,7 +194,6 @@ En términos de requisitos de calidad se necesita:
 * que la interfaz sea fácil de usar
 * que la aplicación sea de fácil instalación
 
-
 ## 4. Descripción de la Solución
 
 Esto es una descripción conceptual de la solución
