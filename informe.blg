@@ -7,8 +7,9 @@ Warning--entry type for "tesismauro" isn't style-file defined
 --line 89 of file endings/02-bibliography.bib
 Warning--entry type for "memoriamanuel" isn't style-file defined
 --line 97 of file endings/02-bibliography.bib
-Warning--I didn't find a database entry for "littlesis"
-Warning--I didn't find a database entry for "poderopedia"
+Warning--to sort, need author or key in littlesis
+Warning--to sort, need author or key in poderopedia
+Warning--to sort, need author or key in podervocabulary
 Warning--to sort, need author or key in mvc
 Warning--to sort, need author or key in rails
 Warning--to sort, need author or key in sinatra
@@ -28,45 +29,45 @@ Warning--to sort, need author or key in gruff
 Warning--to sort, need author or key in allegrograph
 Warning--to sort, need author or key in graph
 Warning--to sort, need author or key in d3
-You've used 23 entries,
+You've used 26 entries,
             2118 wiz_defined-function locations,
-            578 strings with 5979 characters,
-and the built_in function-call counts, 4040 in all, are:
-= -- 386
-> -- 53
+            585 strings with 6331 characters,
+and the built_in function-call counts, 4535 in all, are:
+= -- 434
+> -- 56
 < -- 0
-+ -- 34
++ -- 37
 - -- 10
-* -- 188
-:= -- 501
-add.period$ -- 50
-call.type$ -- 23
-change.case$ -- 74
+* -- 212
+:= -- 555
+add.period$ -- 56
+call.type$ -- 26
+change.case$ -- 83
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 166
-empty$ -- 526
+cite$ -- 48
+duplicate$ -- 187
+empty$ -- 595
 format.name$ -- 10
-if$ -- 971
+if$ -- 1094
 int.to.chr$ -- 0
-int.to.str$ -- 23
+int.to.str$ -- 26
 missing$ -- 2
-newline$ -- 99
+newline$ -- 111
 num.names$ -- 8
-pop$ -- 186
+pop$ -- 210
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 57
 quote$ -- 0
-skip$ -- 160
+skip$ -- 181
 stack$ -- 0
-substring$ -- 116
-swap$ -- 23
+substring$ -- 131
+swap$ -- 26
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
-warning$ -- 19
+type$ -- 102
+warning$ -- 22
 while$ -- 8
-width$ -- 25
-write$ -- 195
-(There were 23 warnings)
+width$ -- 28
+write$ -- 219
+(There were 24 warnings)

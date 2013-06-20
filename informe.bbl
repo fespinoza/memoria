@@ -37,6 +37,11 @@ Graph herramienta que construye, visualiza y modifica grafos.
 Gruff un browser basado en la base de datos allegrograph.
 \newblock \url{http://www.franz.com/agraph/gruff/}, June 2013.
 
+\bibitem{littlesis}
+Littlesis, una base de datos libre de relaciones de 'quien conoce a quien' de
+  los negocios y el gobierno estadounidense.
+\newblock \url{http://littlesis.org/}, June 2013.
+
 \bibitem{meteor}
 Meteosjs home page.
 \newblock \url{http://meteor.com/}, June 2013.
@@ -48,6 +53,10 @@ Omnigraffle, aplicación de diagramación para mac.
 \bibitem{pajek}
 Pajek, programa para análsis de grandes redes.
 \newblock \url{http://pajek.imfm.si/doku.php?id=pajek}, June 2013.
+
+\bibitem{poderopedia}
+Poderopedia, quién es quién en la política y los negocios en chile.
+\newblock \url{http://poderopedia.org/}, June 2013.
 
 \bibitem{pylons}
 Pylons home page.
@@ -70,6 +79,10 @@ Sinatra home page.
 \bibitem{spring}
 Spring home page.
 \newblock \url{http://www.springsource.org/}, June 2013.
+
+\bibitem{podervocabulary}
+Vocabulario en formato rdf de poderopedia.
+\newblock \url{https://github.com/poderopedia/PoderVocabulary}, June 2013.
 
 \bibitem{w3c}
 W3c, home page.
