@@ -240,32 +240,48 @@ Esto es una descripción conceptual de la solución
 * que es D3.js
 * el paradigma de los 3 estados de D3: enter, update y exit
 
+
 ### 4.3. Arquitectura de la Aplicación
-#### Arquitectura de Hardware
+
+#### 4.3.1. Arquitectura de Hardware
 arquitectura necesaria para que la aplicación corra en producción y por qué se eligió esta arquitectura
-#### Arquitectura de Software
+
+#### 4.3.2 Arquitectura de Software
 back-end y front-end, y por qué se eligió esta arquitectura
-#### Diseño de la Base de Datos
+
+#### 4.3.3. Diseño de la Base de Datos
 
 * problemas enfrentados al implementar 
 * representación modelo de mauro en BD relacional
 * adiciones en términos de estilo y visualización de las redes
 
-#### Diseño de Interfaz de Usuario
+## 5. Funcionamiento Solución
 
-algunas muestras de los principales elementos gráficos de la app
+Esta sección consiste básicamente en un manual de usuario de la aplicación, en donde se muestra en base a pantallazos como funciona la aplicación para lograr las tareas propuestas, respondiendo en todo momento:
 
-* detalle de los modos de edición
-* formulario de edición de nodos
-* representación de actores y relaciones
+1. qué feature estoy describiendo?
+2. como funciona? (en términos de uso de la aplicación)
+3. qué requisito cumple este feature? (hablando de ventajas de este enfoqu)
 
-### 4.4 Validación de la solución
-analizar como la solución recién descrita cumple con los objetivos planteados anteriormente
+### 5.1 registro e ingreso de usuarios [screenshot]x2
+### 5.2 creación de redes sociales [screenshot]
+### 5.3 edición redes sociales
+#### 5.3.1. creación y edición de familias [screenshot]
+#### 5.3.2. creación y edición de actores [screenshot]
+#### 5.3.2. creación y edición de relaciones [screenshot]
+#### 5.3.2. creación y edición de atributos en nodos [screenshot]
+### 5.4 exportación rdf [extracto de código]
+- más vocabulario
+### 5.5 importación rdf
+### 5.6 unión de redes sociales [screenshot]
+### 5.7 Casos de estudio
+Algún ejemplo concreto de una red un poco más grande creada con esta aplicación
 
-## 5. Conclusiones
-### 5.2. Dificultades encontradas
+
+## 6. Conclusiones
+### 6.1. Dificultades encontradas
 cosas técnicas y metodológicas que fueron complejas al momento de enfrentar la memoria
-### 5.1. Trabajo Futuro
+### 6.2. Trabajo Futuro
 
 * agregar endpoint virtuoso
 * mejorar la escalabilidad de la aplicación
