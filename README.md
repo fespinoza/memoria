@@ -271,10 +271,13 @@ Esta sección consiste básicamente en un manual de usuario de la aplicación, e
 #### 5.3.2. creación y edición de relaciones [screenshot]
 #### 5.3.2. creación y edición de atributos en nodos [screenshot]
 ### 5.4 exportación rdf [extracto de código]
-- más vocabulario
+
+* más vocabulario
+
 ### 5.5 importación rdf
 ### 5.6 unión de redes sociales [screenshot]
 ### 5.7 Casos de estudio
+
 Algún ejemplo concreto de una red un poco más grande creada con esta aplicación
 
 
