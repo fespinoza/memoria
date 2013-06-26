@@ -1,5 +1,29 @@
-\begin{conclusion}
+\chapter{Conclusión}
 
+\section{Dificultades Técnicas} % (fold)
+\label{sec:dificultades_tecnicas}
+
+% ### 6.1. Dificultades encontradas
+% cosas técnicas y metodológicas que fueron complejas al momento de enfrentar la memoria
+
+Dentro del transcurso del desarrollo de esta memoria, se encontraron algunas dificultades a nivel de implementación, razón por la cual estas serán discutidas brevemente en esta sección.
+
+\subsection{Modelamiento de Redes Sociales} % (fold)
+\label{sub:modelamiento_de_redes_sociales}
+
+En este sentido, dentro del prototipado que requirió el abordaje del desarrollo, inicialmente se pasó por alto el modelo de Mauro San Martín \cite{tesismauro}, creando un modelo básico de redes sociales a medida que las necesidades se iban presentando en términos de desarrollo, lo cual hizo que el mismo fuera más dificultoso, lo cual forzó a estudiar de mejor manera el modelo de Mauro, que mejoró tanto la estructuración de la información, además del esfuerzo requerido para desarrollar la aplicación, ahorrando dificultades por ejemplo: de tener que manejar código para actores y relaciones separadamente en vez de considerarlos un ente común llamado nodo, entre otras cosas.
+
+% subsection modelamiento_de_redes_sociales (end)
+
+\subsection{Interfaz de Alta Interacción en Desarrollo Web} % (fold)
+\label{sub:interfaz_de_alta_interaccion_en_desarrollo_web}
+
+Técnicamente, si se deseaba hacer una aplicación con una alta interactividad en términos de edición de grafos y que a su vez, esta tuviera las propiedades que entrega el hecho de que sea una aplicación web, el lenguaje de programación único para completar esta tarea es JavaScript, por lo tanto, en el camino, se tuvo que adoptar un enfoque distinto al desarrollo web tradicional (\emph{server side}) y optar por el desarrollo \emph{client side}, debido a que en este se pueden acceder limpiamente todos los atributos provenientes de la base de datos, tratarlos como objetos y asignarle lógica de modelos, implementar lógicas de vista mucho más complejas que lo que se puede lograr con JavaScript plano, junto con tener mejor integración con SVG, que era necesario también para este proyecto.
+
+% subsection interfaz_de_alta_interacción_en_desarrollo_web (end)
+
+
+% section dificultades_técnicas (end)
 
 \section{Trabajo Futuro} % (fold)
 \label{sec:trabajo_futuro}
@@ -17,6 +41,3 @@ A partir de lo realizado, se pueden encontrar los siguientes pasos a futuro con 
   \end{enumerate}
 
 % section trabajo_futuro (end)
-
-
-\end{conclusion}
