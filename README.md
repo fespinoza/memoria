@@ -240,7 +240,6 @@ Esto es una descripción conceptual de la solución
 * que es D3.js
 * el paradigma de los 3 estados de D3: enter, update y exit
 
-
 ### 4.3. Arquitectura de la Aplicación
 
 #### 4.3.1. Arquitectura de Hardware
