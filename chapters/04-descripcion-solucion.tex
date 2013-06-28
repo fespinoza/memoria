@@ -180,6 +180,22 @@ El funcionamiento básico de D3 es el siguiente: se parte por asociar un arreglo
 
 % subsection arquitectura_de_software (end)
 
+\subsection{Entidades} % (fold)
+\label{sub:entidades}
+
+Para comprende de mejor manera la aplicación y los diferentes procesos, es necesario especificar qué entidades existen y qué rol cumplen dentro de la aplicación, estas están con sus nombres en inglés, idioma que se usó para escribir el código de la aplicación.\\
+
+  \begin{itemize}
+    \item \textbf{User}: representa a un usuario del sistema, este cuenta con la información necesaria para que un usuario de la aplicación pueda autentificarse dentro del sistema y de esa forma entregarle los permisos necesarios para realizar operaciones sobre sus redes sociales.
+    \item \textbf{Social Network}: es la unidad principal dentro de la aplicación, es la entidad que agrupa toda la información que se desea plasmar dentro de la aplicación y representa al grafo completo que forma la red social.
+    \item \textbf{Node}: es una unidad atómica dentro de una red social que tiene un \emph{tipo} que puede ser \textbf{Actor} o \textbf{Relación}, dado que ambos son equivalentes dentro del modelo de Mauro~\cite{tesismauro}. Un nodo tiene un atributo por defecto y opcional llamado \emph{name} y además puede estar asociados a familias. En general se refiere a \emph{Actor} o \emph{Relación} cuando se necesita hacer una distinción entre ellos o simplemente \emph{Nodo} cuando se habla de ambos.
+    \item \textbf{Family}: una familia representa un conjunto para clasificar en tipos a nodos, las familias por su parte cuentan con un tipo que indica a que tipo de nodo pueden ser asociadas (Actor o Relación), junto a esto tienen algunas opciones de presentación, como el color con que se mostrarán los nodos pertenecientes a una familia.
+    \item \textbf{Node Attribute}: son los atributos de un nodo, representados como un par key-value, cuyo nombre no fue \emph{Attribute} para evitar conflictos de nombres con los frameworks de desarrollo.
+    \item \textbf{Role}: representa la participación de un \emph{Actor} dentro de una \emph{Relación}. Posee un nombre que es opcional para identificar un rol específico dentro de una relación, por ejemplo: la persona que presenta a otras 2 en una relación de amistad.
+  \end{itemize}
+
+% subsection entidades (end)
+
 \subsection{Diseño de la Base de Datos} % (fold)
 \label{sub:diseno_de_la_base_de_datos}
 % #### 4.3.3. Diseño de la Base de Datos
