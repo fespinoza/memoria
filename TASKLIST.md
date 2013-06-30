@@ -56,7 +56,7 @@
 <h4>4.3.4. Diseño de la Base de Datos</h4>
 
 <h2>5. Funcionamiento Solución</h2>
-<h3>5.1 registro e ingreso de usuarios [screenshot]x2</h3>
+<h3 class="done">5.1 registro e ingreso de usuarios [screenshot]x2</h3>
 <h3>5.2 creación de redes sociales [screenshot]</h3>
 <h3 class="done">5.3 edición redes sociales</h3>
 <h4 class="done">5.3.1. creación y edición de familias [screenshot]</h4>
