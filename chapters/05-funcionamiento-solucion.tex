@@ -22,14 +22,23 @@ A continuación, se mostrarán las características principales de la aplicació
 
 Una vez el usuario tiene su cuenta y creo una red social, este está listo para ir agregando los datos relevantes a sus redes sociales, haciendo click sobre el link con el nombre de la red social recién creada
 
-% TODO FIGURA MENÚ DE REDES SOCIALES
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/lista_redes_sociales.png}
+  \caption[Lista de Redes Sociales]{\emph{Lista de Redes Sociales}. En este lugar aparecen las redes sociales creadas, donde el nombre llega a la edición del contenido de esta, además de contar en el costado con botones para editar sus detalles o eliminar la red.}
+  \label{lista_redes_sociales}
+\end{figure}
 
 \subsection{Área de Edición de Redes Sociales} % (fold)
 \label{sub:area_de_edicion_de_redes_sociales}
 
 El área de edición de redes sociales consiste básicamente de 4 elementos: el canvas donde se crea el grafo de la red social (1), una barra de herramientas para la edición (2), un área donde se definen las familias de actores y relaciones (3) y un formulario con los detalles de las entidades seleccionadas (4).
 
-% TODO FIGURA VISIÓN EDICIÓN GENERAL AQUÍ
+\begin{figure}[H]
+  \includegraphics[width=1.0\textwidth]{images/area_edicion_redes.png}
+  \caption[Área de Edición de Redes]{\emph{Área de Edición de Redes}. Esta es el área principal donde el usuario completa y manipula la información de las redes sociales creadas, con números para la explicación de las diversas secciones de esta interfaz.}
+  \label{area_edicion_redes}
+\end{figure}
 
 Esta interfaz está pensada para tener la menor cantidad de elementos posibles, haciendo énfasis en las herramientas primordiales necesarias para la edición del grafo.
 
@@ -38,7 +47,12 @@ Esta interfaz está pensada para tener la menor cantidad de elementos posibles, 
 
 Para la zona de edición se cuenta con 4 modos de edición, de acuerdo a los cuales puedo realizar acciones diversas cuando hago click dentro de la zona del canvas.
 
-% TODO FIGURA MODOS DE EDICIÓN
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/modos_edicion.png}
+  \caption[Modos de Edición]{\emph{Modos de Edición}. botones para seleccionar el modo de edición, con números para explicar los diversos modos.}
+  \label{modos_edicion}
+\end{figure}
 
 Los 4 modos existentes son:
 
@@ -58,17 +72,32 @@ Los 4 modos existentes son:
 
 Para poder agrupar los nodos (actores y relaciones) dentro de familias, hay un área reservada para la creación propia de estas familias dentro de la red, en donde a continacíon se explican las principales operaciones con familias dentro de una red social.\\
 
-% TODO FOTO AREA DE FAMILIAS
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{images/area_familias.png}
+  \caption[Área de Familias]{\emph{Área de Familias}. Detalle del área donde se crean las familias en una red social.}
+  \label{area_familias}
+\end{figure}
 
-Para crear una familia se presiona el botón \emph{Add} en la sección de familias, con lo que aparece un formulario con el siguiente:
+Para crear una familia se presiona el botón \emph{New} en la sección de familias, con lo que aparece un formulario con el siguiente:
 
-% TODO FORMULARIO DE EDICIÓN de FAMILIAS
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/edicion_familias.png}
+  \caption[Formulario de Edición de Familias]{\emph{Formulario de Edición de Familias}. formulario por el cual se define el nombre, color y tipo de familia.}
+  \label{edicion_familias}
+\end{figure}
 
 Acá se rellena el nombre y se selecciona el color para mostrar los nodos de esta familia y el tipo de nodos a los cuáles se les asignará esta familia.\\
 
 Una vez creada, se muestra la familia en el listado con un ícono de \emph{A} para el caso de familias de actores y de \emph{R} en el caso de familias de relaciones. Donde puedo editar sus detalles o eliminarlas con los botones que se encuentran a su lado.
 
-% TODO FOTO DETALLE DE FAMILIA CREADA Y SUS OPERACIONES
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/familia_creada.png}
+  \caption[Detalle Familia Creada]{\emph{Detalle Familia Creada}. un ejemplo de una familia creada, con su ícono que indica si corresponde a familia de Actores o Relaciones, además de sus botones de edición y eliminación.}
+  \label{familia_creada}
+\end{figure}
 
 Es importante destacar, que se puede presionar cualquier tipo de familia, en donde al hacer esto, se cambiará al \emph{modo Actor} o \emph{modo Relación} según corresponda y a continuación cuando creo un actor o relación, por defecto pertenecerá a la familia seleccionada.
 
@@ -79,15 +108,30 @@ Es importante destacar, que se puede presionar cualquier tipo de familia, en don
 
 Para crear actores, se debe definir el modo de edición a \emph{modo Actor}~\ref{ssub:modos_de_edicion}, y hacer click en el canvas donde aparecerá un actor en dicho punto y se enfocará automáticamente el formulario de creación del actor.\\
 
-% TODO INSERT FORMULARIO DE EDICION
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/creacion_actor.png}
+  \caption{Formulario de Creación de Actor}
+  \label{creacion_actor}
+\end{figure}
 
 En este formulario se puede rellenar el nombre (opcionalmente), seleccionar las familias a las que pertenece el actor para finalmente confirmar la creación, luego de esto, la información visual del actor es actualizada, mostrando al actor del color de la(s) familia(s) a la cual pertenece, además de un borde indicando de que es dicho actor el que está seleccionado en este momento.\\
 
-% TODO ACTOR CON 2 FAMILIAS CREADO EN EL CANVAS
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{images/ejemplo_actor_2_familias.png}
+  \caption[Ejemplo Actor con 2 Familias]{\emph{Ejemplo Actor con 2 Familias}. Un actor con 2 familias tendrá un círculo con 2 colores de sus familias correspondientes.}
+  \label{ejemplo_actor_2_familias}
+\end{figure}
 
 El actor puede ser editado en cualquier momento vía el formulario de actor, luego se presiona el botón de actualizar para persistir los cambios, o puede ser eliminado con el botón de borrar, después de confirmar en el cuadro de dialogo que aparece.
 
-% TODO DIALOGO ELIMINACIÓN ACTOR
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/dialogo_eliminacion_actor.png}
+  \caption{Diálogo de Eliminación de Actor}
+  \label{dialogo_eliminacion_actor}
+\end{figure}
 
 % subsection creación_y_edición_de_actores (end)
 
@@ -96,14 +140,17 @@ El actor puede ser editado en cualquier momento vía el formulario de actor, lue
 
 Para crear una relación, se debe seleccionar el \emph{modo Relación}~\ref{ssub:modos_de_edicion}, posteriormente hacer click dentro del canvas en donde aparecerá la nueva relación y se mostrará el formulario de edición de la relación. A diferencia de los actores, las relaciones son creadas automáticamente, lo cual cambiará al modo de edición de roles, para agregar los roles correspondientes a la relación sin perder el contexto.
 
-% TODO FORMULARIO DE EDICIÓN DE RELACIONES
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/creacion_relacion.png}
+  \caption{Formulario de Creación de Relación}
+  \label{creacion_relacion}
+\end{figure}
 
 % TODO check this!!! (relaciones-n-familias)
 Las relaciones pueden o no tener un nombre, además de pertenecer a una familia, lo que generalmente denota el tipo de relación con la cual se está trabajando, ej: estudiaEn, dueñoDe, etc.\\
 
 La relación puede ser editada en cualquier momento vía el formulario y presionando el botón de actualizar, o eliminada con el botón de borrar, luego de confirmar el cuadro de dialogo que aparece.
-
-% TODO DIALOGO DE ELIMINACIÓN RELACIÓN
 
 % subsection creación_y_edición_de_relaciones (end)
 
@@ -112,7 +159,12 @@ La relación puede ser editada en cualquier momento vía el formulario y presion
 
 Una vez teniendo actores y relaciones creados dentro de la red social, es posible agregarles todos los atributos que se estimen conveniente por medio del formulario de edición de actores o relaciones, para esto, en la subsección de atributos en dicho formulario se puede agregar uno presionando el botón \emph{Add}, en donde puedo ingresar un atributo como un par key-value, por ejemplo puedo agregar el atributo \emph{Edad} (key) con el valor \emph{24} a un actor.
 
-% TODO INSERCIÓN DE ATRIBUTOS
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/insercion_atributos.png}
+  \caption[Añadiendo Atributos a un Actor]{\emph{Añadiendo Atributos a un Actor}. se presiona el botón Add y luego se puede agregar el nuevo atributo como un par Key Value.}
+  \label{insercion_atributos}
+\end{figure}
 
 Para editar atributos, se pueden editar directamente en sus campos y luego presionar el botón \emph{Update} para que los cambios sean persistidos, o borrar un atributo presionando el ícono junto a la definición del mismo.
 
@@ -123,7 +175,12 @@ Para editar atributos, se pueden editar directamente en sus campos y luego presi
 
 Los roles representan la participación de un actor en una relación, dicha participación o rol, puede tener un nombre o no, un ejemplo del último caso: en una relación de amistad entre 2 personas, puede haber un tercer actor que fue quien los introdujo, pero nuevamente, el nombre de un rol es opcional. Para crear un rol, se debe seleccionar el modo de edición de roles~\ref{ssub:modos_de_edicion}, luego con el mouse, pincho un actor y arrastro el mouse hacia una relación, al soltar el mouse el rol va a ser creado inmediatamente y el foco va a ser puesto dentro del formulario de edición del rol.
 
-% TODO FORMULARIO EDICIÓN ROL
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/edicion_rol.png}
+  \caption[Formulario de Edición de Rol]{\emph{Formulario de Edición de Rol}. en caso de ser necesario, se puede agregar un nombre al rol o eliminarlo desde aquí.}
+  \label{edicion_rol}
+\end{figure}
 
 En este formulario puedo actualizar el nombre del rol o de ser necesario eliminar el rol. Es importante mencionar que los roles sólo serán creados desde un \emph{Actor} hacia una \emph{Relación}, cualquier otra combinación no resultará en la creación de un rol.
 
