@@ -203,7 +203,30 @@ En este formulario puedo actualizar el nombre del rol o de ser necesario elimina
 
 % section edición_de_redes_sociales (end)
 
-% ### 5.4 exportación rdf [extracto de código]
+\section{Exportación en RDF} % (fold)
+\label{sec:exportacion_en_rdf}
+
+Como primer paso en la integración de la aplicación con la web semántica, esta permite una exportación de las redes sociales modeladas en formato N3/RDF. Con este fin, se usa la estructura de triples descrita en el modelo de mauro en la subsección~\ref{sub:representacion_como_triples}. Cabe mencionar además, que la información en la exportación comprende sólo la información de la estructura de la red social, aislándola de la información de estilos propia de la aplicación.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/mini_red_ejemplo.png}
+  \caption[Micro Ejemplo de Red Social]{\emph{Micro Ejemplo de Red Social}. Una red social que muestra la relación de un estudiante con su profesor guía.}
+  \label{mini_red_ejemplo}
+\end{figure}
+
+A modo de ejemplo, se toma el caso de la red de la figura~\ref{mini_red_ejemplo}, que contiene 2 actores y una relación, que al exportarla en RDF quedaría de la siguiente manera.\\
+
+\lstinputlisting[caption=Exportación RDF red social figura~\ref{mini_red_ejemplo}, style=rdf]{extra/exportacion.rdf}
+
+Es importante mencionar que dentro de dicha representación RDF se define una ontología propia de la aplicación, que cuenta con las definiciones comunes de la aplicación, como por ejemplo Actores, Relaciones y Roles, pero además cuenta con las definiciones de elementos propios de la red como Atributos definidos en esta. El vocabulario correspondiente de la red sería el siguiente:.
+
+% TODO LISTING vocabulario de la red social
+
+Además, de ser necesario, se puede exportar agregando la información gráfica de la red social, en donde se incluyen las posiciones de los nodos en el canvas, los colores de las familias definidas, etc.
+
+% section exportacion_en_rdf (end)
+
 % 
 % * más vocabulario
 % 
