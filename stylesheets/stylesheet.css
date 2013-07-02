@@ -485,3 +485,7 @@ footer a:hover {
   font-weight: bold;
   font-weight: normal; 
 }
+#main-content .code-pending:after {
+  content: "  [CODE PENDING]";
+  color: green;
+}
