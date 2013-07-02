@@ -283,9 +283,10 @@ Algún ejemplo concreto de una red un poco más grande creada con esta aplicaci�
 
 
 ## 6. Conclusiones
-### 6.1. Dificultades encontradas
+### 6.1. Evaluación de la Solución
+### 6.2. Dificultades encontradas
 cosas técnicas y metodológicas que fueron complejas al momento de enfrentar la memoria
-### 6.2. Trabajo Futuro
+### 6.3. Trabajo Futuro
 
 * agregar endpoint virtuoso
 * mejorar la escalabilidad de la aplicación

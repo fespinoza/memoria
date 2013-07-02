@@ -1,0 +1,42 @@
+@base <http://sn.dcc.uchile.cl/2013/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sn: <http://sn.dcc.uchile.cl/social_networks/8/vocabulary#> .
+
+</social_networks/8> foaf:name "Memorias" .
+
+</social_networks/8/nodes/55> a sn:node;
+   </social_networks/8/roles/40> </social_networks/8/nodes/57>;
+   sn:belongsToFamily </social_networks/8/families/19>;
+   sn:kind "Actor";
+   foaf:name "Claudio Gutierrez" .
+
+</social_networks/8/nodes/56> a sn:node;
+   </social_networks/8/roles/41> </social_networks/8/nodes/57>;
+   sn:attributeEdad "24";
+   sn:belongsToFamily </social_networks/8/families/20>;
+   sn:kind "Actor";
+   foaf:name "Felipe Espinoza" .
+
+</social_networks/8/families/19> a sn:family;
+   sn:kind "Actor";
+   foaf:name "Academico" .
+
+</social_networks/8/families/20> a sn:family;
+   sn:kind "Actor";
+   foaf:name "Estudiante" .
+
+</social_networks/8/families/21> a sn:family;
+   sn:kind "Relation";
+   foaf:name "projectoDeMemoria" .
+
+</social_networks/8/roles/40> a sn:role;
+   foaf:name "Profesor Guia" .
+
+</social_networks/8/roles/41> a sn:role;
+   foaf:name "Estudiante" .
+
+</social_networks/8/nodes/57> a sn:node;
+   sn:belongsToFamily </social_networks/8/families/21>;
+   sn:kind "Relation";
+   foaf:name "Social Graph Editor" .

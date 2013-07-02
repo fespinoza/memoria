@@ -1,0 +1,23 @@
+@prefix   sn: <http://sn.dcc.uchile.cl/social_networks/8/vocabulary> .
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Clases
+sn:family rdf:type rdfs:Class .
+sn:node rdf:type rdfs:Class .
+sn:role rdf:type rdfs:Class .
+
+# Properties
+sn:belongsToFamily rdf:type rdf:Property;
+  rdfs:domain sn:node;
+  rdfs:range sn:family .
+
+# Literals
+sn:kind rdf:type rdfs:Literal .
+
+sn:positionX rdf:type rdfs:Literal .
+sn:positionY rdf:type rdfs:Literal .
+
+sn:color rdf:type rdfs:Literal .
+
+sn:attributeEdad rdf:type rdfs:Literal .

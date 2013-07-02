@@ -31,6 +31,28 @@ Cuando el usuario accede de nuevo a la aplicación, esta vez en lugar de registr
 % section registro_e_ingreso_de_usuarios (end)
 
 % ### 5.2 creación de redes sociales [screenshot]
+\section{Creación de Redes Sociales} % (fold)
+\label{sec:creacion_de_redes_sociales}
+
+Dado que el usuario registró una cuenta en la aplicación, esta habilitado para crear una red social, inicialmente en la pantalla principal de redes sociales, presiona el botón \emph{Add Social Network} con el cual aparece el formulario de creación que es para darle un nombre y una descripción a la red social como detalles de esta.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/principal_social_networks.png}
+  \caption[Pantalla Principal de Redes Sociales]{\emph{Pantalla Principal de Redes Sociales}. Es la primera página luego de que el usuario se autentica, la cual le permite crear redes sociales para luego complementar su información.}
+  \label{principal_social_network}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/new_social_network.png}
+  \caption{Formulario Nueva Red Social}
+  \label{new_social_network}
+\end{figure}
+
+Esta información ingresada de la red social, sirve como detalles de la misma y puede ser editada en cualquier momento, sin embargo, lo más relevante de la creación de la red, es la adición de contenido a la estructura de esta, lo que se cubrirá en la siguiente sección.
+
+% section creación_de_redes_sociales (end)
 
 \section{Edición de Redes Sociales} % (fold)
 \label{sec:edicion_de_redes_sociales}
@@ -215,22 +237,33 @@ Como primer paso en la integración de la aplicación con la web semántica, est
   \label{mini_red_ejemplo}
 \end{figure}
 
+% TODO: mostrar como se exporta vía la interfaz y vincular eso con el resultado
 A modo de ejemplo, se toma el caso de la red de la figura~\ref{mini_red_ejemplo}, que contiene 2 actores y una relación, que al exportarla en RDF quedaría de la siguiente manera.\\
 
-\lstinputlisting[caption=Exportación RDF red social figura~\ref{mini_red_ejemplo}, style=rdf]{extra/exportacion.rdf}
+\lstinputlisting[caption=Exportación RDF red social figura~\ref{mini_red_ejemplo}, style=rdf]{extra/exportacion.n3}
+\label{lst:red_n3}
 
 Es importante mencionar que dentro de dicha representación RDF se define una ontología propia de la aplicación, que cuenta con las definiciones comunes de la aplicación, como por ejemplo Actores, Relaciones y Roles, pero además cuenta con las definiciones de elementos propios de la red como Atributos definidos en esta. El vocabulario correspondiente de la red sería el siguiente:.
 
-% TODO LISTING vocabulario de la red social
+\lstinputlisting[caption=Vocabulario red social figura~\ref{mini_red_ejemplo}, style=rdf]{extra/vocabulary.n3}
+\label{lst:vocabulario_n3}
 
 Además, de ser necesario, se puede exportar agregando la información gráfica de la red social, en donde se incluyen las posiciones de los nodos en el canvas, los colores de las familias definidas, etc.
 
 % section exportacion_en_rdf (end)
 
-% 
-% * más vocabulario
-% 
-% ### 5.5 importación rdf
+\section{Importación en RDF} % (fold)
+\label{sec:importacion_en_rdf}
+
+Junto con la exportación en formato RDF que usa la aplicación, esta tiene la funcionalidad de importar a partir de un archivo RDF de la red social como el definido en el ejemplo de código~\ref{lst:red_n3}, para crear una red social a partir de lo importado.
+
+% TODO: mostrar como se importa una red social (se crea una a partir de blah blah blah)
+
+% TODO: mencionar el algoritmo de asignación de posiciones para la red social.
+Cabe destacar que el contenido N3 de la red social puede no definir las posiciones de los nodos, en caso de un archivo que fue exportado sólo con la estructura de la red, no la información visual y por lo tanto la aplicación asigna las posiciones en base al criterio \textbf{PONER CRITERIO AQUÍ}, con lo cual crea los nodos, las familias, roles e interacciones entre ellos según lo especifica el archivo usado.
+
+% section importación_en_rdf (end)
+
 % ### 5.6 unión de redes sociales [screenshot]
 % ### 5.7 Casos de estudio
 % 

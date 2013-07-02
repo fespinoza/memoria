@@ -1,5 +1,6 @@
 <style type="text/css" media="screen">
 .done { text-decoration: line-through }
+.code-pending { text-decoration: line-through }
 </style>
 
 <h1>Estructura de mi Informe de Memoria</h1>
@@ -57,17 +58,18 @@
 
 <h2>5. Funcionamiento Solución</h2>
 <h3 class="done">5.1 registro e ingreso de usuarios [screenshot]x2</h3>
-<h3>5.2 creación de redes sociales [screenshot]</h3>
+<h3 class="needs-revision code-pending">5.2 creación de redes sociales [screenshot]</h3>
 <h3 class="done">5.3 edición redes sociales</h3>
 <h4 class="done">5.3.1. creación y edición de familias [screenshot]</h4>
 <h4 class="done">5.3.2. creación y edición de actores [screenshot]</h4>
 <h4 class="done">5.3.2. creación y edición de relaciones [screenshot]</h4>
 <h4 class="done">5.3.2. creación y edición de atributos en nodos [screenshot]</h4>
-<h3>5.4 exportación rdf [extracto de código]</h3>
-<h3>5.5 importación rdf</h3>
+<h3 class="needs-revision code-pending">5.4 exportación rdf [extracto de código]</h3>
+<h3 class="needs-revision code-pending">5.5 importación rdf</h3>
 <h3>5.6 unión de redes sociales [screenshot]</h3>
 <h3>5.7 Casos de estudio</h3>
 
 <h2>6. Conclusiones</h2>
-<h3>6.1. Dificultades encontradas</h3>
-<h3>6.2. Trabajo Futuro</h3>
+<h3>6.1. Evaluación de la Solución</h3>
+<h3 class="done">6.2. Dificultades encontradas</h3>
+<h3 class="done">6.3. Trabajo Futuro</h3>
