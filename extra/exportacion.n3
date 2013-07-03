@@ -1,42 +1,49 @@
 @base <http://sn.dcc.uchile.cl/2013/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sn: <http://sn.dcc.uchile.cl/social_networks/8/vocabulary#> .
 
-</social_networks/8> foaf:name "Memorias" .
+</social_networks/8> a sn:socialNetwork;
+   sn:name "Memorias" .
 
-</social_networks/8/nodes/55> a sn:node;
-   </social_networks/8/roles/40> </social_networks/8/nodes/57>;
+</social_networks/8/nodes/55> a sn:actor;
    sn:belongsToFamily </social_networks/8/families/19>;
    sn:kind "Actor";
-   foaf:name "Claudio Gutierrez" .
+   sn:name "Claudio Gutierrez";
+   sn:participatesAs </social_networks/8/roles/40> .
 
-</social_networks/8/nodes/56> a sn:node;
-   </social_networks/8/roles/41> </social_networks/8/nodes/57>;
+</social_networks/8/nodes/56> a sn:actor;
    sn:attributeEdad "24";
-   sn:belongsToFamily </social_networks/8/families/20>;
+   sn:belongsToFamily </social_networks/8/families/20>,
+     </social_networks/8/families/23>;
    sn:kind "Actor";
-   foaf:name "Felipe Espinoza" .
+   sn:name "Felipe Espinoza";
+   sn:participatesAs </social_networks/8/roles/41> .
 
 </social_networks/8/families/19> a sn:family;
    sn:kind "Actor";
-   foaf:name "Academico" .
+   sn:name "Academico" .
 
 </social_networks/8/families/20> a sn:family;
    sn:kind "Actor";
-   foaf:name "Estudiante" .
+   sn:name "Estudiante" .
 
 </social_networks/8/families/21> a sn:family;
    sn:kind "Relation";
-   foaf:name "projectoDeMemoria" .
+   sn:name "projectoDeMemoria" .
+
+</social_networks/8/families/23> a sn:family;
+   sn:kind "Actor";
+   sn:name "Memorista" .
 
 </social_networks/8/roles/40> a sn:role;
-   foaf:name "Profesor Guia" .
+   sn:inRelation </social_networks/8/nodes/57>;
+   sn:name "Profesor Guia" .
 
 </social_networks/8/roles/41> a sn:role;
-   foaf:name "Estudiante" .
+   sn:inRelation </social_networks/8/nodes/57>;
+   sn:name "Estudiante" .
 
-</social_networks/8/nodes/57> a sn:node;
+</social_networks/8/nodes/57> a sn:relation;
    sn:belongsToFamily </social_networks/8/families/21>;
    sn:kind "Relation";
-   foaf:name "Social Graph Editor" .
+   sn:name "Social Graph Editor" .

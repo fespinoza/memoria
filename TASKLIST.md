@@ -1,11 +1,13 @@
 <style type="text/css" media="screen">
 .done { text-decoration: line-through }
 .code-pending { text-decoration: line-through }
+.updated { color: blue; }
+.updated:after { content: ' [UPDATED]' }
 </style>
 
 <h1>Estructura de mi Informe de Memoria</h1>
 
-<h2>Introducción</h2>
+<h2 class="done">Introducción</h2>
 
 <h2 class="done">1. Descripción del Proyecto</h2>
 <h3 class="done">1.1. Objetivos</h3>
@@ -14,14 +16,14 @@
 <h3 class="done">1.2. Resultados esperados</h3>
 <h3 class="done">1.3. Alcances</h3>
 
-<h2>2. Marco Conceptual</h2>
+<h2 class="done">2. Marco Conceptual</h2>
 <h3 class="done">2.1. Conceptos de Redes Sociales</h3>
 <h4 class="done">2.1.1. Actor</h4>
 <h4 class="done">2.1.2. Uniones Relacionales</h4>
 <h4 class="done">2.1.3. Relaciones</h4>
 <h4 class="done">2.1.4. Red Social</h4>
-<h3>2.2 Conceptos de Desarrollo</h3>
-<h4>2.2.1 Desarrollo Web</h4>
+<h3 class="done">2.2 Conceptos de Desarrollo</h3>
+<h4 class="done">2.2.1 Desarrollo Web</h4>
 <h4 class="done">2.2.1.1 Desarrollo Front-End</h4>
 <h4 class="done">2.2.1.2 Desarrollo Back-End</h4>
 <h4 class="done">2.2.2 El Modelo MVC</h4>
@@ -31,14 +33,14 @@
 <h4 class="done">2.2.4. HTML5</h4>
 <h5 class="done">2.2.4.1 SVG, Gráficos Vectoriales en la Web</h5>
 
-<h2>3. Especificación del Problema</h2>
-<h3>3.1 Antecedentes y soluciones existentes</h3>
+<h2 class="done">3. Especificación del Problema</h2>
+<h3 class="done">3.1 Antecedentes y soluciones existentes</h3>
 <h4 class="done">3.1.1. LittleSis y Poderopedia</h4>
 <h4 class="done">3.1.2. Memoria Alumno Manuel Bahamonde</h4>
 <h4 class="done">3.1.3. Otras Alternativas</h4>
 <h3 class="done">3.2 Relevancia del problema</h3>
 <h3 class="done">3.3 Usuarios Objetivo</h3>
-<h3>3.4 Requisitos / Criterios de Aceptación</h3>
+<h3 class="done">3.4 Requisitos de la Aplicación</h3>
 
 <h2>4. Descripción de la Solución</h2>
 <h3 class="done">4.1. SNM, Social Network Model</h3>
@@ -71,5 +73,5 @@
 
 <h2>6. Conclusiones</h2>
 <h3>6.1. Evaluación de la Solución</h3>
-<h3 class="done">6.2. Dificultades encontradas</h3>
-<h3 class="done">6.3. Trabajo Futuro</h3>
+<h3 class="done updated">6.2. Dificultades encontradas</h3>
+<h3 class="done updated">6.3. Trabajo Futuro</h3>

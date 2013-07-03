@@ -1,23 +1,46 @@
-@prefix   sn: <http://sn.dcc.uchile.cl/social_networks/8/vocabulary> .
+@prefix   sn: <http://sn.dcc.uchile.cl/social_networks/8/vocabulary#> .
 @prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-# Clases
-sn:family rdf:type rdfs:Class .
-sn:node rdf:type rdfs:Class .
-sn:role rdf:type rdfs:Class .
+# Classes
+sn:socialNetwork a rdfs:Class .
+sn:family a rdfs:Class .
+sn:node a rdfs:Class .
+sn:role a rdfs:Class .
+sn:actor a rdfs:Class ;
+  rdfs:subClassOf sn:node .
+sn:relation a rdfs:Class ;
+  rdfs:subClassOf sn:node .
 
 # Properties
-sn:belongsToFamily rdf:type rdf:Property;
+sn:name a rdf:Property ;
+  rdfs:range rdfs:Literal .
+
+sn:belongsToFamily a rdf:Property;
   rdfs:domain sn:node;
   rdfs:range sn:family .
 
-# Literals
-sn:kind rdf:type rdfs:Literal .
+sn:participatesAs a rdf:Property ;
+  rdfs:domain sn:actor ;
+  rdfs:range sn:role .
 
-sn:positionX rdf:type rdfs:Literal .
-sn:positionY rdf:type rdfs:Literal .
+sn:inRelation a rdf:Property ;
+  rdfs:domain sn:role ;
+  rdfs:range sn:relation .
 
-sn:color rdf:type rdfs:Literal .
+sn:kind a rdfs:Property .
 
-sn:attributeEdad rdf:type rdfs:Literal .
+sn:positionX a rdfs:Property ;
+  rdfs:domain sn:node ;
+  rdfs:range rdfs:Literal .
+sn:positionY a rdfs:Property ;
+  rdfs:domain sn:node ;
+  rdfs:range rdfs:Literal .
+
+sn:color a rdfs:Property ;
+  rdfs:domain sn:family ;
+  rdfs:range rdfs:Literal .
+
+sn:attributeEdad a rdfs:Property ;
+  rdfs:domain sn:node ;
+  rdfs:range rdfs:Literal .

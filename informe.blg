@@ -29,45 +29,46 @@ Warning--to sort, need author or key in gruff
 Warning--to sort, need author or key in allegrograph
 Warning--to sort, need author or key in graph
 Warning--to sort, need author or key in d3
-You've used 26 entries,
+Warning--to sort, need author or key in validador_rdf
+You've used 27 entries,
             2118 wiz_defined-function locations,
-            585 strings with 6331 characters,
-and the built_in function-call counts, 4535 in all, are:
-= -- 434
-> -- 56
+            588 strings with 6418 characters,
+and the built_in function-call counts, 4700 in all, are:
+= -- 450
+> -- 57
 < -- 0
-+ -- 37
++ -- 38
 - -- 10
-* -- 212
-:= -- 555
-add.period$ -- 56
-call.type$ -- 26
-change.case$ -- 83
+* -- 220
+:= -- 573
+add.period$ -- 58
+call.type$ -- 27
+change.case$ -- 86
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 187
-empty$ -- 595
+cite$ -- 50
+duplicate$ -- 194
+empty$ -- 618
 format.name$ -- 10
-if$ -- 1094
+if$ -- 1135
 int.to.chr$ -- 0
-int.to.str$ -- 26
+int.to.str$ -- 27
 missing$ -- 2
-newline$ -- 111
+newline$ -- 115
 num.names$ -- 8
-pop$ -- 210
+pop$ -- 218
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 59
 quote$ -- 0
-skip$ -- 181
+skip$ -- 188
 stack$ -- 0
-substring$ -- 131
-swap$ -- 26
+substring$ -- 136
+swap$ -- 27
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 102
-warning$ -- 22
+type$ -- 106
+warning$ -- 23
 while$ -- 8
-width$ -- 28
-write$ -- 219
-(There were 24 warnings)
+width$ -- 29
+write$ -- 227
+(There were 25 warnings)

@@ -80,6 +80,10 @@ Sinatra home page.
 Spring home page.
 \newblock \url{http://www.springsource.org/}, June 2013.
 
+\bibitem{validador_rdf}
+Validador de rdf/xml y rdf/n3.
+\newblock \url{http://www.rdfabout.com/demo/validator/}, July 2013.
+
 \bibitem{podervocabulary}
 Vocabulario en formato rdf de poderopedia.
 \newblock \url{https://github.com/poderopedia/PoderVocabulary}, June 2013.
