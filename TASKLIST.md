@@ -1,8 +1,16 @@
 <style type="text/css" media="screen">
-.done { text-decoration: line-through }
-.code-pending { text-decoration: line-through }
-.updated { color: blue; }
-.updated:after { content: ' [UPDATED]' }
+#main-content .done { text-decoration: line-through }
+#main-content .needs-revision { 
+  color: red;
+  font-weight: bold;
+  font-weight: normal; 
+}
+#main-content .code-pending:after {
+  content: "  [CODE PENDING]";
+  color: green;
+}
+#main-content .updated { color: blue; }
+#main-content .updated:after { content: ' [UPDATED]'; }
 </style>
 
 <h1>Estructura de mi Informe de Memoria</h1>
