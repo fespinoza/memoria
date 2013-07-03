@@ -489,3 +489,5 @@ footer a:hover {
   content: "  [CODE PENDING]";
   color: green;
 }
+#main-content .updated { color: blue; }
+#main-content .updated:after { content: ' [UPDATED]'; text-decoration: none; }
