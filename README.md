@@ -242,15 +242,12 @@ Esto es una descripción conceptual de la solución
 
 ### 4.3. Arquitectura de la Aplicación
 
-#### 4.3.1. Arquitectura de Hardware
-arquitectura necesaria para que la aplicación corra en producción y por qué se eligió esta arquitectura
-
-#### 4.3.2 Arquitectura de Software
+#### 4.3.1 Arquitectura de Software
 back-end y front-end, y por qué se eligió esta arquitectura
 
-#### 4.3.3. Entidades
+#### 4.3.2. Entidades
 
-#### 4.3.4. Diseño de la Base de Datos
+#### 4.3.3. Diseño de la Base de Datos
 
 * problemas enfrentados al implementar 
 * representación modelo de mauro en BD relacional

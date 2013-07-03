@@ -166,13 +166,6 @@ El funcionamiento básico de D3 es el siguiente: se parte por asociar un arreglo
 \section{Arquitectura de la Aplicación} % (fold)
 \label{sec:arquitectura_de_la_aplicacion}
 
-\subsection{Arquitectura de Hardware} % (fold)
-\label{sub:arquitectura_de_hardware}
-% #### 4.3.1. Arquitectura de Hardware
-% arquitectura necesaria para que la aplicación corra en producción y por qué se eligió esta arquitectura
-
-% subsection arquitectura_de_hardware (end)
-
 \subsection{Arquitectura de Software} % (fold)
 \label{sub:arquitectura_de_software}
 % #### 4.3.2 Arquitectura de Software
@@ -198,10 +191,28 @@ Para comprende de mejor manera la aplicación y los diferentes procesos, es nece
 
 \subsection{Diseño de la Base de Datos} % (fold)
 \label{sub:diseno_de_la_base_de_datos}
-% #### 4.3.3. Diseño de la Base de Datos
-% * problemas enfrentados al implementar 
-% * representación modelo de mauro en BD relacional
-% * adiciones en términos de estilo y visualización de las redes
+
+A partir de las entidades definidas anteriormente, a continuación se presenta la representación en la base de datos, en este caso PostgresSQL, en donde las relaciones siguen la convención de Ruby on Rails, es decir, \texttt{model\_name\_id}, los nombres de tabla, son iguales al nombre del modelo en plural en minúscula, ej: la tabla del modelo \emph{Node} se llama \emph{nodes}, además Rails crea campos de tiempo de creación y actualización que los maneja internamente como ayuda al desarrollo.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/schema_db.png}
+  \caption[Esquema Base de Datos de La Aplicación]{\emph{Esquema Base de Datos de La Aplicación}. Una visualización del esquema de la base de datos con sus relaciones correspondientes.}
+  \label{schema_db}
+\end{figure}
+
+Esta representación se basa en la descrita por el modelo de Mauro en la sección \ref{sub:representacion_como_triples}, con las extensiones correspondientes al dominio de este problema, que se listan a continuación:
+
+  \begin{enumerate}
+    \item El modelo de Node, contiene campos de posición x e y para almacenar su posición en el canvas.
+    \item El modelo de Social Network, no existente en el modelo de Mauro, se crea con el fin de agrupar la entidad de una red social, donde tiene detalles de la misma, además de algunos campos para recordar preferencias de visualización, como por ejemplo la escala y la translación del canvas.
+    \item Las familias poseen un campo de color para visualizar los nodos que pertenecen a ella.
+    \item La tabla \emph{families\_nodes} es la forma de Ruby on Rails de crear relaciones de N a M.
+    \item La tabla de roles posee también una referencia a su red social, debido a de esta forma se puede obtener de una manera simple, toda la información de una red social en una sola query, sin problemas de duplicidad por las referencias al rol por parte de actores y relaciones.
+    \item La tabla \emph{node\_attributes} posee un nombre que evita conflictos de nombre con las herramientas usadas en el desarrollo.
+  \end{enumerate}
+
+En relación a los campos visuales dentro de los modelos, es perfectamente viable tener un modelo separado para manejar toda la información que se refiere a estilos, pero debido a que esta es muy poca, se optó por tenerla en sus mismos modelos por simplicidad.
 
 % subsection diseño_de_la_base_de_datos (end)
 
