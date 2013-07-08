@@ -3,6 +3,18 @@
 \section{Evaluación de la Solución} % (fold)
 \label{sec:evaluacion_de_la_solucion}
 
+En este trabajo de memoria, aprovechando la experiencia de la memoria de Manuel Bahamonde~\cite{memoriamanuel}, se ha realizado una aplicación que permite a usuarios básicos la creación y manejo de redes sociales multi propósito y de esta forma ser una herramienta para asistir en estas tareas a investigadores de diversos campos que incluyan el estudio de redes sociales.\\
+
+Esta aplicación se compone de un servicio de almacenamiento de redes sociales que presenta una API en formato JSON y RDF para redes sociales, que puede ser usado con otro tipo de consumidores de esta API.\\
+
+Por otro lado una aplicación web que corre en el lado del cliente la cual cuenta con una interfaz amigable de ingreso y manipulación de datos, en donde se cumplen los objetivos de crear relaciones de aridad múltiple, agregar atributos complementarios a los nodos.\\
+
+Además de lo anterior, los usuarios son capaces de importar o exportar en formato RDF/N3 las redes sociales que crean con la herramienta e incluso unir la información que ellos generan, funcionalidad que abre un nuevo nivel de interacción entre usuarios con respecto a la creación de diversos tipos de redes sociales.\\
+
+Se lograron visualizaciones limpias de los datos, que pueden ser manipuladas en formatos estándares y que permiten una visión sin pérdida con distintos niveles de acercamiento o alejamiento.\\
+
+Se representaron algunas redes sociales con la aplicación a modo de ejemplificar su utilidad, se documentó toda la experiencia en este informe que se entrega junto con el software, que posee código abierto, con las posibilidades de seguir explotando y expandiendo esta herramienta a futuro.
+
 % section evaluación_de_la_solución (end)
 
 \section{Dificultades Técnicas} % (fold)
@@ -59,15 +71,28 @@ A partir de lo realizado, se pueden encontrar los siguientes pasos a futuro con 
   \begin{enumerate}
     \item \textbf{Agregar Endpoint SPARQL}: uno de los aspectos técnicos a futuro, sería la instalación de un endpoint virtuoso, u otro para aprovechar de mejor manera la utilización del formato RDF, de esta forma, reemplazar el almacenamiento relacional de los datos por uno de grafos y lograr una mayor integración con la web semántica.
     
-    \item \textbf{Mejorar Escalabilidad Aplicación}: Si el proyecto llega a un nivel popularidad grande, se puede mejorar la escalabilidad de manera tal de que la aplicación soporte redes sociales de mayor tamaño, sin perder performance de la misma.
+    \item \textbf{Mejorar Escalabilidad Aplicación}: si el proyecto llega a un nivel popularidad grande, se puede mejorar la escalabilidad de manera tal de que la aplicación soporte redes sociales de mayor tamaño, sin perder performance de la misma.
     
-    \item \textbf{Habilitar Modo Offline Aplicación}: Es posible, debido a la utilización de frameworks client side, hacer que la aplicación de edición de grafos me permita un modo offline, reemplazando el almacenamiento centralizado por uno local en el navegador, sincronizando los datos si es pertinente posteriormente.
+    \item \textbf{Agregar Funcionalidad de Clases a Familias}: esto se refiere en que se puede agregar la capacidad de agregar atributos a familias de actores y relaciones, de manera tal, que al crear un actor o relación de determinada familia con atributos, automáticamente, el nodo creado tenga estos atributos de acuerdo a la plantilla que presenta la familia.
+    
+    \item \textbf{Habilitar Modo Offline Aplicación}: es posible, debido a la utilización de frameworks client side, hacer que la aplicación de edición de grafos me permita un modo offline, reemplazando el almacenamiento centralizado por uno local en el navegador, sincronizando los datos si es pertinente posteriormente.
     
     \item \textbf{Temporalidad en Redes Sociales}: se puede extender la aplicación de manera tal de que se pueda agregar temporalidad a las redes sociales, que sirva para analizar los cambios en las estructuras sociales con el paso del tiempo, aspecto que puede ser prometedor para la utilidad de esta herramienta en el estudio de ciertas disciplinas relacionadas con redes sociales.
     
     \item \textbf{Aspectos de Privacidad}: la aplicación se puede mejorar en términos de privacidad de los datos, explicitando que los datos agregados a la aplicación son de propiedad exclusiva de sus usuarios, que no habrá ningún tipo de mal uso de la información, además de agregar opciones para diferenciar redes privadas y públicas con sus restricciones de permisos peritnentes.
     
-    \item \textbf{Aspectos Legales}: Se debe resolver además temas legales con respecto a la aplicación y la publicación de datos privados de personas, en redes sociales de tipo público, que pudieran legalmente afectar de una u otra forma a terceros por la exposición de estos datos.
+    \item \textbf{Aspectos Legales}: se debe resolver además temas legales con respecto a la aplicación y la publicación de datos privados de personas, en redes sociales de tipo público, que pudieran legalmente afectar de una u otra forma a terceros por la exposición de estos datos.
   \end{enumerate}
 
 % section trabajo_futuro (end)
+
+\section{Distribución del Software y Documentación} % (fold)
+\label{sec:distribucion_del_software_y_documentacion}
+
+Todo el software, ejemplos y documentación desarrollados en este proyecto de memoria, se pueden encontrar y descargar libremente desde el sitio:\\
+
+\begin{center}
+  \url{http://fespinoza.github.io/social-graph-editor/}
+\end{center}
+
+% section distribucion_del_software_y_documentacion (end)

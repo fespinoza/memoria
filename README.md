@@ -274,7 +274,7 @@ Esta sección consiste básicamente en un manual de usuario de la aplicación, e
 
 ### 5.5 importación rdf
 ### 5.6 unión de redes sociales [screenshot]
-### 5.7 Casos de estudio
+### 5.7 Ejemplos de uso
 
 Algún ejemplo concreto de una red un poco más grande creada con esta aplicación
 

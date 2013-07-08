@@ -82,9 +82,10 @@
 <h3 class="done">5.4 exportación rdf [extracto de código]</h3>
 <h3 class="done">5.5 importación rdf</h3>
 <h3 class="needs-revision code-pending">5.6 unión de redes sociales [screenshot]</h3>
-<h3>5.7 Casos de estudio</h3>
+<h3>5.7 Ejemplos de Uso</h3>
 
-<h2>6. Conclusiones</h2>
-<h3>6.1. Evaluación de la Solución</h3>
+<h2 class="done">6. Conclusiones</h2>
+<h3 class="done">6.1. Evaluación de la Solución</h3>
 <h3 class="done updated">6.2. Dificultades encontradas</h3>
 <h3 class="done updated">6.3. Trabajo Futuro</h3>
+<h3 class="done">6.4. Distribución del Software y Documentación</h3>
