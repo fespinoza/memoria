@@ -67,7 +67,7 @@
 <h4 class="done">4.2.2. EmberJS</h4>
 <h4 class="done">4.2.3. D3.js</h4>
 <h3>4.3. Arquitectura de la Aplicación</h3>
-<h4>4.3.1 Arquitectura de Software</h4>
+<h4 class="needs-revision">4.3.1 Arquitectura de Software</h4>
 <h4 class="done">4.3.2. Entidades</h4>
 <h4 class="done">4.3.3. Diseño de la Base de Datos</h4>
 
@@ -81,7 +81,7 @@
 <h4 class="done">5.3.2. creación y edición de atributos en nodos [screenshot]</h4>
 <h3 class="done">5.4 exportación rdf [extracto de código]</h3>
 <h3 class="done">5.5 importación rdf</h3>
-<h3>5.6 unión de redes sociales [screenshot]</h3>
+<h3 class="needs-revision code-pending">5.6 unión de redes sociales [screenshot]</h3>
 <h3>5.7 Casos de estudio</h3>
 
 <h2>6. Conclusiones</h2>

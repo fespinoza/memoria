@@ -1,7 +1,18 @@
 \chapter{Funcionamiento de la Solución}
 \label{chap:funcionamiento_solucion}
 
-A continuación, se mostrarán las características principales de la aplicación desarrollada, a modo de referencia para usuarios, mostrando pantallazos de la interfaz, pero además discutiendo cómo esta interfaz y estas características resuelven los problemas planteados y cumplen los requisitos definidos en la sección~\ref{sub:requisitos_funcionales}.
+En este capítulo, se mostrarán las características principales de la aplicación desarrollada, a modo de referencia para usuarios, mostrando pantallazos de la interfaz, pero además discutiendo cómo decisiones de diseño de interfaces y experiencia de usuario.\\
+
+Cuando el usuario se conecta por primera vez a la aplicación encontrará la siguiente página de inicio donde este se registrará o autenticará, junto con un video de un demo visual sobre como funciona la aplicación.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/inicio.png}
+  \caption[Interfaz de Inicio de La Aplicación]{\emph{Interfaz de Inicio de La Aplicación}. Esta interfaz está pensada para que el usuario se conecte o registre al sitio, junto con entregar un demo en forma de video de como esta aplicación funciona.}
+  \label{inicio}
+\end{figure}
+
+A continuación se procede a mostrar los principales procesos que se llevan a cabo con la aplicación con sus respectivas interfaces de usuario vistas en detalle.
 
 % 1. qué feature estoy describiendo?
 % 2. como funciona? (en términos de uso de la aplicación)
@@ -291,6 +302,32 @@ Junto con la exportación en formato RDF que usa la aplicación, esta tiene la f
 Cabe destacar que el contenido N3 de la red social puede no definir las posiciones de los nodos, en caso de un archivo que fue exportado sólo con la estructura de la red, no la información visual y por lo tanto la aplicación asigna las posiciones en base al algoritmo de layout de grafos de Fruchterman-Reingold, con lo cual crea los nodos, las familias, roles e interacciones entre ellos según lo especifica el archivo usado.
 
 % section importación_en_rdf (end)
+
+\section{Unión de Redes Sociales} % (fold)
+\label{sec:union_de_redes_sociales}
+
+Una de las funcionalidades claves de esta aplicación, que es una mejora con respecto a la experiencia de Manuel Bahamonde~\cite{memoriamanuel} es la unión de redes sociales, esta consiste en que los datos generados de forma manual con la aplicación pueden ser complementados con datos generados por otros usuarios de la misma.\\
+
+% FIXME: check asumption "uno red social importada con una creada por mí"
+% TODO: revisión de la interfaz de acceso a la unión de redes sociales
+% TODO: añadir referencia a figura
+Para unir redes sociales, utilizamos el botón \emph{Join Social Networks}, en donde aparece el formulario de unión de redes sociales, en donde inicialmente seleccionamos un archivo RDF/N3 para importar la red, luego seleccionamos a que red se va a unir esta red social importada como indica el formulario de la figura.\\
+
+%TODO: insertar formulario primer paso en la unión
+
+% TODO: añadir referencia a figura 2
+Luego de presionar \emph{Next} en el formulario de unión, lo siguiente es definir las equivalencias dentro de las familias de ambas redes sociales, en donde a cada familia de la red original, selecciono una, más de una o ninguna equivalencia con una familia de la red social importada. Una vez estas equivalencias son definidas, se procesan en el back-end para añadir todos los datos de la red social importada en la seleccionada.\\
+
+% TODO insertar interfaz selección de equivalencias entre familias
+
+Con respecto a las relaciones, cabe mencionar que si en una red social está la relación $A$ con familia $F_1$ y en la otra red social se encuentra la relación $B$ con familia $F_2$, al momento de determinar que $F_1 = F_2$, la relación $B$ es eliminada y todos sus roles pasan a la relación $A$ debido a que ambas relaciones se consideran equivalentes
+
+% TODO añadir referencia a figura 3
+Luego de completar las operaciones anteriores, las redes sociales estarán unidas dentro de la original, donde los nodos fueron reordenados y lo siguiente es definir las equivalencias entre nodos, para eso se puede usar la herramienta de unión de nodos del menú de edición, disponible cuando la herramienta de mano está seleccionada~\ref{ssub:modos_de_edicion}, con esto, al unir un nodo se combinan las familias, los atributos y roles de estos nodos. Comportamiento el cual se decidió de esta forma debido a que un nodo puede no tener un nombre y su contexto (familias, atributos y nodos) muestran mucho mejor la entidad que representa el nodo y de esta forma visualmente es más sencillo encontrar la equivalencia entre nodos.
+
+% TODO: mostrar gráficamente el proceso de unión de nodos
+
+% section union_de_redes_sociales (end)
 
 % ### 5.6 unión de redes sociales [screenshot]
 % ### 5.7 Casos de estudio
