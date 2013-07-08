@@ -168,10 +168,21 @@ El funcionamiento básico de D3 es el siguiente: se parte por asociar un arreglo
 
 \subsection{Arquitectura de Software} % (fold)
 \label{sub:arquitectura_de_software}
-% #### 4.3.2 Arquitectura de Software
-% back-end y front-end, y por qué se eligió esta arquitectura
 
-% subsection arquitectura_de_software (end)
+Para explicar de mejor manera como funciona el software internamente, a continuación se muestra un diagrama de cómo este está estructurado por sus componentes.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/arquitectura_de_software.png}
+  \caption[Arquitectura de la Aplicación]{\emph{Arquitectura de la Aplicación}. en una vista de componentes, donde algunos de estos son entregados por las herramientas utilizadas.}
+  \label{arquitectura_de_software}
+\end{figure}
+
+Desde punto de vista del back-end, se definen los \emph{modelos} correspondientes a la aplicación (Node, Role, etc) los cuales se definen como clases, luego el \textbf{ORM} es el componente encargado de convertir ciertos métodos del modelo en código SQL que se envía a \textbf{PostgreSQL}, de esta forma, al trabajar con los modelos no es necesario escribir nada de SQL, haciendo la programación mucho más fácil. La interfaz que posee el back-end la conforman un conjunto de \emph{controladores}, quienes son los encargados de responder las peticiones HTTP que llegan al servidor, en donde interactúan con los modelos y como se trata de en su mayoría de API JSON, es necesario definir componentes que representan un modelo de la base de datos en formato JSON, esto lo hacen los \emph{serializadores}. Por su parte, hay un \emph{deserializador RDF} que hace el proceso inverso y crea modelos a partir del contenido de un archivo RDF, lo que se usa en la importación de redes sociales.\\
+
+Para el front-end, en donde se definen las interfaces gráficas con las que el usuario trabaja, además de definir la lógica correspondiente a la aplicación misma, esta se abstrae casi completamente del back-end siendo su único punto de conexión las API JSON en donde intercambian mensajes hacia ambos lados, donde en el caso del front-end esto lo maneja un componente de EmberJS llamado \emph{Store}.\\
+
+Se observa en la figura~\ref{arquitectura_de_software} que existen modelos, en el front-end que son los mismos presentes en el back-end, sin embargo difieren ligeramente en la lógica de operaciones con respecto a la edición y alternativamente el back-end puede cambiar completamente y mientras la API se respete, los modelos del front-end no son afectados de ninguna forma.\\
 
 \subsection{Entidades} % (fold)
 \label{sub:entidades}
