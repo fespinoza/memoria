@@ -169,11 +169,28 @@ El funcionamiento básico de D3 es el siguiente: se parte por asociar un arreglo
 \subsection{Arquitectura de Software} % (fold)
 \label{sub:arquitectura_de_software}
 
-Para explicar de mejor manera como funciona el software internamente, a continuación se muestra un diagrama de cómo este está estructurado por sus componentes.
+La solución considera una aplicación para el manejo de grafos, que consta con un back-end que provee servicios para el almacenamiento y persistencia de las redes sociales junto con un front-end el cual despliega la lógica del editor mismo que los usuarios usan en el día a día.\\
+
+Este esquema permite la creación de diversos sistemas distintos que se alimenten de la data generada por la aplicación como programas completamente independientes. Por otro lado, debido a que el front-end de la aplicación usa un framework  client side como EmberJS, el código de este front-end se obtiene inicialmente desde el back-end, para luego correr en el dispositivo del cliente, donde existirá comunicación entre los componentes de la aplicación, vía peticiones HTTP de tipo JSON para la sincronización y almacenamiento de los datos, mencionando además que estas llamadas son todas de forma autenticada, por lo que el trabajo de diversos usuarios no colisiona entre sí. Para mostrar de mejor manera lo recién descrito, se agrega una figura de la arquitectura general de la aplicación y como sus usuarios interactúan con ella.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1.0\textwidth]{images/arquitectura_de_software.png}
+  \includegraphics[width=0.8\textwidth]{images/app_distribuida.png}
+  \caption[Arquitectura General Aplicación-Usuarios]{\emph{Arquitectura General Aplicación-Usuarios}. en ella se puede observar que la aplicación del lado del cliente se comunica con un servidor central que almacena los datos, pero además diversos usuarios de la aplicación pueden comunicarse independientemente entre ellos por medio de archivos RDF/N3.}
+  \label{app_distribuida}
+\end{figure}
+
+Los usuarios pueden interactuar entre sí intercambiando información generada entre ellos por medio de los archivos de exportación RDF/N3, esta forma de interacción de los usuarios de la aplicación es una aproximación inicial a este problema en particular, debido a las restricciones de tiempo del trabajo de memoria, junto con la gran cantidad de otros problemas y detalles que solucionar primero.\\
+
+Este esquema general, debido a la calidad de proyecto de código abierto, puede ser replicado por 3eros, en donde puedan instalar su propio servidor de la aplicación de manera de tener un ambiente de redes sociales privados, como puede ser el caso de una universidad en particular.\\
+
+Según lo que se comentó anteriormente, esta arquitectura posee la potencialidad de integrar diversas otras aplicaciones que usen este tipo de datos de redes sociales, sin embargo, como la lectura en sí de los datos sólo se hace en el lado del cliente, en el servidor no se entrega ningún dato que no pertenezca a su propio cliente, de esta forma, no hay conflictos con la privacidad de la información, donde la aplicación entrega la funcionalidad al usuario y este se hace cargo del uso que hace de esta.\\
+
+En una vista más en detalle de la aplicación, para explicar de mejor manera como funciona el software internamente, a continuación se muestra un diagrama de cómo este está estructurado por sus componentes.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/arquitectura_de_software.png}
   \caption[Arquitectura de la Aplicación]{\emph{Arquitectura de la Aplicación}. en una vista de componentes, donde algunos de estos son entregados por las herramientas utilizadas.}
   \label{arquitectura_de_software}
 \end{figure}
