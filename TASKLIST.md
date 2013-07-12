@@ -36,7 +36,7 @@
 <h4 class="done">2.1.2. Uniones Relacionales</h4>
 <h4 class="done">2.1.3. Relaciones</h4>
 <h4 class="done">2.1.4. Red Social</h4>
-<h3 class="done">2.2 Conceptos de Desarrollo</h3>
+<h3 class="done needs-revision">2.2 Conceptos de Desarrollo</h3>
 <h4 class="done needs-revision">2.2.1 Desarrollo Web</h4>.
 <h4 class="done">2.2.1.1 Desarrollo Front-End</h4>
 <h4 class="done">2.2.1.2 Desarrollo Back-End</h4>
@@ -50,7 +50,7 @@
 <h2 class="done">3. Especificación del Problema</h2>
 <h3 class="done">3.1 Antecedentes y soluciones existentes</h3>
 <h4 class="done">3.1.1. LittleSis y Poderopedia</h4>
-<h4 class="done">3.1.2. Memoria Alumno Manuel Bahamonde</h4>
+<h4 class="done needs-revision">3.1.2. Memoria Alumno Manuel Bahamonde</h4>
 <h4 class="done">3.1.3. Otras Alternativas</h4>
 <h3 class="done">3.2 Relevancia del problema</h3>
 <h3 class="done">3.3 Usuarios Objetivo</h3>
@@ -86,6 +86,6 @@
 
 <h2 class="done">6. Conclusiones</h2>
 <h3 class="done">6.1. Evaluación de la Solución</h3>
-<h3 class="done updated">6.2. Dificultades encontradas</h3>
-<h3 class="done updated">6.3. Trabajo Futuro</h3>
+<h3 class="done">6.2. Dificultades encontradas</h3>
+<h3 class="done">6.3. Trabajo Futuro</h3>
 <h3 class="done">6.4. Distribución del Software y Documentación</h3>
