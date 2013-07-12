@@ -11,7 +11,7 @@ Uno de los puntos principales de esta memoria, es poner en práctica el modelo r
 \subsection{Elementos de Redes Sociales} % (fold)
 \label{sub:elementos_de_redes_sociales}
 
-Para el modelo de Mauro se tienen algunos elementos pertenecientes a las redes sociales, que fueron tratados en los conceptos de redes sociales en la sección \ref{sec:conceptos_de_redes_sociales}, a los cuales se les agregan algunas restricciones:
+El modelo de Mauro San Martín, tiene los elementos pertenecientes a las redes sociales, que fueron tratados en los conceptos de redes sociales en la sección \ref{sec:conceptos_de_redes_sociales}, a los cuales se les agregan algunas restricciones:
 
   \begin{itemize}
     \item Los \emph{Actores}: estos tienen un identificador único y un conjunto de atributos, además pueden participar en cualquier número de relaciones.
@@ -39,7 +39,7 @@ Dado lo anterior, el modelo \emph{SNM} describe una red social como un grafo de 
   \begin{itemize}
     \item El conjunto de nodos $N = A \cup T \cup C$ es una unión disjunta del conjunto de actores $A$, con el conjunto de relaciones $T$ y el conjunto de atributos $C$.
     \item Existe una colección finita de familias (subconjuntos) de actores $\mathcal{A} = \{ A_1, A_2, \dotsc, A_k \}$ de manera tal que cada $A_i \subseteq A$ y $\cup_{1 \leq i \leq k}A_i = A$.
-    \item Donde existe una colección finita de familias (subconjuntos) de relaciones $\mathcal{T} = \{ T_1, T_2, \dotsc, T_j \}$ donde cada $T_i \subseteq T$ y $\cup_{1 \leq i \leq k}T_i = T$.
+    \item Existe una colección finita de familias (subconjuntos) de relaciones $\mathcal{T} = \{ T_1, T_2, \dotsc, T_j \}$ donde cada $T_i \subseteq T$ y $\cup_{1 \leq i \leq k}T_i = T$.
     \item El conjunto de arcos $E = E_{AT} \cup E_{AC} \cup E_{TC}$ es la unión disjunta del conjunto de arcos entre actores y relaciones $E_{AT}$, con el conjunto de arcos entre actores y atributos $E_{AC}$, el conjunto de arcos entre atributos y relaciones $E_{TC}$.
     \item El conjunto de etiquetas de nodo $L_N = L_A \cup L_T \cup L_C$ es la unión disjunta de los conjuntos de etiquetas de actores $L_A$, de etiquetas de relaciones $L_T$ y el de etiquetas de atributos $L_C$.
     \item El conjunto de etiquetas de arcos $L_E = L_{AT} \cup L_{AC} \cup L_{TC}$ es la unión disjunta de los conjuntos de etiquetas de arcos entre actores y relaciones $L_{AT}$ (roles de participación), de etiquetas de arcos entre actores y atributos $L_{AC}$ (significado de atributos de actores) y el de etiquetas de arcos entre relaciones y atributos $L_{TC}$ (significado de atributos de relaciones).
@@ -69,7 +69,7 @@ De lo anterior se extrae información relevante sobre las características de la
 \subsection{Representación Gráfica} % (fold)
 \label{sub:representacian_grafica}
 
-En su tesis de doctorado\cite{tesismauro}, Mauro define un lenguaje gráfico para representar redes sociales con su modelo, el cual se adjunta a continuación por motivos de completitud del trabajo y expresar como este modelo influye posteriormente el diseño de la interfaz del usuario.\\
+En su tesis de doctorado\cite{tesismauro}, Mauro presenta un lenguaje gráfico para representar redes sociales con su modelo, el cual se adjunta a continuación por motivos de completitud del trabajo y para expresar como este modelo influye posteriormente el diseño de la interfaz del usuario.\\
 
 \begin{figure}[H]
   \includegraphics[width=1.0\textwidth]{images/elementos_modelo_mauro.png}
