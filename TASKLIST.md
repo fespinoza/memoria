@@ -50,7 +50,7 @@
 <h2 class="done">3. Especificación del Problema</h2>
 <h3 class="done">3.1 Antecedentes y soluciones existentes</h3>
 <h4 class="done">3.1.1. LittleSis y Poderopedia</h4>
-<h4 class="done needs-revision">3.1.2. Memoria Alumno Manuel Bahamonde</h4>
+<h4 class="done">3.1.2. Memoria Alumno Manuel Bahamonde</h4>
 <h4 class="done">3.1.3. Otras Alternativas</h4>
 <h3 class="done">3.2 Relevancia del problema</h3>
 <h3 class="done">3.3 Usuarios Objetivo</h3>
