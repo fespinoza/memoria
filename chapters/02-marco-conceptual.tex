@@ -1,7 +1,7 @@
 \chapter{Marco Conceptual}
 \label{chap:marco_conceptual}
 
-En este capítulo se describen los conceptos necesarios para que el lector se pueda familiarizar con mayor facilidad con los conceptos usados en el resto del informe, describiendo lo que se entiende por los conceptos usados en términos de redes sociales y conceptos asociados al desarrollo de la solución.\\
+En este capítulo se describen los conceptos necesarios para que el lector se pueda familiarizar con los conceptos usados en el resto del informe, describiendo lo que se entiende por los conceptos usados en términos de redes sociales y conceptos asociados al desarrollo de la solución.\\
 
 En caso de así preferirlo, el lector puede saltar las secciones que estime convenientes dentro de este capítulo, en caso de dominar los conceptos y usar este capítulo como referencia en caso de necesitarlo.
 
@@ -9,7 +9,7 @@ En caso de así preferirlo, el lector puede saltar las secciones que estime conv
 \label{sec:conceptos_de_redes_sociales}
 
 
-A continuación se expondrán los conceptos fundamentales que se usarán en la memoria en relación a redes sociales. Estos conceptos fueron extraídos desde la tesis de doctorado del alumno del DCC, Mauro San Martín\cite{tesismauro}, debido a que representan lo necesario para el entendimiento de este trabajo, por lo tanto su reusó e inclusión en el informe para que el lector no necesite revisar la memoria de Mauro para poder ver estos conceptos.
+A continuación se expondrán los conceptos fundamentales que se usarán en la memoria en relación a redes sociales. Estos conceptos fueron tomados de la tesis de doctorado del alumno del DCC, Mauro San Martín\cite{tesismauro}, que representan lo necesario para el entendimiento de este trabajo. Su reuso e inclusión en el informe se hace sólo para que el lector no necesite revisar la memoria de Mauro para poder ver estos conceptos.
 
 Para construir la definición formal de redes sociales, es necesario definir algunos conceptos claves previamente, siguiendo las definiciones clásicas de este dominio\cite{sna}.
 
@@ -18,20 +18,20 @@ Para construir la definición formal de redes sociales, es necesario definir alg
 Un actor es una entidad social, la cual está bajo estudio junto con sus interacciones sociales. En estricto rigor, los actores pueden ser definidos como individuos, corporaciones o unidades sociales colectivas. Ejemplos de actores son gente en un grupo, departamentos en una empresa o agencias de servicio público en una cuidad. El uso del término actor no significa que estas entidades necesariamente tienen la habilidad de actuar. Más allá, la mayoría de las aplicaciones en redes sociales se enfocan en colecciones de actores que son de un mismo tipo (por ejemplo, gente en un grupo de trabajo). A veces, sin embargo, la investigación necesita mirar a actores de diversos niveles o tipos conceptuales, o desde diversos conjuntos. Los datos pueden incluir atributos no relacionales asociados a los diferentes actores.
 % subsection actor (end)
 
-\subsection{Uniones Relacionales} % (fold)
-\label{sub:uniones_relacionales}
-Los actores están conectados hacia otros por uniones sociales. El rango y tipo de estas uniones puede ser muy grande. La característica principal de una unión es que establece una conexión entre un par de actores. Algunos de los ejemplos más comunes de uniones empleadas en el análisis de redes sociales son:
+\subsection{Vínculos Relacionales} % (fold)
+\label{sub:vinculos_relacionales}
+Los actores están conectados hacia otros por vínculos sociales. El rango y tipo de estos puede ser muy amplio. La característica principal de un vínculo es que establece una conexión entre un par de actores. Algunos de los ejemplos más comunes de vínculos empleados en el análisis de redes sociales son:
 
   \begin{itemize}
     \item La evaluación de una persona por otra, ej: amistad declarada, gusto o respeto.
     \item Transferencia de recursos materiales, ej: transacciones de negocios, prestar o pedir prestado.
     \item Asociación o afiliación, ej: atender conjuntamente a un evento social, o pertenecer al mismo club social.
   \end{itemize}
-% subsection uniones_relacionales (end)
+% subsection vinculos_relacionales (end)
 
 \subsection{Relaciones} % (fold)
 \label{sub:relaciones}
-El conjunto de uniones entre un tipo específico de miembros de un grupo se llama una relación. Por ejemplo, el conjunto de las amistades entre pares de niños en un salón de clases, o el conjunto de uniones diplomáticas entre pares de naciones en el mundo, son uniones que definen relaciones. Para cualquier grupo de actores, podemos encontrar diversas relaciones; por ejemplo, además de las relaciones diplomáticas entre países, podemos encontrar la existencia de comercio en un determinado año. Las relaciones (o uniones específicas) pueden tener atributos que las describen. Por ejemplo en el caso del comercio, su cantidad de transacciones total puede haber sido guardado.
+El conjunto de vínculos entre un tipo específico de miembros de un grupo se llama una relación. Por ejemplo, el conjunto de las amistades entre pares de niños en un salón de clases, o el conjunto de uniones diplomáticas entre pares de naciones en el mundo, son vínculos que definen relaciones. Para cualquier grupo de actores, podemos encontrar diversas relaciones; por ejemplo, además de las relaciones diplomáticas entre países, podemos encontrar la existencia de comercio en un determinado año. Las relaciones (o vínculos específicas) pueden tener atributos que las describen. Por ejemplo en el caso del comercio, su cantidad de transacciones total puede haber sido almacenado.
 % subsection relaciones (end)
 
 Con lo expuesto anteriormente, finalmente podemos definir una red social.
@@ -40,11 +40,11 @@ Con lo expuesto anteriormente, finalmente podemos definir una red social.
 \label{sub:red_social}
 Una red social consiste en uno o muchos conjuntos finitos de actores, junto con las relaciones definidas entre ellos. La presencia de información relacional es una característica crítica de las redes sociales. Una red social es un caso particular de red, de esta manera su estructura puede ser formalizada como un grafo.
 
-En adición al uso de conceptos relacionales, Wasserman y Faust\cite{sna} se deben tener en cuenta las siguientes consideraciones:
+En adición al uso de conceptos relacionales (Wasserman y Faust\cite{sna}) se deben tener en cuenta las siguientes consideraciones:
 
   \begin{itemize}
     \item Actores y sus acciones son vistos como interdependientes, más que independientes, unidades autónomas.
-    \item Uniones relacionales (conexiones) entre actores son canales de transferencia o "flujo" de recursos (material o no material).
+    \item Vínculos relacionales (conexiones) entre actores son canales de transferencia o "flujo" de recursos (material o no material).
     \item Modelos de red enfocados en individuos muestran el ambiente estructural de la red, además de proveer la capacidad de definir limitaciones en nivel individual.
     \item Los modelos de red conceptualizan estructura (social, económica, política, entre otras) como patrones generales de relaciones entre actores.
   \end{itemize}
@@ -70,7 +70,8 @@ En adición al uso de conceptos relacionales, Wasserman y Faust\cite{sna} se deb
 \section{Conceptos de Desarrollo} % (fold)
 \label{sec:conceptos_de_desarrollo}
 
-A continuación se explican los términos en lo que a desarrollo que se refiere que tienen relación con el trabajo realizado en esta memoria.
+% TODO: ver que dijo claudio aquí en XXXXXXX
+A continuación se explican los términos referentes al desarrollo de XXXXXXX del trabajo realizado en esta memoria.
 
 \subsection{Desarrollo Web} % (fold)
 \label{sub:desarrollo_web}
@@ -85,11 +86,13 @@ A continuación se explican los términos en lo que a desarrollo que se refiere 
 %   * servidor de bases de datos
 %   * servidor de acceso a aplicaciones
 
-El desarrollo web se denomina al desarrollo de software cuyo fin es la creación de aplicaciones que se ejecuten en computadores que puedan ser accesados vía la \emph{world-wide web}. Este estilo de desarrollo conlleva a que una aplicación que pueda estar ejecutándose en un servidor pueda entregar resultados a clientes provenientes de cualquier parte del mundo, usando una gran diversidad de dispositivos, plataformas de software, etc. Las cuales son frecuentemente accesadas por personas vía un navegador web.\\
+El desarrollo web se denomina al desarrollo de software cuyo fin es la creación de aplicaciones que se ejecuten en computadores que puedan ser accesados vía la \emph{world-wide web}. Este estilo de desarrollo conlleva a que una aplicación que pueda estar ejecutándose en un servidor pueda entregar resultados a clientes provenientes de cualquier parte del mundo, usando una gran diversidad de dispositivos, plataformas de software, etc. Esas aplicaciones son frecuentemente accesadas por personas vía un navegador web.\\
 
 Esta propiedad de multiplataforma de las aplicaciones desarrolladas para la web, junto con propiedades de accesibilidad desde diversos medios a las aplicaciones, ha hecho que el desarrollo web sea un enfoque de desarrollo ampliamente usado en la industria en los últimos 10 años.\\
 
 En términos generales el desarrollo web posee una arquitectura clásica de cliente/servidor, en donde una aplicación corriendo en un servidor proporciona resultados y ejecuta instrucciones proveniente de clientes, que pueden ir desde un navegador web de p.c. o dispositivo móvil, o servir de API, \emph{Application Programming Interface}, para otras aplicaciones. A continuación se adjunta un diagrama que muestra los principales componentes cuando se habla de desarrollo web.\\
+
+% TODO agregar figura de elementos en el desarrollo web
 
 A modo de ejemplo de componentes en el desarrollo web de una aplicación que posee un servidor de ejecución de la aplicación, con un servidor de base de datos, que es accesada vía teléfono, tablet o computador por medio de un navegador web o de una interfaz API que use otra aplicación, por la cual se acceden sus datos en formato de documentos HTML (junto con sus estilos en CSS y manejo de eventos en JavaScript) o documentos en formato JSON, RDF, XML entre otros.\\
 
@@ -110,7 +113,7 @@ En términos de tecnologías, se asocia el desarrollo front-end al uso de tecnol
 
 % * es desarrollo de software de la aplicación que guarda y procesa los datos del usuario
 
-Es el desarrollo de la aplicación que almacena y posee la lógica común a todos los clientes de la aplicación, en donde el código de este tipo de desarrollo es que se ejecuta en el servidor. Además generalmente en el desarrollo back-end se incluye todo lo relacionado a persistencia de datos generados a través del uso de la aplicación.
+Es el desarrollo de la aplicación que almacena y posee la lógica común a todos los clientes de la aplicación, en donde el código de este tipo de desarrollo se ejecuta en el servidor. Además generalmente en el desarrollo back-end se incluye todo lo relacionado a persistencia de datos generados a través del uso de la aplicación.
 
 % subsubsection desarrollo_back_end (end) 
 % subsection desarrollo_web (end)
@@ -127,7 +130,7 @@ El modelo MVC (Modelo, Vista, Controlador)\cite{mvc}, consiste en un modelo para
 \end{figure}
 
 \begin{itemize}
-  \item \textbf{Modelo}: el modelo corresponde a una clase \texttt{Compra} que contiene toda la lógica de negocio asociada a las compras, que además se asocia directamente a como se almacena una compra en la base de datos.
+  \item \textbf{Modelo}: el modelo corresponde a una clase \texttt{Compra} que contiene toda la lógica de negocio asociada a las compras, que además se asocia directamente a cómo se almacena una compra en la base de datos.
   \item \textbf{Vista}: un ejemplo de vista para una compra, puede ser una interfaz \texttt{HTML} en la cual el cliente efectúe operaciones sobre la compra, por ejemplo agregar productos, cabe destacar que la vista no ejecuta las acciones, sólo se encarga de recibirlas y enviarlas al último componente del modelo MVC, el controlador.
   \item \textbf{Controlador}: de acuerdo a lo recién expresado, el controlador es el encargado de coordinar uno o más modelos para ejecutar las acciones capturadas en la vista. En el caso de la compra, el controlador es quien efectivamente procesaría el pago de la misma.
 \end{itemize}
@@ -135,7 +138,7 @@ El modelo MVC (Modelo, Vista, Controlador)\cite{mvc}, consiste en un modelo para
 
 \subsection{Frameworks de Desarrollo} % (fold)
 \label{sub:frameworks_de_desarollo}
-Un framework de desarrollo define un marco en el cual desarrollar una aplicación, el cual provee una gran cantidad de funcionalidad común lista de manera de no desarrollar un proyecto desde cero, pero además de sólo funcionalidad, provee de una estructura lógica con la cual se escribe el código, que está influida por muchas otras personas que han usado el framework en aplicaciones reales.
+Un framework de desarrollo define un marco en el cual desarrollar una aplicación. Provee una gran cantidad de funcionalidad común lista de manera de no desarrollar un proyecto desde cero, pero además de funcionalidad, provee de una estructura lógica con la cual se escribe el código, que está influida por muchas otras personas que han usado el framework en aplicaciones reales.
 
 \subsubsection{Frameworks Server Side} % (fold)
 \label{ssub:frameworks_server_side}
@@ -164,7 +167,7 @@ Comúnmente estos frameworks son escritos para ser usados con el lenguaje \textt
 \subsection{HTML5} % (fold)
 \label{sub:html5}
 
-\emph{Html5}\cite{html5} es el nuevo estándar para \emph{HTML}, Hyper-Text Markup Language, definido por la WC3\cite{w3c} y Web Hypertext Application Technology Group (WHATWG), es un trabajo en progreso, sin embargo desde hace tiempo los principales navegadores soportan muchas de los nuevos elementos de HTML y sus APIs.\\
+\emph{Html5}\cite{html5} es el nuevo estándar para \emph{HTML} (Hyper-Text Markup Language), definido por la WC3\cite{w3c} y Web Hypertext Application Technology Group (WHATWG), es un trabajo en progreso, sin embargo desde hace tiempo los principales navegadores soportan muchas de los nuevos elementos de HTML y sus APIs.\\
 
 Algunas de los nuevas características más interesantes en HTML5 son: el tag \texttt{<canvas>} para dibujo en 2D, los tags \texttt{<video>} y \texttt{<audio>} para reproducción multimedia, soporte para almacenamiento local en el browser, algunos elementos específicos para el contenido como \texttt{<article>}, \texttt{<footer>}, \texttt{<header>}, \texttt{<nav>} y \texttt{<section>}; nuevos controles para formularios como para fecha, hora, email, url y búsqueda. Además de esto, soporte para SVG dentro de los sitios, característica especialmente importante para esta memoria.
 
@@ -177,5 +180,40 @@ SVG, en inglés se refiere a gráficos vectoriales escalables, los cuales pueden
 
 % subsection html5 (end)
 
-
 % section conceptos_de_desarrollo (end)
+
+\section{Herramientas Elegidas} % (fold)
+\label{sec:herramientas_elegidas}
+
+A continuación se presentan las herramientas elegidas para el desarrollo de la aplicación y los fundamentos de estas elecciones:
+
+\subsection{Ruby on Rails} % (fold)
+\label{sub:ruby_on_rails}
+Para el desarrollo del backend de la aplicación se eligió el framework de desarrollo web Ruby on Rails\cite{rails}, comúnmente conocido simplemente como Rails, en el cual se desarrolla sobre el lenguaje Ruby. Es un framework maduro con 10 años de existencia, el cual es una de las plataformas más populares para este tipo de desarrollo actualmente en Silicon Valley.\\
+
+Dentro de las características destacables de rails se pueden destacar: sus principios de privilegiar las convenciones sobre las configuraciones, es decir, el framework entrega mucha funcionalidad hecha mientras se cumplan sus convenciones, las cuales de ser necesario se pueden sobre escribir; aplicaciones que pueden ser ejecutadas en diversos ambientes independientemente configurados como producción, testing o desarrollo.\\
+
+Además de aspectos técnicos, dentro de las motivaciones al elegir rails, se encuentra la presencia de una gran comunidad de desarrolladores que crean muchas librerías, o en terminología ruby, 'gemas' las cuales hacen el desarrollo mucho más rápido reusando estas librerías que resuelven múltiples problemas frecuentes. Junto con lo anterior el alumno memorista posee vasta experiencia laboral en esta tecnología.
+% subsection ruby_on_rails (end)
+
+\subsection{EmberJS} % (fold)
+\label{sub:emberjs}
+
+EmberJS es un framework de desarrollo web javascript en el lado del cliente, fue creado por Yehuda Katz y Tom Dale cuando ellos hacían la segunda versión del framework web Sproutcore.\\
+
+EmberJS se destaca debido a que se pueden escribir aplicaciones completas que son ejecutadas en el lado del cliente, con clases especializadas como \emph{modelos}, \emph{vistas}, \emph{controladores}, \emph{templates} en una versión un poco distinta del modelo MVC. Una característica principal de emberjs es la actualización automática de templates cuando la información el sistema cambia; la presencia de observadores y la capacidad de adaptar emberjs a diversos modelos de persistencia como vía API JSON o el almacenamiento local integrado en los navegadores web de última generación.\\
+
+Para el desarrollo de la aplicación de esta memoria, debido a que se trata de una aplicación que permite editar grafos interactivamente y es vía web, es necesaria mucha integración entre el javascript de las vistas y los datos de los nodos de las redes sociales, razón por la cual fue un mejor enfoque desarrollar la aplicación con emberJS, que resultó en pruebas iniciales mucho mejor que la otra alternativa evaluada, BackboneJS\cite{backbone}.\\
+
+Uno de los aspectos útiles de EmberJS es que uno de sus creadores, Yehuda Katz, es integrante de los equipos principales de desarrollo de Ruby on Rails y la librería de javascript jQuery. De esta forma, EmberJS está pensado para tener una muy buena integración con Rails y jQuery, potenciando su atractivo como herramienta de desarrollo en el lado del cliente.
+
+% subsection emberjs (end)
+
+\subsection{D3.js} % (fold)
+\label{sub:d3_js}
+
+Dentro de las herramientas principales se incluye D3.js\cite{d3}, que es una librería javascript para el despliegue y manipulación de datos como información visual vía SVG en la web. Además de lo anterior D3.js es una de las opciones más utilizadas en lo que a gráficos SVG en la web se refiere.\\
+
+El funcionamiento básico de D3 es el siguiente: se parte por asociar un arreglo de elementos que contienen los datos con los que trabajamos y son asociados con elementos SVG, como círculos por ejemplo y para el caso del arreglo de datos, D3 tiene 3 estados: el de entrada, es decir, cuando un elemento nuevo es agregado al arreglo, D3 se encarga de crear un nuevo elemento SVG para asociarlo a este nuevo dato; el estado de actualización  es el cual que a todos los datos disponibles actualiza su posición u otras propiedades y finalmente el estado de salida es cuando un elemento del arreglo es eliminado y por consiguiente D3.js se encarga de remover su elemento SVG respectivo.
+
+% subsection d3_js (end)
