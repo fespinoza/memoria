@@ -11,7 +11,7 @@ Uno de los puntos principales de esta memoria, es poner en práctica el modelo r
 \subsection{Elementos de Redes Sociales} % (fold)
 \label{sub:elementos_de_redes_sociales}
 
-Para el modelo de Mauro se tienen algunos elementos pertenecientes a las redes sociales, que fueron tratados en los conceptos de redes sociales en la sección \ref{sec:conceptos_de_redes_sociales}, a los cuales se les agregan algunas restricciones:
+El modelo de Mauro San Martín, tiene los elementos pertenecientes a las redes sociales, que fueron tratados en los conceptos de redes sociales en la sección \ref{sec:conceptos_de_redes_sociales}, a los cuales se les agregan algunas restricciones:
 
   \begin{itemize}
     \item Los \emph{Actores}: estos tienen un identificador único y un conjunto de atributos, además pueden participar en cualquier número de relaciones.
@@ -39,7 +39,7 @@ Dado lo anterior, el modelo \emph{SNM} describe una red social como un grafo de 
   \begin{itemize}
     \item El conjunto de nodos $N = A \cup T \cup C$ es una unión disjunta del conjunto de actores $A$, con el conjunto de relaciones $T$ y el conjunto de atributos $C$.
     \item Existe una colección finita de familias (subconjuntos) de actores $\mathcal{A} = \{ A_1, A_2, \dotsc, A_k \}$ de manera tal que cada $A_i \subseteq A$ y $\cup_{1 \leq i \leq k}A_i = A$.
-    \item Donde existe una colección finita de familias (subconjuntos) de relaciones $\mathcal{T} = \{ T_1, T_2, \dotsc, T_j \}$ donde cada $T_i \subseteq T$ y $\cup_{1 \leq i \leq k}T_i = T$.
+    \item Existe una colección finita de familias (subconjuntos) de relaciones $\mathcal{T} = \{ T_1, T_2, \dotsc, T_j \}$ donde cada $T_i \subseteq T$ y $\cup_{1 \leq i \leq k}T_i = T$.
     \item El conjunto de arcos $E = E_{AT} \cup E_{AC} \cup E_{TC}$ es la unión disjunta del conjunto de arcos entre actores y relaciones $E_{AT}$, con el conjunto de arcos entre actores y atributos $E_{AC}$, el conjunto de arcos entre atributos y relaciones $E_{TC}$.
     \item El conjunto de etiquetas de nodo $L_N = L_A \cup L_T \cup L_C$ es la unión disjunta de los conjuntos de etiquetas de actores $L_A$, de etiquetas de relaciones $L_T$ y el de etiquetas de atributos $L_C$.
     \item El conjunto de etiquetas de arcos $L_E = L_{AT} \cup L_{AC} \cup L_{TC}$ es la unión disjunta de los conjuntos de etiquetas de arcos entre actores y relaciones $L_{AT}$ (roles de participación), de etiquetas de arcos entre actores y atributos $L_{AC}$ (significado de atributos de actores) y el de etiquetas de arcos entre relaciones y atributos $L_{TC}$ (significado de atributos de relaciones).
@@ -69,7 +69,7 @@ De lo anterior se extrae información relevante sobre las características de la
 \subsection{Representación Gráfica} % (fold)
 \label{sub:representacian_grafica}
 
-En su tesis de doctorado\cite{tesismauro}, Mauro define un lenguaje gráfico para representar redes sociales con su modelo, el cual se adjunta a continuación por motivos de completitud del trabajo y expresar como este modelo influye posteriormente el diseño de la interfaz del usuario.\\
+En su tesis de doctorado\cite{tesismauro}, Mauro presenta un lenguaje gráfico para representar redes sociales con su modelo, el cual se adjunta a continuación por motivos de completitud del trabajo y para expresar como este modelo influye posteriormente el diseño de la interfaz del usuario.\\
 
 \begin{figure}[H]
   \includegraphics[width=1.0\textwidth]{images/elementos_modelo_mauro.png}
@@ -124,42 +124,6 @@ Por ejemplo se muestra la siguiente tabla que representa este conjunto de triple
 % subsection representación_como_triples (end)
 
 % section social network model (end) 
-
-\section{Herramientas Elegidas} % (fold)
-\label{sec:herramientas_elegidas}
-
-A continuación se presentan las herramientas elegidas para el desarrollo de la aplicación y los fundamentos de estas elecciones:
-
-\subsection{Ruby on Rails} % (fold)
-\label{sub:ruby_on_rails}
-Para el desarrollo del backend de la aplicación se eligió el framework de desarrollo web Ruby on Rails\cite{rails}, comúnmente conocido simplemente como Rails, en el cual se desarrolla sobre el lenguaje Ruby. Es un framework maduro con 10 años de existencia, el cual es una de las plataformas más populares para este tipo de desarrollo actualmente en Silicon Valley.\\
-
-Dentro de las características destacables de rails se pueden destacar: sus principios de privilegiar las convenciones sobre las configuraciones, es decir, el framework entrega mucha funcionalidad hecha mientras se cumplan sus convenciones, las cuales de ser necesario se pueden sobre escribir; aplicaciones que pueden ser ejecutadas en diversos ambientes independientemente configurados como producción, testing o desarrollo.\\
-
-Además de aspectos técnicos, dentro de las motivaciones al elegir rails, se encuentra la presencia de una gran comunidad de desarrolladores que crean muchas librerías, o en terminología ruby, 'gemas' las cuales hacen el desarrollo mucho más rápido reusando estas librerías que resuelven múltiples problemas frecuentes. Junto con lo anterior el alumno memorista posee vasta experiencia laboral en esta tecnología.
-% subsection ruby_on_rails (end)
-
-\subsection{EmberJS} % (fold)
-\label{sub:emberjs}
-
-EmberJS es un framework de desarrollo web javascript en el lado del cliente, fue creado por Yehuda Katz y Tom Dale cuando ellos hacían la segunda versión del framework web Sproutcore.\\
-
-EmberJS se destaca debido a que se pueden escribir aplicaciones completas que son ejecutadas en el lado del cliente, con clases especializadas como \emph{modelos}, \emph{vistas}, \emph{controladores}, \emph{templates} en una versión un poco distinta del modelo MVC. Una característica principal de emberjs es la actualización automática de templates cuando la información el sistema cambia; la presencia de observadores y la capacidad de adaptar emberjs a diversos modelos de persistencia como vía API JSON o el almacenamiento local integrado en los navegadores web de última generación.\\
-
-Para el desarrollo de la aplicación de esta memoria, debido a que se trata de una aplicación que permite editar grafos interactivamente y es vía web, es necesaria mucha integración entre el javascript de las vistas y los datos de los nodos de las redes sociales, razón por la cual fue un mejor enfoque desarrollar la aplicación con emberJS, que resultó en pruebas iniciales mucho mejor que la otra alternativa evaluada, BackboneJS\cite{backbone}.\\
-
-Uno de los aspectos útiles de EmberJS es que uno de sus creadores, Yehuda Katz, es integrante de los equipos principales de desarrollo de Ruby on Rails y la librería de javascript jQuery. De esta forma, EmberJS está pensado para tener una muy buena integración con Rails y jQuery, potenciando su atractivo como herramienta de desarrollo en el lado del cliente.
-
-% subsection emberjs (end)
-
-\subsection{D3.js} % (fold)
-\label{sub:d3_js}
-
-Dentro de las herramientas principales se incluye D3.js\cite{d3}, que es una librería javascript para el despliegue y manipulación de datos como información visual vía SVG en la web. Además de lo anterior D3.js es una de las opciones más utilizadas en lo que a gráficos SVG en la web se refiere.\\
-
-El funcionamiento básico de D3 es el siguiente: se parte por asociar un arreglo de elementos que contienen los datos con los que trabajamos y son asociados con elementos SVG, como círculos por ejemplo y para el caso del arreglo de datos, D3 tiene 3 estados: el de entrada, es decir, cuando un elemento nuevo es agregado al arreglo, D3 se encarga de crear un nuevo elemento SVG para asociarlo a este nuevo dato; el estado de actualización  es el cual que a todos los datos disponibles actualiza su posición u otras propiedades y finalmente el estado de salida es cuando un elemento del arreglo es eliminado y por consiguiente D3.js se encarga de remover su elemento SVG respectivo.
-
-% subsection d3_js (end)
 
 % section herramientas_elegidas (end)
 
