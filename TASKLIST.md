@@ -15,9 +15,9 @@
 
 <h1>Estructura de mi Informe de Memoria</h1>
 
-<h2>Resumen Ejecutivo</h2>
+<h2 class="done">Resumen Ejecutivo</h2>
 
-<h2>Dedicatoria</h2>
+<h2 class="done">Dedicatoria</h2>
 
 <h2>Agradecimientos</h2>
 

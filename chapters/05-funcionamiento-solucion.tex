@@ -308,22 +308,29 @@ Cabe destacar que el contenido N3 de la red social puede no definir las posicion
 
 Una de las funcionalidades claves de esta aplicación, que es una mejora con respecto a la experiencia de Manuel Bahamonde~\cite{memoriamanuel} es la unión de redes sociales, esta consiste en que los datos generados de forma manual con la aplicación pueden ser complementados con datos generados por otros usuarios de la misma.\\
 
-% FIXME: check asumption "uno red social importada con una creada por mí"
 % TODO: revisión de la interfaz de acceso a la unión de redes sociales
-% TODO: añadir referencia a figura
-Para unir redes sociales, utilizamos el botón \emph{Join Social Networks}, en donde aparece el formulario de unión de redes sociales, en donde inicialmente seleccionamos un archivo RDF/N3 para importar la red, luego seleccionamos a que red se va a unir esta red social importada como indica el formulario de la figura.\\
+Para unir redes sociales, utilizamos el botón \emph{Join Social Networks}, en donde aparece el formulario de unión de redes sociales~\ref{seleccion_union}, en donde inicialmente seleccionamos un archivo RDF/N3 para importar la red, luego seleccionamos a que red se va a unir esta red social importada como indica el formulario de la figura.\\
 
-%TODO: insertar formulario primer paso en la unión
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{images/seleccion_union.png}
+  \caption[Selección de Redes a Unir]{\emph{Selección de Redes a Unir}. se selecciona una red social que el usuario posee y se importa una red social externa con la que se va a unir.}
+  \label{seleccion_union}
+\end{figure}
 
-% TODO: añadir referencia a figura 2
-Luego de presionar \emph{Next} en el formulario de unión, lo siguiente es definir las equivalencias dentro de las familias de ambas redes sociales, en donde a cada familia de la red original, selecciono una, más de una o ninguna equivalencia con una familia de la red social importada. Una vez estas equivalencias son definidas, se procesan en el back-end para añadir todos los datos de la red social importada en la seleccionada.\\
+Luego de presionar \emph{Next} en el formulario de unión, lo siguiente es definir las equivalencias dentro de las familias de ambas redes sociales~\ref{equivalencia_familias}, en donde a cada familia de la red original, selecciono una, más de una o ninguna equivalencia con una familia de la red social importada. Una vez estas equivalencias son definidas, se procesan en el back-end para añadir todos los datos de la red social importada en la seleccionada.\\
 
-% TODO insertar interfaz selección de equivalencias entre familias
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/equivalencia_familias.png}
+  \caption[Selección de Equivalencias entre Familias]{\emph{Selección de Equivalencias entre Familias}. en esta pantalla se seleccionan que familias de la red importada para unir, son equivalentes a las familias de la red social original, en múltiples equivalencias a la misma familia original son permitidas.}
+  \label{equivalencia_familias}
+\end{figure}
 
 Con respecto a las relaciones, cabe mencionar que si en una red social está la relación $A$ con familia $F_1$ y en la otra red social se encuentra la relación $B$ con familia $F_2$, al momento de determinar que $F_1 = F_2$, la relación $B$ es eliminada y todos sus roles pasan a la relación $A$ debido a que ambas relaciones se consideran equivalentes
 
 % TODO añadir referencia a figura 3
-Luego de completar las operaciones anteriores, las redes sociales estarán unidas dentro de la original, donde los nodos fueron reordenados y lo siguiente es definir las equivalencias entre nodos, para eso se puede usar la herramienta de unión de nodos del menú de edición, disponible cuando la herramienta de mano está seleccionada~\ref{ssub:modos_de_edicion}, con esto, al unir un nodo se combinan las familias, los atributos y roles de estos nodos. Comportamiento el cual se decidió de esta forma debido a que un nodo puede no tener un nombre y su contexto (familias, atributos y nodos) muestran mucho mejor la entidad que representa el nodo y de esta forma visualmente es más sencillo encontrar la equivalencia entre nodos.
+Luego de completar las operaciones anteriores, las redes sociales estarán unidas dentro de la original, donde los nodos fueron reordenados. Lo siguiente es definir las equivalencias entre nodos, para esto se selecciona el modo de unión en el menú de edición~\ref{ssub:modos_de_edicion}, con esto, solo basta arrastrar un nodo sobre otro y confirmar el dialogo que aparece al soltar el nodo para unirlos. Al unir un par nodos se combinan las familias, los atributos y roles de estos, comportamiento el cual se decidió de esta forma debido a que un nodo puede no tener un nombre y su contexto (familias, atributos y nodos) expresan mucho mejor la entidad que representa el nodo y de esta forma visual es más sencillo encontrar la equivalencia entre estos.
 
 % TODO: mostrar gráficamente el proceso de unión de nodos
 
