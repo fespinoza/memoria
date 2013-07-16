@@ -98,4 +98,8 @@ Todo el software, ejemplos y documentación desarrollados en este proyecto de me
   \url{http://fespinoza.github.io/social-graph-editor/}
 \end{center}
 
+En dicho sitio, existen instrucciones precisas de como crear un ambiente de desarrollo para la aplicación, el cual está automatizado por la herramienta de gestión de máquinas virtuales Vagrant~\cite{vagrant}, es decir, que con unos pocos comandos se puede instalar una máquina virtual que usa recetas Chef~\cite{chef} para instalar todas las aplicaciones necesarias para definir el ambiente de desarrollo las cuales están incluidas en este proyecto.\\
+
+Además por el lado de la puesta en producción del proyecto en un servidor externo, la alternativa más fácil y rápida es Heroku, cuyos pasos de instalación se encuentran en la guía de su sitio~\cite{heroku}. En caso de querer hacer un deploy en un servidor propio, se recomienda Ubuntu 12.04 con postgresql y hacer un deployment con capistrano como una aplicación rails estándar.
+
 % section distribucion_del_software_y_documentacion (end)

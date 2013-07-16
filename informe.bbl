@@ -16,6 +16,10 @@ Backbonejs home page.
 Cakephp home page.
 \newblock \url{http://cakephp.org/}, June 2013.
 
+\bibitem{chef}
+Chef, herramienta de automatización de instalación de programas.
+\newblock \url{http://www.opscode.com/chef/}, July 2013.
+
 \bibitem{html5}
 Curso html5, w3schools.
 \newblock \url{http://w3schools.com/html/html5_intro.asp}, June 2013.
@@ -36,6 +40,11 @@ Graph herramienta que construye, visualiza y modifica grafos.
 \bibitem{gruff}
 Gruff un browser basado en la base de datos allegrograph.
 \newblock \url{http://www.franz.com/agraph/gruff/}, June 2013.
+
+\bibitem{heroku}
+Guía de inicio en la utilización de heroku para el deployment de aplicaciones
+  en ruby on rails.
+\newblock \url{https://devcenter.heroku.com/articles/quickstart}, July 2013.
 
 \bibitem{littlesis}
 Littlesis, una base de datos libre de relaciones de 'quien conoce a quien' de
@@ -79,6 +88,10 @@ Sinatra home page.
 \bibitem{spring}
 Spring home page.
 \newblock \url{http://www.springsource.org/}, June 2013.
+
+\bibitem{vagrant}
+Vagrant, herramienta que gestiona la creación y uso de máquinas virtuales.
+\newblock \url{http://www.vagrantup.com/}, July 2013.
 
 \bibitem{validador_rdf}
 Validador de rdf/xml y rdf/n3.
