@@ -308,8 +308,7 @@ Cabe destacar que el contenido N3 de la red social puede no definir las posicion
 
 Una de las funcionalidades claves de esta aplicación, que es una mejora con respecto a la experiencia de Manuel Bahamonde~\cite{memoriamanuel} es la unión de redes sociales, esta consiste en que los datos generados de forma manual con la aplicación pueden ser complementados con datos generados por otros usuarios de la misma.\\
 
-% TODO: revisión de la interfaz de acceso a la unión de redes sociales
-Para unir redes sociales, utilizamos el botón \emph{Join Social Networks}, en donde aparece el formulario de unión de redes sociales~\ref{seleccion_union}, en donde inicialmente seleccionamos un archivo RDF/N3 para importar la red, luego seleccionamos a que red se va a unir esta red social importada como indica el formulario de la figura.\\
+Para unir redes sociales, se utiliza el botón de creación de redes sociales y se elige la opción de unir dos redes sociales, en donde aparece el formulario de unión de redes sociales~\ref{seleccion_union}, en donde inicialmente seleccionamos un archivo RDF/N3 para importar la red, luego seleccionamos a que red se va a unir esta red social importada como indica el formulario de la figura.\\
 
 \begin{figure}[H]
   \centering
@@ -329,10 +328,14 @@ Luego de presionar \emph{Next} en el formulario de unión, lo siguiente es defin
 
 Con respecto a las relaciones, cabe mencionar que si en una red social está la relación $A$ con familia $F_1$ y en la otra red social se encuentra la relación $B$ con familia $F_2$, al momento de determinar que $F_1 = F_2$, la relación $B$ es eliminada y todos sus roles pasan a la relación $A$ debido a que ambas relaciones se consideran equivalentes
 
-% TODO añadir referencia a figura 3
-Luego de completar las operaciones anteriores, las redes sociales estarán unidas dentro de la original, donde los nodos fueron reordenados. Lo siguiente es definir las equivalencias entre nodos, para esto se selecciona el modo de unión en el menú de edición~\ref{ssub:modos_de_edicion}, con esto, solo basta arrastrar un nodo sobre otro y confirmar el dialogo que aparece al soltar el nodo para unirlos. Al unir un par nodos se combinan las familias, los atributos y roles de estos, comportamiento el cual se decidió de esta forma debido a que un nodo puede no tener un nombre y su contexto (familias, atributos y nodos) expresan mucho mejor la entidad que representa el nodo y de esta forma visual es más sencillo encontrar la equivalencia entre estos.
+Luego de completar las operaciones anteriores, las redes sociales estarán unidas dentro de la original, donde los nodos fueron reordenados. Lo siguiente es definir las equivalencias entre nodos, para esto se selecciona el modo de unión en el menú de edición~\ref{ssub:modos_de_edicion}, con esto, solo basta arrastrar un nodo sobre otro y confirmar el dialogo que aparece al soltar el nodo para unirlos (figura~\ref{node_join}). Al unir un par nodos se combinan las familias, los atributos y roles de estos, comportamiento el cual se decidió de esta forma debido a que un nodo puede no tener un nombre y su contexto (familias, atributos y nodos) expresan mucho mejor la entidad que representa el nodo y de esta forma visual es más sencillo encontrar la equivalencia entre estos.
 
-% TODO: mostrar gráficamente el proceso de unión de nodos
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/node_join.png}
+  \caption[Operación de Unión de Nodos]{\emph{Operación de Unión de Nodos}. explicación de los 3 pasos para unir dos nodos entre sí (actores o relaciones): seleccionar el modo de unión de nodos, tomar un nodo y arrastrarlo al que se desea unir y confirmar la operación. Con estos pasos se unen los nodos.}
+  \label{node_join}
+\end{figure}
 
 % section union_de_redes_sociales (end)
 
