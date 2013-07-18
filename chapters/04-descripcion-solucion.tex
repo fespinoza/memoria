@@ -6,7 +6,7 @@ A continuación se describe la solución propuesta con motivo de este trabajo de
 \section{SNM, Social Network Model} % (fold)
 \label{sec:snm_social_network_model}
 
-Uno de los puntos principales de esta memoria, es poner en práctica el modelo realizado por el alumno de doctorado en el DCC, Mauro San Martín\cite{tesismauro}, quien investigó y propuso un modelo llamado \emph{Social Network Model} o SNM. Por lo tanto, la generación de redes sociales en esta aplicación tendrán en cuenta este modelo, trabajo que fue guiado por el mismo profesor guía de esta memoria, aprovechando la experiencia e investigación previa sobre el tema. Entonces, se procederá a definir y explicar brevemente en que consiste este modelo.
+Uno de los puntos principales de esta memoria, es poner en práctica el modelo realizado por el alumno de doctorado en el DCC, Mauro San Martín\cite{tesismauro}, quien investigó y propuso un modelo llamado \emph{Social Network Model} o SNM. Por lo tanto, la generación de redes sociales en esta aplicación tendrán en cuenta este modelo, trabajo que fue guiado por el mismo profesor guía de esta memoria, aprovechando la experiencia e investigación previa sobre el tema. Entonces, se procederá a definir y explicar brevemente en qué consiste este modelo.
 
 \subsection{Elementos de Redes Sociales} % (fold)
 \label{sub:elementos_de_redes_sociales}
@@ -69,7 +69,7 @@ De lo anterior se extrae información relevante sobre las características de la
 \subsection{Representación Gráfica} % (fold)
 \label{sub:representacian_grafica}
 
-En su tesis de doctorado\cite{tesismauro}, Mauro presenta un lenguaje gráfico para representar redes sociales con su modelo, el cual se adjunta a continuación por motivos de completitud del trabajo y para expresar como este modelo influye posteriormente el diseño de la interfaz del usuario.\\
+En su tesis de doctorado\cite{tesismauro}, Mauro presenta un lenguaje gráfico para representar redes sociales con su modelo, el cual se adjunta a continuación por motivos de completitud del trabajo y para expresar cómo este modelo influye posteriormente el diseño de la interfaz del usuario.\\
 
 \begin{figure}[H]
   \includegraphics[width=1.0\textwidth]{images/elementos_modelo_mauro.png}
@@ -90,7 +90,7 @@ Dados estos elementos gráficos podemos modelar una red de ejemplo como:
 \subsection{Representación Como Triples} % (fold)
 \label{sub:representacion_como_triples}
 
-El modelo SNM, al ser en una representación de grafo, es posible representarlo como triples y vice-versa (la demostración se encuentra en la memoria de Mauro\cite{tesismauro}). Lo cual es particularmente útil para usar este modelo dentro de un contexto de bases de datos relacionales, razón por la cual veremos una de estas transformaciones a continuación.
+El modelo SNM, al ser una representación de grafo, es posible representarlo como triples y vice-versa (la demostración se encuentra en la memoria de Mauro\cite{tesismauro}). Esto es particularmente útil para usar este modelo dentro de un contexto de bases de datos relacionales, razón por la cual veremos una de estas transformaciones a continuación.
 
 Es posible traducir una red social dada, representada como tres conjuntos de triples $(N, R, M)$, en donde $N$ es el conjunto de triples de \emph{Tipos}, $R$ el de \emph{Roles} y $M$ de \emph{Atributos}; en una red social generalizada $G$ con el siguiente algoritmo que produce un nodo o arco por cada triple:
 
@@ -135,18 +135,18 @@ Por ejemplo se muestra la siguiente tabla que representa este conjunto de triple
 
 La solución considera una aplicación para el manejo de grafos, que consta con un back-end que provee servicios para el almacenamiento y persistencia de las redes sociales junto con un front-end el cual despliega la lógica del editor mismo que los usuarios usan en el día a día.\\
 
-Este esquema permite la creación de diversos sistemas distintos que se alimenten de la data generada por la aplicación como programas completamente independientes. Por otro lado, debido a que el front-end de la aplicación usa un framework  client side como EmberJS, el código de este front-end se obtiene inicialmente desde el back-end, para luego correr en el dispositivo del cliente, donde existirá comunicación entre los componentes de la aplicación, vía peticiones HTTP de tipo JSON para la sincronización y almacenamiento de los datos, mencionando además que estas llamadas son todas de forma autenticada, por lo que el trabajo de diversos usuarios no colisiona entre sí. Para mostrar de mejor manera lo recién descrito, se agrega una figura de la arquitectura general de la aplicación y como sus usuarios interactúan con ella.
+Este esquema permite la creación de diversos sistemas distintos que se alimenten de la data generada por la aplicación como programas completamente independientes. Por otro lado, debido a que el front-end de la aplicación usa un framework  client side como EmberJS, el código de este front-end se obtiene inicialmente desde el back-end, para luego correr en el dispositivo del cliente, donde existirá comunicación entre los componentes de la aplicación, vía peticiones HTTP de tipo JSON para la sincronización y almacenamiento de los datos, mencionando además que estas llamadas son todas de forma autenticada, por lo que el trabajo de diversos usuarios no colisiona entre sí. Para mostrar de mejor manera lo recién descrito, se agrega una figura de la arquitectura general de la aplicación y como sus usuarios interactúan con ella (ver figura \ref{app_distribuida}).
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{images/app_distribuida.png}
-  \caption[Arquitectura General Aplicación-Usuarios]{\emph{Arquitectura General Aplicación-Usuarios}. en ella se puede observar que la aplicación del lado del cliente se comunica con un servidor central que almacena los datos, pero además diversos usuarios de la aplicación pueden comunicarse independientemente entre ellos por medio de archivos RDF/N3.}
+  \caption[Arquitectura General Aplicación-Usuarios]{\emph{Arquitectura General Aplicación-Usuarios}. Se puede observar que la aplicación del lado del cliente se comunica con un servidor central que almacena los datos, pero además diversos usuarios de la aplicación pueden comunicarse independientemente entre ellos por medio de archivos RDF/N3.}
   \label{app_distribuida}
 \end{figure}
 
 Los usuarios pueden interactuar entre sí intercambiando información generada entre ellos por medio de los archivos de exportación RDF/N3, esta forma de interacción de los usuarios de la aplicación es una aproximación inicial a este problema en particular, debido a las restricciones de tiempo del trabajo de memoria, junto con la gran cantidad de otros problemas y detalles que solucionar primero.\\
 
-Este esquema general, debido a la calidad de proyecto de código abierto, puede ser replicado por 3eros, en donde puedan instalar su propio servidor de la aplicación de manera de tener un ambiente de redes sociales privados, como puede ser el caso de una universidad en particular.\\
+Este esquema general, debido a la calidad de proyecto de código abierto, puede ser replicado por terceros, que puedan instalar su propio servidor de la aplicación de manera de tener un ambiente de redes sociales privados, como puede ser el caso de una universidad en particular.\\
 
 Según lo que se comentó anteriormente, esta arquitectura posee la potencialidad de integrar diversas otras aplicaciones que usen este tipo de datos de redes sociales, sin embargo, como la lectura en sí de los datos sólo se hace en el lado del cliente, en el servidor no se entrega ningún dato que no pertenezca a su propio cliente, de esta forma, no hay conflictos con la privacidad de la información, donde la aplicación entrega la funcionalidad al usuario y este se hace cargo del uso que hace de esta.\\
 
@@ -155,11 +155,11 @@ En una vista más en detalle de la aplicación, para explicar de mejor manera co
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{images/arquitectura_de_software.png}
-  \caption[Arquitectura de la Aplicación]{\emph{Arquitectura de la Aplicación}. en una vista de componentes, donde algunos de estos son entregados por las herramientas utilizadas.}
+  \caption[Arquitectura de la Aplicación]{\emph{Arquitectura de la Aplicación}. En una vista de componentes, donde algunos de estos son entregados por las herramientas utilizadas.}
   \label{arquitectura_de_software}
 \end{figure}
 
-Desde punto de vista del back-end, se definen los \emph{modelos} correspondientes a la aplicación (Node, Role, etc) los cuales se definen como clases, luego el \textbf{ORM} es el componente encargado de convertir ciertos métodos del modelo en código SQL que se envía a \textbf{PostgreSQL}, de esta forma, al trabajar con los modelos no es necesario escribir nada de SQL, haciendo la programación mucho más fácil. La interfaz que posee el back-end la conforman un conjunto de \emph{controladores}, quienes son los encargados de responder las peticiones HTTP que llegan al servidor, en donde interactúan con los modelos y como se trata de en su mayoría de API JSON, es necesario definir componentes que representan un modelo de la base de datos en formato JSON, esto lo hacen los \emph{serializadores}. Por su parte, hay un \emph{deserializador RDF} que hace el proceso inverso y crea modelos a partir del contenido de un archivo RDF, lo que se usa en la importación de redes sociales.\\
+Desde punto de vista del back-end, se definen los \emph{modelos} correspondientes a la aplicación (Node, Role, etc) los cuales se definen como clases, luego el \textbf{ORM} es el componente encargado de convertir ciertos métodos del modelo en código SQL que se envía a \textbf{PostgreSQL}. De esta forma, al trabajar con los modelos no es necesario escribir nada de SQL, haciendo la programación mucho más fácil. La interfaz que posee el back-end la conforman un conjunto de \emph{controladores}, quienes son los encargados de responder las peticiones HTTP que llegan al servidor, en donde interactúan con los modelos y como se trata de en su mayoría de API JSON, es necesario definir componentes que representan un modelo de la base de datos en formato JSON, esto lo hacen los \emph{serializadores}. Por su parte, hay un \emph{deserializador RDF} que hace el proceso inverso y crea modelos a partir del contenido de un archivo RDF, lo que se usa en la importación de redes sociales.\\
 
 Para el front-end, en donde se definen las interfaces gráficas con las que el usuario trabaja, además de definir la lógica correspondiente a la aplicación misma, esta se abstrae casi completamente del back-end siendo su único punto de conexión las API JSON en donde intercambian mensajes hacia ambos lados, donde en el caso del front-end esto lo maneja un componente de EmberJS llamado \emph{Store}.\\
 
@@ -168,7 +168,7 @@ Se observa en la figura~\ref{arquitectura_de_software} que existen modelos, en e
 \subsection{Entidades} % (fold)
 \label{sub:entidades}
 
-Para comprende de mejor manera la aplicación y los diferentes procesos, es necesario especificar qué entidades existen y qué rol cumplen dentro de la aplicación, estas están con sus nombres en inglés, idioma que se usó para escribir el código de la aplicación.\\
+Para comprender de mejor manera la aplicación y los diferentes procesos, es necesario especificar qué entidades existen y qué rol cumplen dentro de la aplicación. Estas están con sus nombres en inglés, idioma que se usó para escribir el código de la aplicación.\\
 
   \begin{itemize}
     \item \textbf{User}: representa a un usuario del sistema, este cuenta con la información necesaria para que un usuario de la aplicación pueda autentificarse dentro del sistema y de esa forma entregarle los permisos necesarios para realizar operaciones sobre sus redes sociales.

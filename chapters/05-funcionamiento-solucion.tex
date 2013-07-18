@@ -1,9 +1,9 @@
 \chapter{Funcionamiento de la Solución}
 \label{chap:funcionamiento_solucion}
 
-En este capítulo, se mostrarán las características principales de la aplicación desarrollada, a modo de referencia para usuarios, mostrando pantallazos de la interfaz, pero además discutiendo cómo decisiones de diseño de interfaces y experiencia de usuario.\\
+En este capítulo se mostrarán las características principales de la aplicación desarrollada y a modo de referencia para usuarios, mostrando pantallazos de la interfaz, discutiendo las decisiones de diseño de interfaces y experiencia de usuario.\\
 
-Cuando el usuario se conecta por primera vez a la aplicación encontrará la siguiente página de inicio donde este se registrará o autenticará, junto con un video de un demo visual sobre como funciona la aplicación.
+Cuando el usuario se conecta por primera vez a la aplicación encontrará la siguiente página de inicio donde este se registrará o autentificará, junto con un video de un demo visual sobre cómo funciona la aplicación.
 
 \begin{figure}[H]
   \centering
@@ -21,7 +21,7 @@ A continuación se procede a mostrar los principales procesos que se llevan a ca
 \section{Registro e Ingreso de Usuarios} % (fold)
 \label{sec:registro_e_ingreso_de_usuarios}
 
-Con el fin de mantener la privacidad de las redes sociales que sus usuarios crean, se necesita un sistema de autentificación de usuarios, el cual en este caso requiere una combinación de email y password, en donde al ingresar a la aplicación por primera vez, el usuario crea su cuenta, es autenticado y redirigido a la página principal donde se muestran sus redes sociales.
+Con el fin de mantener la privacidad de las redes sociales que sus usuarios crean, se necesita un sistema de autentificación de usuarios, el cual en este caso requiere una combinación de email y password. Al ingresar a la aplicación por primera vez, el usuario crea su cuenta, es autentificado y redirigido a la página principal donde se muestran sus redes sociales.
 
 % FIXME: check updates
 \begin{figure}[H]
@@ -31,7 +31,7 @@ Con el fin de mantener la privacidad de las redes sociales que sus usuarios crea
   \label{creacion_usuario}
 \end{figure}
 
-Cuando el usuario accede de nuevo a la aplicación, esta vez en lugar de registrar un usuario debe autenticarse de modo de acceder a su información vía este pequeño formulario.
+Cuando el usuario accede de nuevo a la aplicación, esta vez en lugar de registrar un usuario debe autentificarse de modo de acceder a su información vía este pequeño formulario.
 
 % FIXME: check updates
 \begin{figure}[H]
@@ -53,7 +53,7 @@ Dado que el usuario registró una cuenta en la aplicación, esta habilitado para
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.0\textwidth]{images/principal_social_networks.png}
-  \caption[Pantalla Principal de Redes Sociales]{\emph{Pantalla Principal de Redes Sociales}. Es la primera página luego de que el usuario se autentica, la cual le permite crear redes sociales para luego complementar su información.}
+  \caption[Pantalla Principal de Redes Sociales]{\emph{Pantalla Principal de Redes Sociales}. Es la primera página luego de que el usuario se autentifica, la cual le permite crear redes sociales para luego complementar su información.}
   \label{principal_social_network}
 \end{figure}
 
@@ -65,14 +65,14 @@ Dado que el usuario registró una cuenta en la aplicación, esta habilitado para
   \label{new_social_network}
 \end{figure}
 
-Esta información ingresada de la red social, sirve como detalles de la misma y puede ser editada en cualquier momento, sin embargo, lo más relevante de la creación de la red, es la adición de contenido a la estructura de esta, lo que se cubrirá en la siguiente sección.
+Esta información ingresada de la red social sirve como detalles de la misma y puede ser editada en cualquier momento, sin embargo, lo más relevante de la creación de la red, es la adición de contenido a la estructura de esta, lo que se cubrirá en la siguiente sección.
 
 % section creación_de_redes_sociales (end)
 
 \section{Edición de Redes Sociales} % (fold)
 \label{sec:edicion_de_redes_sociales}
 
-Una vez el usuario tiene su cuenta y creo una red social, este está listo para ir agregando los datos relevantes a sus redes sociales, haciendo click sobre el link con el nombre de la red social recién creada
+Una vez que el usuario tiene su cuenta y creó una red social, está listo para ir agregando los datos relevantes a sus redes sociales, haciendo click sobre el link con el nombre de la red social recién creada.
 
 \begin{figure}[H]
   \centering
@@ -103,17 +103,18 @@ Para la zona de edición se cuenta con 4 modos de edición, de acuerdo a los cua
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/modos_edicion.png}
-  \caption[Modos de Edición]{\emph{Modos de Edición}. botones para seleccionar el modo de edición, con números para explicar los diversos modos.}
+  \caption[Modos de Edición]{\emph{Modos de Edición}. Botones para seleccionar el modo de edición, con números para explicar los diversos modos.}
   \label{modos_edicion}
 \end{figure}
 
-Los 4 modos existentes son:
+Los modos existentes son:
 
   \begin{enumerate}
     \item \textbf{Herramienta de Movimiento}: esta herramienta me permite cambiar la posición de los nodos dentro del canvas a voluntad, además de al hacer click en estos seleccionarlos para la edición de sus detalles.
-    \item \textbf{Modo Actor}: en este modo, al hacer click en algún punto del canvas creará un nuevo actor dentro de esta en la posición donde se especificó haciendo click, el enfoque será puesto automáticamente en el formulario de detalles del nuevo actor para rellenar rápidamente sus campos necesarios y confirmar la creación del nuevo actor.
-    \item \textbf{Modo Relación}: en este modo, al hacer click en algún punto del canvas creará una nueva relación situada en esas coordenadas, el enfoque será puesto automáticamente en el formulario de edición de la relación, pero a diferencia de los actores, las relaciones son automáticamente guardadas al momento de ser creadas y cambian al \emph{modo Rol}.
+    \item \textbf{Modo Actor}: en este modo, al hacer click en algún punto del canvas creará un nuevo actor dentro de esta en la posición donde se especificó haciendo click. El enfoque será puesto automáticamente en el formulario de detalles del nuevo actor para rellenar rápidamente sus campos necesarios y confirmar la creación del nuevo actor.
+    \item \textbf{Modo Relación}: en este modo, al hacer click en algún punto del canvas creará una nueva relación situada en esas coordenadas. El enfoque será puesto automáticamente en el formulario de edición de la relación, pero a diferencia de los actores, las relaciones son automáticamente guardadas al momento de ser creadas y cambian al \emph{modo Rol}.
     \item \textbf{Modo Rol}: en este modo, al momento de hacer click en un actor (manteniendo el botón presionado), puedo arrastrar una flecha y situarla sobre una relación, donde al soltar el botón del mouse, creará automáticamente un nuevo rol del actor seleccionado en la relación seleccionada, para después editar sus detalles en el formulario de roles correspondiente. Además, puedo repetir esta acción cuantas veces sea necesario.
+    \item \textbf{Modo Unión de Nodos}: en este modo, al arrastrar un nodo (actor o relación) sobre otro del mismo tipo provocará la aparición de un cuadro de confirmación de la unión entre nodos, que de ser confirmada hará que se unan todas las propiedades de estos en uno solo, en caso contrario el nodo arrastrado retornará a su posición original.
   \end{enumerate}
 
 % subsubsection modos_de_edición (end)
@@ -123,7 +124,7 @@ Los 4 modos existentes son:
 \subsection{Creación y Edición de Familias} % (fold)
 \label{sub:creacion_y_edicion_de_familias}
 
-Para poder agrupar los nodos (actores y relaciones) dentro de familias, hay un área reservada para la creación propia de estas familias dentro de la red, en donde a continacíon se explican las principales operaciones con familias dentro de una red social.\\
+Para poder agrupar los nodos (actores y relaciones) dentro de familias, hay un área reservada para la creación propia de estas familias dentro de la red, en donde a continación se explican las principales operaciones con familias dentro de una red social.\\
 
 \begin{figure}[H]
   \centering
@@ -138,18 +139,18 @@ Para crear una familia se presiona el botón \emph{New} en la sección de famili
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{images/edicion_familias.png}
-  \caption[Formulario de Edición de Familias]{\emph{Formulario de Edición de Familias}. formulario por el cual se define el nombre, color y tipo de familia.}
+  \caption[Formulario de Edición de Familias]{\emph{Formulario de Edición de Familias}. Formulario por el cual se define el nombre, color y tipo de familia.}
   \label{edicion_familias}
 \end{figure}
 
-Acá se rellena el nombre y se selecciona el color para mostrar los nodos de esta familia y el tipo de nodos a los cuáles se les asignará esta familia.\\
+Acá se rellena el nombre y se selecciona el color para mostrar los nodos de esta familia y el tipo de nodos a los cuales se les asignará esta familia.\\
 
 Una vez creada, se muestra la familia en el listado con un ícono de \emph{A} para el caso de familias de actores y de \emph{R} en el caso de familias de relaciones. Donde puedo editar sus detalles o eliminarlas con los botones que se encuentran a su lado.
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/familia_creada.png}
-  \caption[Detalle Familia Creada]{\emph{Detalle Familia Creada}. un ejemplo de una familia creada, con su ícono que indica si corresponde a familia de Actores o Relaciones, además de sus botones de edición y eliminación.}
+  \caption[Detalle Familia Creada]{\emph{Detalle Familia Creada}. Un ejemplo de una familia creada, con su ícono que indica si corresponde a familia de Actores o Relaciones, además de sus botones de edición y eliminación.}
   \label{familia_creada}
 \end{figure}
 
@@ -170,7 +171,7 @@ Para crear actores, se debe definir el modo de edición a \emph{modo Actor}~\ref
   \label{creacion_actor}
 \end{figure}
 
-En este formulario se puede rellenar el nombre (opcionalmente), seleccionar las familias a las que pertenece el actor para finalmente confirmar la creación, luego de esto, la información visual del actor es actualizada, mostrando al actor del color de la(s) familia(s) a la cual pertenece, además de un borde indicando de que es dicho actor el que está seleccionado en este momento.\\
+En este formulario se puede rellenar el nombre (opcionalmente), seleccionar las familias a las que pertenece el actor para finalmente confirmar la creación. Luego de esto, la información visual del actor es actualizada, mostrando al actor del color de la(s) familia(s) a la cual pertenece, además de un borde indicando de que es dicho actor el que está seleccionado en este momento.\\
 
 \begin{figure}[H]
   \centering
@@ -179,7 +180,7 @@ En este formulario se puede rellenar el nombre (opcionalmente), seleccionar las 
   \label{ejemplo_actor_2_familias}
 \end{figure}
 
-El actor puede ser editado en cualquier momento vía el formulario de actor, luego se presiona el botón de actualizar para persistir los cambios, o puede ser eliminado con el botón de borrar, después de confirmar en el cuadro de dialogo 
+El actor puede ser editado en cualquier momento vía el formulario de actor, luego se presiona el botón de actualizar para persistir los cambios, o puede ser eliminado con el botón de borrar, después de confirmar en el cuadro de diálogo 
 que aparece.
 
 \begin{figure}[H]
@@ -200,7 +201,7 @@ Para crear una relación, se debe seleccionar el \emph{modo Relación}~\ref{ssub
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/creacion_relacion.png}
-  \caption{Formulario de Creación de Relación}
+  \caption{Formulario de Creación de Relación.}
   \label{creacion_relacion}
 \end{figure}
 
@@ -219,24 +220,24 @@ Una vez teniendo actores y relaciones creados dentro de la red social, es posibl
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/insercion_atributos.png}
-  \caption[Añadiendo Atributos a un Actor]{\emph{Añadiendo Atributos a un Actor}. se presiona el botón Add y luego se puede agregar el nuevo atributo como un par Key Value.}
+  \caption[Añadiendo Atributos a un Actor]{\emph{Añadiendo Atributos a un Actor}. Se presiona el botón Add y luego se puede agregar el nuevo atributo como un par Key Value.}
   \label{insercion_atributos}
 \end{figure}
 
-Para editar atributos, se pueden editar directamente en sus campos y luego presionar el botón \emph{Update} para que los cambios sean persistidos, o borrar un atributo presionando el ícono junto a la definición del mismo.
+Para editar atributos, se pueden editar directamente en sus campos y luego presionar el botón \emph{Update} para que los cambios sean persistentes, o borrar un atributo presionando el ícono junto a la definición del mismo.
 
 % subsection creación_y_edición_de_atributos_en_nodos (end)
 
 \subsection{Creación y Edición de Roles} % (fold)
 \label{sub:creacion_y_edicion_de_roles}
 
-Los roles representan la participación de un actor en una relación, dicha participación o rol, puede tener un nombre o no, un ejemplo del último caso: en una relación de amistad entre 2 personas, puede haber un tercer actor que fue quien los introdujo, pero nuevamente, el nombre de un rol es opcional. Para crear un rol, se debe seleccionar el modo de edición de roles~\ref{ssub:modos_de_edicion}, luego con el mouse, pincho un actor y arrastro el mouse hacia una relación, al soltar el mouse el rol va a ser creado inmediatamente y el foco va a ser puesto dentro del formulario de edición del rol.
+Los roles representan la participación de un actor en una relación, dicha participación o rol, puede tener un nombre o no. Un ejemplo del último caso: en una relación de amistad entre dos personas, puede haber un tercer actor que fue quien los presentó, pero nuevamente, el nombre de un rol es opcional. Para crear un rol, se debe seleccionar el modo de edición de roles~\ref{ssub:modos_de_edicion}, luego con el mouse, pincho un actor y arrastro el mouse hacia una relación, al soltar el mouse el rol va a ser creado inmediatamente y el foco va a ser puesto dentro del formulario de edición del rol.
 
 % FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/edicion_rol.png}
-  \caption[Formulario de Edición de Rol]{\emph{Formulario de Edición de Rol}. en caso de ser necesario, se puede agregar un nombre al rol o eliminarlo desde aquí.}
+  \caption[Formulario de Edición de Rol]{\emph{Formulario de Edición de Rol}. En caso de ser necesario, se puede agregar un nombre al rol o eliminarlo desde aquí.}
   \label{edicion_rol}
 \end{figure}
 
@@ -276,13 +277,13 @@ Exportando la estructura únicamente de esta red social, que contiene 2 actores 
 \lstinputlisting[caption=Exportación RDF red social figura~\ref{mini_red_ejemplo}, style=rdf]{extra/exportacion.n3}
 \label{lst:red_n3}
 
-Esta representación RDF/N3 está validada~\cite{validador_rdf}. Es importante mencionar que dentro de dicha representación RDF se define una ontología propia de la aplicación, que cuenta con las definiciones comunes de la aplicación, como por ejemplo Actores, Relaciones y Roles, pero además cuenta con las definiciones de elementos propios de la red como Atributos definidos en esta. El vocabulario correspondiente de la red sería el siguiente:.
+Esta representación RDF/N3 está validada~\cite{validador_rdf}. Es importante mencionar que para dicha representación RDF se define una ontología propia de la aplicación, que cuenta con las definiciones comunes de la aplicación, como por ejemplo Actores, Relaciones y Roles, pero además cuenta con las definiciones de elementos propios de la red como Atributos definidos en esta. El vocabulario correspondiente de la red sería el siguiente:.
 
 % FIXME: check updates
 \lstinputlisting[caption=Vocabulario red social figura~\ref{mini_red_ejemplo}, style=rdf]{extra/vocabulary.n3}
 \label{lst:vocabulario_n3}
 
-Además, de ser necesario, como se menciona antes se puede exportar agregando la información gráfica de la red social, en donde se incluyen las posiciones de los nodos en el canvas, los colores de las familias definidas, etc.
+Además en caso de ser necesario, como se menciona antes, se puede exportar agregando la información gráfica de la red social, en donde se incluyen las posiciones de los nodos en el canvas, los colores de las familias definidas, etc.
 
 % section exportacion_en_rdf (end)
 
@@ -295,25 +296,25 @@ Junto con la exportación en formato RDF que usa la aplicación, esta tiene la f
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.0\textwidth]{images/import_sn.png}
-  \caption[Importación de una Red Social]{\emph{Importación de una Red Social}. para archivos RDF/N3 exportados previamente con la aplicación.}
+  \caption[Importación de una Red Social]{\emph{Importación de una Red Social}. Para archivos RDF/N3 exportados previamente con la aplicación.}
   \label{import_sn}
 \end{figure}
 
-Cabe destacar que el contenido N3 de la red social puede no definir las posiciones de los nodos, en caso de un archivo que fue exportado sólo con la estructura de la red, no la información visual y por lo tanto la aplicación asigna las posiciones en base al algoritmo de layout de grafos de Fruchterman-Reingold, con lo cual crea los nodos, las familias, roles e interacciones entre ellos según lo especifica el archivo usado.
+Cabe destacar que el contenido N3 de la red social puede no definir las posiciones de los nodos, en caso de un archivo que fue exportado sólo con la estructura de la red, no la información visual y por lo tanto la aplicación asigna las posiciones en base al algoritmo de layout de grafos de Fruchterman-Reingold~\cite{sna}, con lo cual crea los nodos, las familias, roles e interacciones entre ellos según lo especifica el archivo usado.
 
 % section importación_en_rdf (end)
 
 \section{Unión de Redes Sociales} % (fold)
 \label{sec:union_de_redes_sociales}
 
-Una de las funcionalidades claves de esta aplicación, que es una mejora con respecto a la experiencia de Manuel Bahamonde~\cite{memoriamanuel} es la unión de redes sociales, esta consiste en que los datos generados de forma manual con la aplicación pueden ser complementados con datos generados por otros usuarios de la misma.\\
+Una de las funcionalidades claves de esta aplicación, que es una mejora con respecto a la experiencia de Manuel Bahamonde~\cite{memoriamanuel}, es la unión de redes sociales, esta consiste en que los datos generados de forma manual con la aplicación pueden ser complementados con datos generados por otros usuarios de la misma.\\
 
 Para unir redes sociales, se utiliza el botón de creación de redes sociales y se elige la opción de unir dos redes sociales, en donde aparece el formulario de unión de redes sociales~\ref{seleccion_union}, en donde inicialmente seleccionamos un archivo RDF/N3 para importar la red, luego seleccionamos a que red se va a unir esta red social importada como indica el formulario de la figura.\\
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.6\textwidth]{images/seleccion_union.png}
-  \caption[Selección de Redes a Unir]{\emph{Selección de Redes a Unir}. se selecciona una red social que el usuario posee y se importa una red social externa con la que se va a unir.}
+  \caption[Selección de Redes a Unir]{\emph{Selección de Redes a Unir}. Se selecciona una red social que el usuario posee y se importa una red social externa con la que se va a unir.}
   \label{seleccion_union}
 \end{figure}
 
@@ -322,7 +323,7 @@ Luego de presionar \emph{Next} en el formulario de unión, lo siguiente es defin
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{images/equivalencia_familias.png}
-  \caption[Selección de Equivalencias entre Familias]{\emph{Selección de Equivalencias entre Familias}. en esta pantalla se seleccionan que familias de la red importada para unir, son equivalentes a las familias de la red social original, en múltiples equivalencias a la misma familia original son permitidas.}
+  \caption[Selección de Equivalencias entre Familias]{\emph{Selección de Equivalencias entre Familias}. En esta pantalla se seleccionan que familias de la red importada para unir, son equivalentes a las familias de la red social original, en múltiples equivalencias a la misma familia original son permitidas.}
   \label{equivalencia_familias}
 \end{figure}
 
@@ -333,7 +334,7 @@ Luego de completar las operaciones anteriores, las redes sociales estarán unida
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{images/node_join.png}
-  \caption[Operación de Unión de Nodos]{\emph{Operación de Unión de Nodos}. explicación de los 3 pasos para unir dos nodos entre sí (actores o relaciones): seleccionar el modo de unión de nodos, tomar un nodo y arrastrarlo al que se desea unir y confirmar la operación. Con estos pasos se unen los nodos.}
+  \caption[Operación de Unión de Nodos]{\emph{Operación de Unión de Nodos}. Explicación de los 3 pasos para unir dos nodos entre sí (actores o relaciones): seleccionar el modo de unión de nodos, tomar un nodo y arrastrarlo al que se desea unir y confirmar la operación. Con estos pasos se unen los nodos.}
   \label{node_join}
 \end{figure}
 
