@@ -69,8 +69,9 @@
 <h3 class="done updated">5.6 unión de redes sociales [screenshot]</h3>
 <h3>5.7 Ejemplos de Uso</h3>
 
-<h2 class="">6. Conclusiones</h2>
-<h3 class="">6.1. Evaluación de la Solución</h3>
+<h2 class="done">6. Conclusiones</h2>
+<h3 class="done updated">6.1. Evaluación de la Solución</h3>
+<h4 class="done">6.1.1. Cumplimiento de Objetivos</h4>
 <h3 class="done">6.2. Dificultades encontradas</h3>
 <h3 class="done">6.3. Trabajo Futuro</h3>
 <h3 class="done">6.4. Distribución del Software y Documentación</h3>

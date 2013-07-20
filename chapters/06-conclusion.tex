@@ -15,6 +15,32 @@ Se lograron visualizaciones limpias de los datos, que pueden ser manipuladas en 
 
 Se representaron algunas redes sociales con la aplicación a modo de ejemplificar su utilidad, se documentó toda la experiencia en este informe que se entrega junto con el software, que posee código abierto, con las posibilidades de seguir explotando y expandiendo esta herramienta a futuro.
 
+\subsection{Cumplimiento de Objetivos} % (fold)
+\label{sub:cumplimiento_de_objetivos}
+
+Lo expuesto anteriormente deja en evidencia como fue cumplido el objetivo general~\ref{sub:objetivo_general}, considerando los detalles que fueron observados en el resto del informe. A continuación se analizará el cumplimiento de los objetivos específicos enumerados en la sección~\ref{sub:objetivos_especificos}.
+
+\begin{enumerate}
+  \item \emph{Implementar un modelo de representación de redes sociales en RDF}. La aplicación creada posee la capacidad de exportar los datos de la red social en RDF/N3, definiendo un vocabulario simple con el cual se expresa esta información, detalles definidos en la sección~\ref{sec:exportacion_en_rdf}.
+  
+  \item \emph{Hacer una interfaz amigable de ingreso de datos: actores y relaciones}. La interfaz creada funciona para este ingreso de datos, que fue adaptada iterativamente para cumplir con mayor eficiencia los objetivos de ingreso de información de manera fácil para sus usuarios.
+  
+  \item \emph{Desarrollar un sistema centralizado que administre la asignación de identificadores únicos a los actores que los usuarios agregan a sus redes sociales}. Esto fue manejado de manera directa por el motor de base de datos utilizado, ya que este genera id's únicos para cada entidad, que al funcionar con el servidor central, asegura que las entidades creadas por distintos usuarios posean identificadores únicos.
+  
+  \item \emph{Unir redes sociales, combinando la información y relaciones de actores en común}. Este objetivo fue cumplido de acuerdo a lo descrito en la sección~\ref{sec:union_de_redes_sociales}.
+  
+  \item \emph{Visualización}
+    \begin{enumerate}
+      \item \emph{De la estructura general de las redes sociales creadas}. Las redes sociales poseen una representación en SVG la cual se puede manipular para la edición de estas.
+      \item \emph{Específica de elementos de interés en esas redes sociales}. Este objetivo contemplaba la extracción o énfasis en subgrafos dentro del grafo principal de la red social, objetivo que no fue cumplido en este trabajo, mencionado dentro del trabajo futuro con la integración de un endpoint sparql.
+    \end{enumerate}
+    
+  \item \emph{Representar algunas redes con el modelo implementado anteriormente, que varíen en tamaño y en complejidad}. En la sección~\ref{sec:ejemplos_de_uso} se expusieron dos casos de redes sociales modelados por medio de esta aplicación.
+  
+\end{enumerate}
+
+% subsection cumplimiento_de_objetivos (end)
+
 % section evaluación_de_la_solución (end)
 
 \section{Dificultades Técnicas} % (fold)
