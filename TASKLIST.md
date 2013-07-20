@@ -1,6 +1,6 @@
 <h1>Estructura de mi Informe de Memoria</h1>
 
-<h2 class="done">Resumen Ejecutivo</h2>
+<h2 class="done updated">Resumen Ejecutivo</h2>
 
 <h2 class="done">Dedicatoria</h2>
 
