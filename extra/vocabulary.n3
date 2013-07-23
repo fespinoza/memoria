@@ -1,8 +1,8 @@
-@prefix   sn: <http://sn.dcc.uchile.cl/social_networks/8/vocabulary#> .
+@prefix   sn: <http://social-graph-editor.heroku.com/2013/v1/vocabulary#> .
 @prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-# Classes
+# Clases
 sn:socialNetwork a rdfs:Class .
 sn:family a rdfs:Class .
 sn:node a rdfs:Class .
@@ -11,6 +11,7 @@ sn:actor a rdfs:Class ;
   rdfs:subClassOf sn:node .
 sn:relation a rdfs:Class ;
   rdfs:subClassOf sn:node .
+sn:attribute a rdf:Class ;
 
 # Properties
 sn:name a rdf:Property ;
@@ -19,6 +20,10 @@ sn:name a rdf:Property ;
 sn:belongsToFamily a rdf:Property;
   rdfs:domain sn:node;
   rdfs:range sn:family .
+
+sn:hasAttribute a rdfs:Property ;
+  rdfs:domain sn:node ;
+  rdfs:range sn:attribute .
 
 sn:participatesAs a rdf:Property ;
   rdfs:domain sn:actor ;
@@ -41,6 +46,10 @@ sn:color a rdfs:Property ;
   rdfs:domain sn:family ;
   rdfs:range rdfs:Literal .
 
-sn:attributeEdad a rdfs:Property ;
-  rdfs:domain sn:node ;
+sn:key a rdfs:Property ;
+  rdfs:domain sn:attribute ;
+  rdfs:range rdfs:Literal .
+  
+sn:value a rdfs:Property ;
+  rdfs:domain sn:attribute ;
   rdfs:range rdfs:Literal .
