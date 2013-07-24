@@ -14,16 +14,11 @@ Cuando el usuario se conecta por primera vez a la aplicación encontrará la sig
 
 A continuación se procede a mostrar los principales procesos que se llevan a cabo con la aplicación con sus respectivas interfaces de usuario vistas en detalle.
 
-% 1. qué feature estoy describiendo?
-% 2. como funciona? (en términos de uso de la aplicación)
-% 3. qué requisito cumple este feature? (hablando de ventajas de este enfoqu)
-
 \section{Registro e Ingreso de Usuarios} % (fold)
 \label{sec:registro_e_ingreso_de_usuarios}
 
 Con el fin de mantener la privacidad de las redes sociales que sus usuarios crean, se necesita un sistema de autentificación de usuarios, el cual en este caso requiere una combinación de email y password. Al ingresar a la aplicación por primera vez, el usuario crea su cuenta, es autentificado y redirigido a la página principal donde se muestran sus redes sociales.
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.6\textwidth]{images/creacion_usuario.png}
@@ -33,7 +28,6 @@ Con el fin de mantener la privacidad de las redes sociales que sus usuarios crea
 
 Cuando el usuario accede de nuevo a la aplicación, esta vez en lugar de registrar un usuario debe autentificarse de modo de acceder a su información vía este pequeño formulario.
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{images/login.png}
@@ -47,9 +41,8 @@ Cuando el usuario accede de nuevo a la aplicación, esta vez en lugar de registr
 \section{Creación de Redes Sociales} % (fold)
 \label{sec:creacion_de_redes_sociales}
 
-Dado que el usuario registró una cuenta en la aplicación, esta habilitado para crear una red social, inicialmente en la pantalla principal de redes sociales, presiona el botón \emph{Add Social Network} con el cual aparece el formulario de creación que es para darle un nombre y una descripción a la red social como detalles de esta.
+Dado que el usuario registró una cuenta en la aplicación, esta habilitado para crear una red social, inicialmente en la pantalla principal de redes sociales, presiona el botón \emph{Create Social Network} con el cual aparece el formulario de creación que es para darle un nombre y una descripción a la red social como detalles de esta.
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.0\textwidth]{images/principal_social_networks.png}
@@ -57,7 +50,6 @@ Dado que el usuario registró una cuenta en la aplicación, esta habilitado para
   \label{principal_social_network}
 \end{figure}
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.0\textwidth]{images/new_social_network.png}
@@ -97,9 +89,8 @@ Esta interfaz está pensada para tener la menor cantidad de elementos posibles, 
 \subsubsection{Modos de Edición} % (fold)
 \label{ssub:modos_de_edicion}
 
-Para la zona de edición se cuenta con 4 modos de edición, de acuerdo a los cuales puedo realizar acciones diversas cuando hago click dentro de la zona del canvas.
+Para la zona de edición se cuenta con 5 modos de edición, de acuerdo a los cuales puedo realizar acciones diversas cuando hago click dentro de la zona del canvas.
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.6\textwidth]{images/modos_edicion.png}
@@ -135,7 +126,6 @@ Para poder agrupar los nodos (actores y relaciones) dentro de familias, hay un �
 
 Para crear una familia se presiona el botón \emph{New} en la sección de familias, con lo que aparece un formulario con el siguiente:
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{images/edicion_familias.png}
@@ -163,7 +153,6 @@ Es importante destacar, que se puede presionar cualquier tipo de familia, en don
 
 Para crear actores, se debe definir el modo de edición a \emph{modo Actor}~\ref{ssub:modos_de_edicion}, y hacer click en el canvas donde aparecerá un actor en dicho punto y se enfocará automáticamente el formulario de creación del actor.\\
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/creacion_actor.png}
@@ -197,7 +186,6 @@ que aparece.
 
 Para crear una relación, se debe seleccionar el \emph{modo Relación}~\ref{ssub:modos_de_edicion}, posteriormente hacer click dentro del canvas en donde aparecerá la nueva relación y se mostrará el formulario de edición de la relación. A diferencia de los actores, las relaciones son creadas automáticamente, lo cual cambiará al modo de edición de roles, para agregar los roles correspondientes a la relación sin perder el contexto.
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/creacion_relacion.png}
@@ -216,7 +204,6 @@ La relación puede ser editada en cualquier momento vía el formulario y presion
 
 Una vez teniendo actores y relaciones creados dentro de la red social, es posible agregarles todos los atributos que se estimen conveniente por medio del formulario de edición de actores o relaciones, para esto, en la subsección de atributos en dicho formulario se puede agregar uno presionando el botón \emph{Add}, en donde puedo ingresar un atributo como un par key-value, por ejemplo puedo agregar el atributo \emph{Edad} (key) con el valor \emph{24} a un actor.
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/insercion_atributos.png}
@@ -233,7 +220,6 @@ Para editar atributos, se pueden editar directamente en sus campos y luego presi
 
 Los roles representan la participación de un actor en una relación, dicha participación o rol, puede tener un nombre o no. Un ejemplo del último caso: en una relación de amistad entre dos personas, puede haber un tercer actor que fue quien los presentó, pero nuevamente, el nombre de un rol es opcional. Para crear un rol, se debe seleccionar el modo de edición de roles~\ref{ssub:modos_de_edicion}, luego con el mouse, pincho un actor y arrastro el mouse hacia una relación, al soltar el mouse el rol va a ser creado inmediatamente y el foco va a ser puesto dentro del formulario de edición del rol.
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{images/edicion_rol.png}
@@ -252,7 +238,6 @@ En este formulario puedo actualizar el nombre del rol o de ser necesario elimina
 
 Como primer paso en la integración de la aplicación con la web semántica, esta permite una exportación de las redes sociales modeladas en formato RDF/N3. Con este fin, se usa la estructura de triples descrita en el modelo de Mauro en la subsección~\ref{sub:representacion_como_triples}. Entonces, para exportar la información de la red social en este formato puede hacerse vía el botón \emph{Export in RDF/N3} en el menú de edición de redes sociales.\\
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.4\textwidth]{images/export_button.png}
@@ -262,7 +247,6 @@ Como primer paso en la integración de la aplicación con la web semántica, est
 
 Por ejemplo, podemos tener el caso de una red social como la de la figura~\ref{mini_red_ejemplo}:
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{images/mini_red_ejemplo.png}
@@ -273,13 +257,11 @@ Por ejemplo, podemos tener el caso de una red social como la de la figura~\ref{m
 
 Exportando la estructura únicamente de esta red social, que contiene 2 actores y una relación, se obtendría el siguiente resultado\\
 
-% FIXME: check updates
 \lstinputlisting[caption=Exportación RDF red social figura~\ref{mini_red_ejemplo}, style=rdf]{extra/exportacion.n3}
 \label{lst:red_n3}
 
-Esta representación RDF/N3 está validada~\cite{validador_rdf}. Es importante mencionar que para dicha representación RDF se define una ontología propia de la aplicación, que cuenta con las definiciones comunes de la aplicación, como por ejemplo Actores, Relaciones y Roles, pero además cuenta con las definiciones de elementos propios de la red como Atributos definidos en esta. El vocabulario correspondiente de la red sería el siguiente:.
+Esta representación RDF/N3 está validada~\cite{validador_rdf}. Es importante mencionar que para dicha representación RDF se define una ontología propia de la aplicación, que cuenta con las definiciones comunes de la aplicación, como por ejemplo Actores, Relaciones y Roles, Atributos, etc. El vocabulario correspondiente de la red sería el siguiente:.
 
-% FIXME: check updates
 \lstinputlisting[caption=Vocabulario red social figura~\ref{mini_red_ejemplo}, style=rdf]{extra/vocabulary.n3}
 \label{lst:vocabulario_n3}
 
@@ -292,7 +274,6 @@ Además en caso de ser necesario, como se menciona antes, se puede exportar agre
 
 Junto con la exportación en formato RDF que usa la aplicación, esta tiene la funcionalidad de importar a partir de un archivo RDF de la red social como el definido en el ejemplo de código~\ref{lst:red_n3}, para crear una red social a partir de lo importado.
 
-% FIXME: check updates
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.0\textwidth]{images/import_sn.png}
