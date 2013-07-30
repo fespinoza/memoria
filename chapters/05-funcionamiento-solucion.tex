@@ -326,8 +326,8 @@ Luego de completar las operaciones anteriores, las redes sociales estarán unida
 
 Se muestra el funcionamiento de esta solución con algunos casos de prueba de la misma. Estos casos de prueba son ejemplos concretos de lo que se puede lograr con la aplicación, utilizando información real.
 
-\subsubsection{Grupos de Trabajo del DCC, año 2009} % (fold)
-\label{ssub:grupos_de_trabajo_del_dcc_2009}
+\subsection{Grupos de Trabajo del DCC, año 2009} % (fold)
+\label{sub:grupos_de_trabajo_del_dcc_2009}
 
 En primer lugar se modeló con la herramienta una red social ejemplo que fue hecho por Manuel Bahamonde en su memoria~\cite{memoriamanuel} como una forma de comparar los resultados visuales y la experiencia básica al crear redes sociales con la aplicación.\\
 
@@ -340,7 +340,51 @@ La información fue extraída en su momento desde el sitio web del departamento 
   \label{grupos_de_trabajo_dcc}
 \end{figure}
 
-% subsubsection grupos_de_trabajo_del_dcc_año_2009 (end)
+% subsection grupos_de_trabajo_del_dcc_año_2009 (end)
+
+\subsection{Rectores, Directores y Universidades} % (fold)
+\label{sub:rectores_directores_y_universidades}
+
+Una de las motivaciones claves de esta memoria era proveer una herramienta de modelamiento flexible para redes sociales. Esta herramienta muestra un uso especialmente útil con la utilización de data poco estructurada o no procesable por computador como texto plano con la información de una red.\\
+
+Para este caso de ejemplo se modela la información de las universidades proveniente del libro \emph{La Privatización de las Universidades} de María Olivia Mönckeberg~\cite{privatizacion_universidades}. A partir de esto, se presentan redes sociales de las universidades públicas, las universidades particulares y las privadas como tres redes independientes que luego son unidas para recopilar la información que fue traspasada por varios investigadores como caso de ejemplo.\\
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/universidades_publicas.png}
+  \caption[Red Social de Universidades Públicas]{\emph{Red Social de Universidades Públicas}. Compuesta principalmente por rectores y directores de las diversas universidades públicas y sus respectivas subcategorías.}
+  \label{universidades_publicas}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/universidades_particulares.png}
+  \caption[Red Social de Universidades Particulares]{\emph{Red Social de Universidades Particulares}. Algunos ejemplos de universidades particulares.}
+  \label{universidades_particulares}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/universidades_privadas.png}
+  \caption[Red Social de Universidades Privadas]{\emph{Red Social de Universidades Privadas}. Red Social de universidades privadas con sus dueños, rectores, etc.}
+  \label{universidades_privadas}
+\end{figure}
+
+Esta primera aproximación de las redes sociales de universidades muestra la poca relación entre los integrantes de diversas universidades, sin embargo estos datos fueron extraídos del libro únicamente, por lo tanto el investigador puede contar con más fuentes de información que puedan indicar más relaciones entre estos y con este modelo inicial sería más visual la forma de como estas relaciones se comportan en la red.\\
+
+Por otro lado, por la calidad visual de estas redes, se puede apreciar la aparición de apellidos vinculados con el mundo de la política dentro de las universidades privadas, lo cual es un excelente punto de partida con el fin de investigar con mayor detalle posibles conflictos de interés en materia educacional.\\
+
+Finalmente, como el caso de prueba asume que investigadores distintos fueron los que crearon las redes anteriormente mostradas, cualquiera de ellos puede unir estas redes para hacer un estudio más global de la información referente a universidades. Con la herramienta esta unión tiene como resultado la siguiente red.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/universidades.png}
+  \caption[Red Social Universidades]{\emph{Red Social Universidades}. Unión de las redes sociales de las figuras~\ref{universidades_publicas}, \ref{universidades_particulares}, \ref{universidades_privadas}.}
+  \label{universidades}
+\end{figure}
+
+
+% subsection rectores_directores_y_universidades (end)
 
 % El software que se implemento ́ esta disen ̃ado para ser utilizado por investigadores que recopilan sus datos desde varias fuentes. Se asume que estas fuentes dif ́ıcilmente cuentan con toda la informacio ́n, o estas se encuentra en un formato donde no se puede automatizar el proceso de transcribir la informacio ́n desde la fuente original hasta una red social.
 

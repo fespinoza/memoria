@@ -1,0 +1,967 @@
+@base <http://sn.dcc.uchile.cl/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sn: <http://sn2.dcc.uchile.cl/2013/v1/vocabulary#> .
+
+</social_networks/81> a sn:socialNetwork;
+   dc:description "";
+   sn:name "Universidades Públicas" .
+
+</social_networks/81/nodes/897> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/386>;
+   sn:hasAttribute </social_networks/81/attributes/207>;
+   sn:kind "Actor";
+   sn:name "Universidad de Antofagasta";
+   sn:participatesAs </social_networks/81/roles/702>,
+     </social_networks/81/roles/704>,
+     </social_networks/81/roles/706>,
+     </social_networks/81/roles/708>,
+     </social_networks/81/roles/710>;
+   sn:positionX 502;
+   sn:positionY 93 .
+
+</social_networks/81/nodes/898> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/382>;
+   sn:kind "Actor";
+   sn:name "Pedro Córdova Mena";
+   sn:participatesAs </social_networks/81/roles/709>;
+   sn:positionX 334;
+   sn:positionY 51 .
+
+</social_networks/81/nodes/899> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Alejandro Noemí Callejas";
+   sn:participatesAs </social_networks/81/roles/701>;
+   sn:positionX 353;
+   sn:positionY 195 .
+
+</social_networks/81/nodes/900> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Sergio Murin Urzúa";
+   sn:participatesAs </social_networks/81/roles/703>;
+   sn:positionX 488;
+   sn:positionY 233 .
+
+</social_networks/81/nodes/901> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Edmundo Ziede Díaz";
+   sn:participatesAs </social_networks/81/roles/705>;
+   sn:positionX 612;
+   sn:positionY 175 .
+
+</social_networks/81/nodes/902> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Eduardo Morales Echeverría";
+   sn:participatesAs </social_networks/81/roles/707>;
+   sn:positionX 665;
+   sn:positionY 78 .
+
+</social_networks/81/nodes/908> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/386>;
+   sn:hasAttribute </social_networks/81/attributes/205>;
+   sn:kind "Actor";
+   sn:name "Universidad de Antofagasta";
+   sn:participatesAs </social_networks/81/roles/712>,
+     </social_networks/81/roles/714>,
+     </social_networks/81/roles/716>,
+     </social_networks/81/roles/718>,
+     </social_networks/81/roles/720>;
+   sn:positionX 1015;
+   sn:positionY 244 .
+
+</social_networks/81/nodes/909> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/382>;
+   sn:kind "Actor";
+   sn:name "José Manuel Palacios Guzmán";
+   sn:participatesAs </social_networks/81/roles/719>;
+   sn:positionX 1028;
+   sn:positionY 121 .
+
+</social_networks/81/nodes/910> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Gonzalo Castillo Olivares";
+   sn:participatesAs </social_networks/81/roles/717>;
+   sn:positionX 863;
+   sn:positionY 270 .
+
+</social_networks/81/nodes/911> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Carlos Vilches Guzmán";
+   sn:participatesAs </social_networks/81/roles/715>;
+   sn:positionX 1086;
+   sn:positionY 379 .
+
+</social_networks/81/nodes/912> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Edwin Hovolet Tapia";
+   sn:participatesAs </social_networks/81/roles/713>;
+   sn:positionX 1162;
+   sn:positionY 305 .
+
+</social_networks/81/nodes/913> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Ricardo Troncoso San Martín";
+   sn:participatesAs </social_networks/81/roles/711>;
+   sn:positionX 885;
+   sn:positionY 173 .
+
+</social_networks/81/nodes/920> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/387>;
+   sn:hasAttribute </social_networks/81/attributes/208>,
+     </social_networks/81/attributes/209>;
+   sn:kind "Actor";
+   sn:name "Universidad de Chile";
+   sn:participatesAs </social_networks/81/roles/722>,
+     </social_networks/81/roles/776>,
+     </social_networks/81/roles/777>,
+     </social_networks/81/roles/780>,
+     </social_networks/81/roles/782>;
+   sn:positionX 295;
+   sn:positionY 360 .
+
+</social_networks/81/nodes/921> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/382>;
+   sn:kind "Actor";
+   sn:name "Luis Riveros C.";
+   sn:participatesAs </social_networks/81/roles/721>;
+   sn:positionX 184;
+   sn:positionY 285 .
+
+</social_networks/81/nodes/923> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/386>;
+   sn:hasAttribute </social_networks/81/attributes/210>;
+   sn:kind "Actor";
+   sn:name "Universidad Arturo Prat";
+   sn:participatesAs </social_networks/81/roles/724>,
+     </social_networks/81/roles/726>,
+     </social_networks/81/roles/728>,
+     </social_networks/81/roles/730>,
+     </social_networks/81/roles/732>;
+   sn:positionX 712;
+   sn:positionY 359 .
+
+</social_networks/81/nodes/924> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/382>;
+   sn:kind "Actor";
+   sn:name "Carlos Alfredo Merino Pinochet";
+   sn:participatesAs </social_networks/81/roles/731>;
+   sn:positionX 865;
+   sn:positionY 421 .
+
+</social_networks/81/nodes/925> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Néstor Araya Blazina";
+   sn:participatesAs </social_networks/81/roles/723>;
+   sn:positionX 627;
+   sn:positionY 474 .
+
+</social_networks/81/nodes/926> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Ricardo Palma Contesse";
+   sn:participatesAs </social_networks/81/roles/729>;
+   sn:positionX 871;
+   sn:positionY 341 .
+
+</social_networks/81/nodes/927> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Fernando Lolas Stepke";
+   sn:participatesAs </social_networks/81/roles/727>;
+   sn:positionX 771;
+   sn:positionY 478 .
+
+</social_networks/81/nodes/928> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Mónica Cuevas Cevallos";
+   sn:participatesAs </social_networks/81/roles/725>;
+   sn:positionX 569;
+   sn:positionY 353 .
+
+</social_networks/81/nodes/934> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/386>;
+   sn:kind "Actor";
+   sn:name "Universidad de la Frontera";
+   sn:participatesAs </social_networks/81/roles/736>,
+     </social_networks/81/roles/738>,
+     </social_networks/81/roles/740>,
+     </social_networks/81/roles/742>,
+     </social_networks/81/roles/744>;
+   sn:positionX 1277;
+   sn:positionY 513 .
+
+</social_networks/81/nodes/935> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/382>;
+   sn:kind "Actor";
+   sn:name "Sergio Bravo Escobar";
+   sn:participatesAs </social_networks/81/roles/741>;
+   sn:positionX 1291;
+   sn:positionY 635 .
+
+</social_networks/81/nodes/936> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Miriam Montecinos Latorre";
+   sn:participatesAs </social_networks/81/roles/739>;
+   sn:positionX 1391;
+   sn:positionY 460 .
+
+</social_networks/81/nodes/937> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Roberto Contreras Eddinger";
+   sn:participatesAs </social_networks/81/roles/735>;
+   sn:positionX 1109;
+   sn:positionY 507 .
+
+</social_networks/81/nodes/938> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Jerónimo Molina Ávila";
+   sn:participatesAs </social_networks/81/roles/737>;
+   sn:positionX 1413;
+   sn:positionY 596 .
+
+</social_networks/81/nodes/939> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Cristián Hund Villagra";
+   sn:participatesAs </social_networks/81/roles/743>;
+   sn:positionX 1153;
+   sn:positionY 602 .
+
+</social_networks/81/nodes/946> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/387>;
+   sn:hasAttribute </social_networks/81/attributes/211>;
+   sn:kind "Actor";
+   sn:name "Universidad de Santiago de Chile, USACH";
+   sn:participatesAs </social_networks/81/roles/746>,
+     </social_networks/81/roles/748>,
+     </social_networks/81/roles/752>,
+     </social_networks/81/roles/754>,
+     </social_networks/81/roles/755>;
+   sn:positionX 1463;
+   sn:positionY 55 .
+
+</social_networks/81/nodes/947> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/382>;
+   sn:kind "Actor";
+   sn:name "Ubaldo Zúñiga Quintanilla";
+   sn:participatesAs </social_networks/81/roles/753>;
+   sn:positionX 1392;
+   sn:positionY 226 .
+
+</social_networks/81/nodes/948> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Juan Agustín Figueroa Yavar";
+   sn:participatesAs </social_networks/81/roles/745>;
+   sn:positionX 1246;
+   sn:positionY 18 .
+
+</social_networks/81/nodes/949> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Roberto Pizarro Hoffer";
+   sn:participatesAs </social_networks/81/roles/747>;
+   sn:positionX 1562;
+   sn:positionY 26 .
+
+</social_networks/81/nodes/950> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Mario Letelier Sotomayor";
+   sn:participatesAs </social_networks/81/roles/766>;
+   sn:positionX 1643;
+   sn:positionY 148 .
+
+</social_networks/81/nodes/951> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Carlos Araya Villalobos";
+   sn:participatesAs </social_networks/81/roles/751>;
+   sn:positionX 1553;
+   sn:positionY 236 .
+
+</social_networks/81/nodes/958> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/386>;
+   sn:kind "Actor";
+   sn:name "Universidad de Talca";
+   sn:participatesAs </social_networks/81/roles/757>,
+     </social_networks/81/roles/759>,
+     </social_networks/81/roles/761>,
+     </social_networks/81/roles/763>,
+     </social_networks/81/roles/765>;
+   sn:positionX 758;
+   sn:positionY 695 .
+
+</social_networks/81/nodes/959> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/382>;
+   sn:kind "Actor";
+   sn:name "Álvaro Rojas Marín";
+   sn:participatesAs </social_networks/81/roles/756>;
+   sn:positionX 748;
+   sn:positionY 578 .
+
+</social_networks/81/nodes/961> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Arnoldo Sánchez Muñoz";
+   sn:participatesAs </social_networks/81/roles/758>;
+   sn:positionX 641;
+   sn:positionY 657 .
+
+</social_networks/81/nodes/962> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Jaime Crispi Soler";
+   sn:participatesAs </social_networks/81/roles/764>;
+   sn:positionX 882;
+   sn:positionY 631 .
+
+</social_networks/81/nodes/963> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Jorge Awad Mehech";
+   sn:participatesAs </social_networks/81/roles/762>;
+   sn:positionX 938;
+   sn:positionY 760 .
+
+</social_networks/81/nodes/964> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/383>;
+   sn:kind "Actor";
+   sn:name "Ricardo Baeza Rodríguez";
+   sn:participatesAs </social_networks/81/roles/760>;
+   sn:positionX 656;
+   sn:positionY 796 .
+
+</social_networks/81/nodes/970> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/388>;
+   sn:kind "Actor";
+   sn:name "Julio Chesta Peigna";
+   sn:participatesAs </social_networks/81/roles/779>;
+   sn:positionX 233;
+   sn:positionY 503 .
+
+</social_networks/81/nodes/971> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/388>;
+   sn:kind "Actor";
+   sn:name "Pablo Oyarzún Robles";
+   sn:participatesAs </social_networks/81/roles/778>;
+   sn:positionX 465;
+   sn:positionY 485 .
+
+</social_networks/81/nodes/972> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/388>;
+   sn:kind "Actor";
+   sn:name "Francisco Brieva Rodríguez";
+   sn:participatesAs </social_networks/81/roles/781>;
+   sn:positionX 90;
+   sn:positionY 371 .
+
+</social_networks/81/nodes/973> a sn:actor;
+   sn:belongsToFamily </social_networks/81/families/388>;
+   sn:kind "Actor";
+   sn:name "Luís Nuñez Vergara";
+   sn:participatesAs </social_networks/81/roles/775>;
+   sn:positionX 407;
+   sn:positionY 273 .
+
+</social_networks/81/attributes/205> a sn:attribute;
+   sn:key "Fundación";
+   sn:value "1981" .
+
+</social_networks/81/attributes/207> a sn:attribute;
+   sn:key "Fundación";
+   sn:value "20 Marzo 1981" .
+
+</social_networks/81/attributes/208> a sn:attribute;
+   sn:key "Fundación";
+   sn:value "1842" .
+
+</social_networks/81/attributes/209> a sn:attribute;
+   sn:key "Número de Alumnos";
+   sn:value "23459" .
+
+</social_networks/81/attributes/210> a sn:attribute;
+   sn:key "Fundación";
+   sn:value "Diciembre 1984" .
+
+</social_networks/81/attributes/211> a sn:attribute;
+   sn:key "Fundación";
+   sn:value "1947" .
+
+</social_networks/81/roles/701> a sn:role;
+   sn:inRelation </social_networks/81/nodes/903>;
+   sn:name "" .
+
+</social_networks/81/roles/702> a sn:role;
+   sn:inRelation </social_networks/81/nodes/903>;
+   sn:name "" .
+
+</social_networks/81/roles/703> a sn:role;
+   sn:inRelation </social_networks/81/nodes/904>;
+   sn:name "" .
+
+</social_networks/81/roles/704> a sn:role;
+   sn:inRelation </social_networks/81/nodes/904>;
+   sn:name "" .
+
+</social_networks/81/roles/705> a sn:role;
+   sn:inRelation </social_networks/81/nodes/905>;
+   sn:name "" .
+
+</social_networks/81/roles/706> a sn:role;
+   sn:inRelation </social_networks/81/nodes/905>;
+   sn:name "" .
+
+</social_networks/81/roles/707> a sn:role;
+   sn:inRelation </social_networks/81/nodes/906>;
+   sn:name "" .
+
+</social_networks/81/roles/708> a sn:role;
+   sn:inRelation </social_networks/81/nodes/906>;
+   sn:name "" .
+
+</social_networks/81/roles/709> a sn:role;
+   sn:inRelation </social_networks/81/nodes/907>;
+   sn:name "" .
+
+</social_networks/81/roles/710> a sn:role;
+   sn:inRelation </social_networks/81/nodes/907>;
+   sn:name "" .
+
+</social_networks/81/roles/711> a sn:role;
+   sn:inRelation </social_networks/81/nodes/914>;
+   sn:name "" .
+
+</social_networks/81/roles/712> a sn:role;
+   sn:inRelation </social_networks/81/nodes/914>;
+   sn:name "" .
+
+</social_networks/81/roles/713> a sn:role;
+   sn:inRelation </social_networks/81/nodes/915>;
+   sn:name "" .
+
+</social_networks/81/roles/714> a sn:role;
+   sn:inRelation </social_networks/81/nodes/915>;
+   sn:name "" .
+
+</social_networks/81/roles/715> a sn:role;
+   sn:inRelation </social_networks/81/nodes/916>;
+   sn:name "" .
+
+</social_networks/81/roles/716> a sn:role;
+   sn:inRelation </social_networks/81/nodes/916>;
+   sn:name "" .
+
+</social_networks/81/roles/717> a sn:role;
+   sn:inRelation </social_networks/81/nodes/917>;
+   sn:name "Presidente" .
+
+</social_networks/81/roles/718> a sn:role;
+   sn:inRelation </social_networks/81/nodes/917>;
+   sn:name "" .
+
+</social_networks/81/roles/719> a sn:role;
+   sn:inRelation </social_networks/81/nodes/918>;
+   sn:name "" .
+
+</social_networks/81/roles/720> a sn:role;
+   sn:inRelation </social_networks/81/nodes/918>;
+   sn:name "" .
+
+</social_networks/81/roles/721> a sn:role;
+   sn:inRelation </social_networks/81/nodes/922>;
+   sn:name "" .
+
+</social_networks/81/roles/722> a sn:role;
+   sn:inRelation </social_networks/81/nodes/922>;
+   sn:name "" .
+
+</social_networks/81/roles/723> a sn:role;
+   sn:inRelation </social_networks/81/nodes/929>;
+   sn:name "" .
+
+</social_networks/81/roles/724> a sn:role;
+   sn:inRelation </social_networks/81/nodes/929>;
+   sn:name "" .
+
+</social_networks/81/roles/725> a sn:role;
+   sn:inRelation </social_networks/81/nodes/930>;
+   sn:name "" .
+
+</social_networks/81/roles/726> a sn:role;
+   sn:inRelation </social_networks/81/nodes/930>;
+   sn:name "" .
+
+</social_networks/81/roles/727> a sn:role;
+   sn:inRelation </social_networks/81/nodes/931>;
+   sn:name "" .
+
+</social_networks/81/roles/728> a sn:role;
+   sn:inRelation </social_networks/81/nodes/931>;
+   sn:name "" .
+
+</social_networks/81/roles/729> a sn:role;
+   sn:inRelation </social_networks/81/nodes/932>;
+   sn:name "" .
+
+</social_networks/81/roles/730> a sn:role;
+   sn:inRelation </social_networks/81/nodes/932>;
+   sn:name "" .
+
+</social_networks/81/roles/731> a sn:role;
+   sn:inRelation </social_networks/81/nodes/933>;
+   sn:name "" .
+
+</social_networks/81/roles/732> a sn:role;
+   sn:inRelation </social_networks/81/nodes/933>;
+   sn:name "" .
+
+</social_networks/81/roles/735> a sn:role;
+   sn:inRelation </social_networks/81/nodes/941>;
+   sn:name "" .
+
+</social_networks/81/roles/736> a sn:role;
+   sn:inRelation </social_networks/81/nodes/941>;
+   sn:name "" .
+
+</social_networks/81/roles/737> a sn:role;
+   sn:inRelation </social_networks/81/nodes/942>;
+   sn:name "" .
+
+</social_networks/81/roles/738> a sn:role;
+   sn:inRelation </social_networks/81/nodes/942>;
+   sn:name "" .
+
+</social_networks/81/roles/739> a sn:role;
+   sn:inRelation </social_networks/81/nodes/943>;
+   sn:name "" .
+
+</social_networks/81/roles/740> a sn:role;
+   sn:inRelation </social_networks/81/nodes/943>;
+   sn:name "" .
+
+</social_networks/81/roles/741> a sn:role;
+   sn:inRelation </social_networks/81/nodes/944>;
+   sn:name "" .
+
+</social_networks/81/roles/742> a sn:role;
+   sn:inRelation </social_networks/81/nodes/944>;
+   sn:name "" .
+
+</social_networks/81/roles/743> a sn:role;
+   sn:inRelation </social_networks/81/nodes/940>;
+   sn:name "" .
+
+</social_networks/81/roles/744> a sn:role;
+   sn:inRelation </social_networks/81/nodes/940>;
+   sn:name "" .
+
+</social_networks/81/roles/745> a sn:role;
+   sn:inRelation </social_networks/81/nodes/952>;
+   sn:name "Presidente" .
+
+</social_networks/81/roles/746> a sn:role;
+   sn:inRelation </social_networks/81/nodes/952>;
+   sn:name "" .
+
+</social_networks/81/roles/747> a sn:role;
+   sn:inRelation </social_networks/81/nodes/953>;
+   sn:name "" .
+
+</social_networks/81/roles/748> a sn:role;
+   sn:inRelation </social_networks/81/nodes/953>;
+   sn:name "" .
+
+</social_networks/81/roles/751> a sn:role;
+   sn:inRelation </social_networks/81/nodes/955>;
+   sn:name "" .
+
+</social_networks/81/roles/752> a sn:role;
+   sn:inRelation </social_networks/81/nodes/955>;
+   sn:name "" .
+
+</social_networks/81/roles/753> a sn:role;
+   sn:inRelation </social_networks/81/nodes/957>;
+   sn:name "" .
+
+</social_networks/81/roles/754> a sn:role;
+   sn:inRelation </social_networks/81/nodes/957>;
+   sn:name "" .
+
+</social_networks/81/roles/755> a sn:role;
+   sn:inRelation </social_networks/81/nodes/954>;
+   sn:name "" .
+
+</social_networks/81/roles/756> a sn:role;
+   sn:inRelation </social_networks/81/nodes/960>;
+   sn:name "" .
+
+</social_networks/81/roles/757> a sn:role;
+   sn:inRelation </social_networks/81/nodes/960>;
+   sn:name "" .
+
+</social_networks/81/roles/758> a sn:role;
+   sn:inRelation </social_networks/81/nodes/965>;
+   sn:name "" .
+
+</social_networks/81/roles/759> a sn:role;
+   sn:inRelation </social_networks/81/nodes/965>;
+   sn:name "" .
+
+</social_networks/81/roles/760> a sn:role;
+   sn:inRelation </social_networks/81/nodes/966>;
+   sn:name "" .
+
+</social_networks/81/roles/761> a sn:role;
+   sn:inRelation </social_networks/81/nodes/966>;
+   sn:name "" .
+
+</social_networks/81/roles/762> a sn:role;
+   sn:inRelation </social_networks/81/nodes/967>;
+   sn:name "" .
+
+</social_networks/81/roles/763> a sn:role;
+   sn:inRelation </social_networks/81/nodes/967>;
+   sn:name "" .
+
+</social_networks/81/roles/764> a sn:role;
+   sn:inRelation </social_networks/81/nodes/968>;
+   sn:name "vicepresidente" .
+
+</social_networks/81/roles/765> a sn:role;
+   sn:inRelation </social_networks/81/nodes/968>;
+   sn:name "" .
+
+</social_networks/81/roles/766> a sn:role;
+   sn:inRelation </social_networks/81/nodes/954>;
+   sn:name "" .
+
+</social_networks/81/roles/775> a sn:role;
+   sn:inRelation </social_networks/81/nodes/977>;
+   sn:name "" .
+
+</social_networks/81/roles/776> a sn:role;
+   sn:inRelation </social_networks/81/nodes/977>;
+   sn:name "" .
+
+</social_networks/81/roles/777> a sn:role;
+   sn:inRelation </social_networks/81/nodes/975>;
+   sn:name "" .
+
+</social_networks/81/roles/778> a sn:role;
+   sn:inRelation </social_networks/81/nodes/975>;
+   sn:name "" .
+
+</social_networks/81/roles/779> a sn:role;
+   sn:inRelation </social_networks/81/nodes/976>;
+   sn:name "" .
+
+</social_networks/81/roles/780> a sn:role;
+   sn:inRelation </social_networks/81/nodes/976>;
+   sn:name "" .
+
+</social_networks/81/roles/781> a sn:role;
+   sn:inRelation </social_networks/81/nodes/974>;
+   sn:name "" .
+
+</social_networks/81/roles/782> a sn:role;
+   sn:inRelation </social_networks/81/nodes/974>;
+   sn:name "" .
+
+</social_networks/81/families/387> a sn:family;
+   sn:color "#666699";
+   sn:kind "Actor";
+   sn:name "Universidad Pública Tradicional" .
+
+</social_networks/81/nodes/903> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 389;
+   sn:positionY 170 .
+
+</social_networks/81/nodes/904> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 495;
+   sn:positionY 184 .
+
+</social_networks/81/nodes/905> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 579;
+   sn:positionY 148 .
+
+</social_networks/81/nodes/906> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 608;
+   sn:positionY 83 .
+
+</social_networks/81/nodes/907> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/384>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 389;
+   sn:positionY 64 .
+
+</social_networks/81/nodes/914> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 944;
+   sn:positionY 208 .
+
+</social_networks/81/nodes/915> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1088;
+   sn:positionY 274 .
+
+</social_networks/81/nodes/916> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1067;
+   sn:positionY 338 .
+
+</social_networks/81/nodes/917> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 957;
+   sn:positionY 249 .
+
+</social_networks/81/nodes/918> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/384>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1035;
+   sn:positionY 194 .
+
+</social_networks/81/nodes/922> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/384>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 245;
+   sn:positionY 312 .
+
+</social_networks/81/nodes/929> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 683;
+   sn:positionY 424 .
+
+</social_networks/81/nodes/930> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 643;
+   sn:positionY 359 .
+
+</social_networks/81/nodes/931> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 743;
+   sn:positionY 435 .
+
+</social_networks/81/nodes/932> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 787;
+   sn:positionY 340 .
+
+</social_networks/81/nodes/933> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/384>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 804;
+   sn:positionY 411 .
+
+</social_networks/81/nodes/940> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1215;
+   sn:positionY 557 .
+
+</social_networks/81/nodes/941> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1193;
+   sn:positionY 510 .
+
+</social_networks/81/nodes/942> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1345;
+   sn:positionY 554 .
+
+</social_networks/81/nodes/943> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1334;
+   sn:positionY 486 .
+
+</social_networks/81/nodes/944> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/384>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1284;
+   sn:positionY 574 .
+
+</social_networks/81/nodes/952> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1391;
+   sn:positionY 72 .
+
+</social_networks/81/nodes/953> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1512;
+   sn:positionY 61 .
+
+</social_networks/81/nodes/954> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1563;
+   sn:positionY 116 .
+
+</social_networks/81/nodes/955> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1507;
+   sn:positionY 166 .
+
+</social_networks/81/nodes/957> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/384>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 1427;
+   sn:positionY 161 .
+
+</social_networks/81/nodes/960> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/384>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 753;
+   sn:positionY 636 .
+
+</social_networks/81/nodes/965> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "Presidente";
+   sn:positionX 699;
+   sn:positionY 676 .
+
+</social_networks/81/nodes/966> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 707;
+   sn:positionY 745 .
+
+</social_networks/81/nodes/967> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 848;
+   sn:positionY 727 .
+
+</social_networks/81/nodes/968> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/385>;
+   sn:kind "Relation";
+   sn:name "";
+   sn:positionX 820;
+   sn:positionY 663 .
+
+</social_networks/81/nodes/974> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/389>;
+   sn:kind "Relation";
+   sn:name "Ciencias Físicas y Matemáticas";
+   sn:positionX 195;
+   sn:positionY 390 .
+
+</social_networks/81/nodes/975> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/389>;
+   sn:kind "Relation";
+   sn:name "Artes";
+   sn:positionX 380;
+   sn:positionY 422 .
+
+</social_networks/81/nodes/976> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/389>;
+   sn:kind "Relation";
+   sn:name "Arquitectura y Urbanismo";
+   sn:positionX 262;
+   sn:positionY 440 .
+
+</social_networks/81/nodes/977> a sn:relation;
+   sn:belongsToFamily </social_networks/81/families/389>;
+   sn:kind "Relation";
+   sn:name "Ciencias Químicas y Farmaceuticas";
+   sn:positionX 336;
+   sn:positionY 306 .
+
+</social_networks/81/families/388> a sn:family;
+   sn:color "#ff00ff";
+   sn:kind "Actor";
+   sn:name "Decano" .
+
+</social_networks/81/families/389> a sn:family;
+   sn:color "#33cccc";
+   sn:kind "Relation";
+   sn:name "decanoEn" .
+
+</social_networks/81/families/386> a sn:family;
+   sn:color "#333399";
+   sn:kind "Actor";
+   sn:name "Universidad Pública Derivada" .
+
+</social_networks/81/families/382> a sn:family;
+   sn:color "#ff7f0e";
+   sn:kind "Actor";
+   sn:name "Rector" .
+
+</social_networks/81/families/384> a sn:family;
+   sn:color "#d62728";
+   sn:kind "Relation";
+   sn:name "rectorDe" .
+
+</social_networks/81/families/383> a sn:family;
+   sn:color "#2ca02c";
+   sn:kind "Actor";
+   sn:name "Director" .
+
+</social_networks/81/families/385> a sn:family;
+   sn:color "#9467bd";
+   sn:kind "Relation";
+   sn:name "directorEn" .

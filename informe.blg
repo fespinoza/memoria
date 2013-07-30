@@ -33,45 +33,45 @@ Warning--to sort, need author or key in validador_rdf
 Warning--to sort, need author or key in vagrant
 Warning--to sort, need author or key in chef
 Warning--to sort, need author or key in heroku
-You've used 30 entries,
+You've used 31 entries,
             2118 wiz_defined-function locations,
-            597 strings with 6790 characters,
-and the built_in function-call counts, 5195 in all, are:
-= -- 498
-> -- 60
+            602 strings with 6941 characters,
+and the built_in function-call counts, 5410 in all, are:
+= -- 517
+> -- 67
 < -- 0
-+ -- 41
-- -- 10
-* -- 244
-:= -- 627
-add.period$ -- 64
-call.type$ -- 30
-change.case$ -- 95
++ -- 44
+- -- 12
+* -- 252
+:= -- 665
+add.period$ -- 67
+call.type$ -- 31
+change.case$ -- 98
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 215
-empty$ -- 687
-format.name$ -- 10
-if$ -- 1258
+cite$ -- 57
+duplicate$ -- 227
+empty$ -- 709
+format.name$ -- 12
+if$ -- 1304
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 2
-newline$ -- 127
-num.names$ -- 8
-pop$ -- 242
+int.to.str$ -- 31
+missing$ -- 4
+newline$ -- 132
+num.names$ -- 10
+pop$ -- 250
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 68
 quote$ -- 0
-skip$ -- 209
+skip$ -- 215
 stack$ -- 0
-substring$ -- 151
-swap$ -- 30
+substring$ -- 156
+swap$ -- 31
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 118
+type$ -- 120
 warning$ -- 26
-while$ -- 8
-width$ -- 32
-write$ -- 251
+while$ -- 10
+width$ -- 33
+write$ -- 261
 (There were 28 warnings)
