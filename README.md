@@ -289,3 +289,7 @@ cosas técnicas y metodológicas que fueron complejas al momento de enfrentar la
 * mejorar la escalabilidad de la aplicación
 * habilitar un modo offline de la app
 * evolución temporal de las redes sociales
+
+# Notas
+
+* ultima oracion: no calza con el resto del parrafo, que era un relato en pasado de lo que se habia hecho, y de repente sale con una oracion en presente sobre la estructura de la tesis, que es otra cosa.
