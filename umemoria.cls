@@ -57,8 +57,8 @@
 \renewenvironment{itemize}{\olditem\setlength{\parskip}{\smallskipamount}}{\oldenditem}
 
 %% Entornos nuevos
-\newenvironment{abstract}{\cleardoublepage\chapter*{Resumen}}{\vfill\null}
-\newenvironment{dedicatoria}{\cleardoublepage\null\vspace{\stretch{1}}\begin{flushright}\itshape}{\end{flushright}\vspace{\stretch{2}}\null}
+\newenvironment{abstract}{\clearpage{\thispagestyle{empty}\cleardoublepage}\chapter*{Resumen}}{\vfill\null}
+\newenvironment{dedicatoria}{\clearpage{\thispagestyle{empty}\cleardoublepage}\null\vspace{\stretch{1}}\begin{flushright}\itshape}{\end{flushright}\vspace{\stretch{2}}\null}
 \let\thanks\undefined
 \newenvironment{thanks}{\chapter*{Agradecimientos}}{\vfill\null}
 \newenvironment{intro}{\addcontentsline{toc}{chapter}{\protect\numberline{}Introducción}\chapter*{Introducción}}{\vfill\null}
